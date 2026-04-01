@@ -667,7 +667,7 @@ WaveSchedule
         {
             Name "Bundy"
             Class Sniper
-            ClassIcon sniper_kukri_giant
+            ClassIcon sniper_kukri_lite
             Scale 1.75
             Health 5000
         
@@ -701,7 +701,7 @@ WaveSchedule
         {
             Name "Pundy"
             Class Sniper
-            ClassIcon sniper_kukri_giant
+            ClassIcon sniper_kukri_lite
             Scale 1.75
             Health 5000
         
@@ -735,7 +735,7 @@ WaveSchedule
         {
             Name "Mundy"
             Class Sniper
-            ClassIcon sniper_kukri_giant
+            ClassIcon sniper_kukri_lite
             Scale 1.75
             Health 5000
         
@@ -769,7 +769,7 @@ WaveSchedule
         {
             Name "Phil"
             Class Sniper
-            ClassIcon sniper_kukri_giant
+            ClassIcon sniper_kukri_lite
             Scale 1.75
             Health 5000
         
