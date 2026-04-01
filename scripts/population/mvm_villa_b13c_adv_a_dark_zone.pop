@@ -40,15 +40,15 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 	// FixHuntsmanDamageBonus 1
 	RobotLimit 24
 	MaxSpeedLimit 1600
-	
+
 	BluHumanFlagCapture 1
 	BluHumanFlagPickup 1
 	NoBluHumanFootsteps 1
 	BluPlayersAreRobots 1
 	FlagCarrierMovementPenalty 1
 	// PlayerRobotsUsePlayerAnimation 1
-	
-	ClassLimit  
+
+	ClassLimit
 	{
 		Soldier 0
 		Pyro 0
@@ -61,7 +61,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 		Civilian 0
 	}
 	PrecacheSound "trespasser/sg-1.wav"
-	
+
 	PrecacheSound "missionfolderthatappearswhenyouhavetakentoolonginaghosthouse/mus_pumpkin_boss.mp3"
 	PrecacheSound "missionfolderthatappearswhenyouhavetakentoolonginaghosthouse/mus_pumpkin_boss_high_quality_rip.mp3"
 	PrecacheSound "missionfolderthatappearswhenyouhavetakentoolonginaghosthouse/snd_im_old.mp3"
@@ -119,21 +119,21 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 	PrecacheSound "missionfolderthatappearswhenyouhavetakentoolonginaghosthouse/mus_oldman_fucks_your_shit_up.mp3"
 	PrecacheSound "missionfolderthatappearswhenyouhavetakentoolonginaghosthouse/snd_old_man_grunt.mp3"
 	PrecacheSound "missionfolderthatappearswhenyouhavetakentoolonginaghosthouse/mus_gerson_defeated.mp3"
-	
+
 	// TO DO:
-	
+
 	PrecacheGeneric "materials/colorcorrection/your_taking_too_long.raw"
 	PrecacheGeneric "materials/colorcorrection/fear_of_dark.raw"
-	PrecacheGeneric "greenasfuck.raw" // The air crackles green with freedom.
-	
+	PrecacheGeneric "materials/colorcorrection/greenasfuck.raw" // The air crackles green with freedom.
+
 	PrecacheModel "models/weapons/c_models/c_funny_doom_db.mdl"
-	
+
 	PrecacheModel "models/props_mvm/reversemvm_whitewall_352x256.mdl"
 	PrecacheModel "models/props_mvm/reversemvm_whitewall_384x224.mdl"
 	PrecacheModel "models/props_mvm/reversemvm_whitewall_512x320.mdl"
 	PrecacheModel "models/props_mvm/reversemvm_whitewall_176x152.mdl"
 	PrecacheModel "models/props_mvm/reversemvm_whitewall_112x320.mdl"
-	
+
 	PrecacheModel "models/bots/boss_bot/combat_tank_mk2/mk2_combat_tank_chassis.mdl"
 	PrecacheModel "models/bots/boss_bot/combat_tank_mk2/mk2_fireball.mdl"
 	PrecacheModel "models/bots/boss_bot/combat_tank_mk2/mk2_railgun.mdl"
@@ -141,9 +141,9 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 	PrecacheModel "models/bots/boss_bot/combat_tank_mk2/mk2_rocket_pod.mdl"
 	PrecacheModel "models/bots/boss_bot/combat_tank_mk2/mk2_rocket_dumbfire.mdl"
 	PrecacheModel "models/bots/boss_bot/combat_tank_mk2/mk2_rocket_seeker.mdl"
-	
+
 	PrecacheModel "models/bots/demo_boss/bot_demo_gray_boss.mdl"
-	
+
 	PrecacheGeneric "materials/missionfolderthatappearswhenyouhavetakentoolonginaghosthouse/w17_its.vtf"
 	PrecacheGeneric "materials/missionfolderthatappearswhenyouhavetakentoolonginaghosthouse/w17_its.vmt"
 	PrecacheGeneric "materials/missionfolderthatappearswhenyouhavetakentoolonginaghosthouse/w17_its_t.vtf"
@@ -152,7 +152,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 	PrecacheGeneric "materials/missionfolderthatappearswhenyouhavetakentoolonginaghosthouse/w17_its_tv.vmt"
 	PrecacheGeneric "materials/missionfolderthatappearswhenyouhavetakentoolonginaghosthouse/w17_its_tv_time.vtf"
 	PrecacheGeneric "materials/missionfolderthatappearswhenyouhavetakentoolonginaghosthouse/w17_its_tv_time.vmt"
-	
+
 	// DisableSound "Announcer.MVM_Spy_Alert"
 	OverrideSounds
 	{
@@ -237,8 +237,8 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			"shoot pattern reset time" "1"
 			"special item description" "Projectile type cycles between shots, becomes stronger with successive shots in the same clip"
 		}
-	
-	
+
+
 		"Nice Guy Eyes"
 		{
 			OriginalItemName "Pyrovision Goggles"
@@ -315,7 +315,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			"explosion particle" "drg_cow_explosioncore_charged_blue"
 			"custom weapon fire sound" "Weapon_CowMangler.Single"
 			"custom impact sound" "Weapon_CowMangler.ExplodeCharged"
-			"custom projectile model" "models/projectiles/fos_hologram_projectile_blu_l_spin.mdl" 
+			"custom projectile model" "models/projectiles/fos_hologram_projectile_blu_l_spin.mdl"
 			"ignores other projectiles" 1
 			"Set DamageType Ignite" 1
 			"penetrate teammates" 1
@@ -459,7 +459,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"projectile trail particle" "pipebombtrail_red"
 				"effect add attributes" "override projectile type|2|no damage falloff|1|mult projectile count|3|projectile spread angle penalty|4|damage bonus HIDDEN|6.3|projectile gravity|600|projectile detonate time|0.4|custom kill icon|iron_bomber|Blast radius decreased|0.5|disable weapon switch|1"
 			}
-			Description "+Hype replaces shots with a volley of grenades +Hype gives faster fire and reload speed -Cannot switch weapons during hype -25% max primary ammo" 
+			Description "+Hype replaces shots with a volley of grenades +Hype gives faster fire and reload speed -Cannot switch weapons during hype -25% max primary ammo"
 			Tier 1
 			AllowedWeapons
 			{
@@ -482,7 +482,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"alt fire attributes" "fire rate bonus HIDDEN|0.2|damage penalty|0.65|reload time increased|4|shoot view punch angle random|5 5 5"
 				"hidden primary max ammo bonus" -0.25
 			}
-			Description "+Hold alt fire to release all shots in clip in a burst with 35% reduced damage -25% max primary ammo -Random viewpunch during burst" 
+			Description "+Hold alt fire to release all shots in clip in a burst with 35% reduced damage -25% max primary ammo -Random viewpunch during burst"
 			Tier 1
 			AllowedWeapons
 			{
@@ -502,11 +502,11 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			Cost 0
 			SecondaryAttributes
 			{
-				"weapon spread bonus" -0.4	
+				"weapon spread bonus" -0.4
 				"lose hype on take damage" -4
 				"move speed penalty" -0.1
 			}
-			Description "+Boost not lost on damage +40% more accurate -10% move speed -No double jump" 
+			Description "+Boost not lost on damage +40% more accurate -10% move speed -No double jump"
 			Tier 1
 			AllowedWeapons
 			{
@@ -549,7 +549,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"projectile spread angle penalty" 1
 				"reload time increased" 0.25
 			}
-			Description "+1 projectile count +1 degree projectile deviation -25% reload speed" 
+			Description "+1 projectile count +1 degree projectile deviation -25% reload speed"
 			AllowedWeapons
 			{
 				ItemName "Super Bees Gun"
@@ -640,7 +640,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			{
 				"alt fire attributes" "override projectile type extra|jarate"
 			}
-			Description "+Alt fire throws Jarate" 
+			Description "+Alt fire throws Jarate"
 			Tier 1
 			AllowedWeapons
 			{
@@ -697,7 +697,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 		BatB // funny
 		{
 			Name "Perk: Overkill: Luigi Edition"
-			Attribute "mult bleeding dmg" 
+			Attribute "mult bleeding dmg"
 			Cap 3
 			Increment 3
 			Cost 400
@@ -747,7 +747,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"fire input on hit" "bad_theory_relay^Trigger"
 				"fire input on hit name restrict" "player"
 			}
-			Description "+Hit enemies receive a 25% damage penalty for 5 seconds -No mark for death -25% slower deploy time -Generates a terrible theory in chat on hit" 
+			Description "+Hit enemies receive a 25% damage penalty for 5 seconds -No mark for death -25% slower deploy time -Generates a terrible theory in chat on hit"
 			Tier 1
 			AllowedWeapons
 			{
@@ -777,7 +777,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 	}
 
 	SpawnTemplate MainLogicAtNewOrigin
-	SpawnTemplate		
+	SpawnTemplate
 	{
 		Name "MainLogic"
 		"origin" "-6848 1152 256"
@@ -1141,7 +1141,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				// "spawnflags" 2
 				// "StartDisabled" 1
 				// "targetname" "secret_theory_relay"
-				// "OnTrigger" "!activator,$DisplayTextChat,{CCCCCC}I: LET SECONDS RUN OUT.,0.1,-1"	
+				// "OnTrigger" "!activator,$DisplayTextChat,{CCCCCC}I: LET SECONDS RUN OUT.,0.1,-1"
 				// "OnTrigger" "!activator,$DisplayTextChat,{CCCCCC}II: YOUR ALLY BECOMES STRONGER.,0.2,-1"
 				// "OnTrigger" "!activator,$DisplayTextChat,{CCCCCC}III: A GIFT WAS RECEIVED.,0.3,-1"
 				// "OnTrigger" "!activator,$DisplayTextChat,{CCCCCC}IV: FIND THE SECRET GOAL.,0.4,-1"
@@ -1604,13 +1604,13 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"targetname" "pumpkin_interrupt_stop_relay_delayed"
 				"OnTrigger" "@f@filter_pumpkin@player,$BotCommand,stop interrupt action,3.3,-1"
 			}
-			color_correction 
+			color_correction
 			{
 				"targetname" "takingtoolong_colorcorrection"
 				"origin" "0 0 0"
 				"fadeInDuration" "0"
 				"fadeOutDuration" "0"
-				"maxfalloff" "-1" 
+				"maxfalloff" "-1"
 				"minfalloff" "-1"
 				"maxweight" "0.6"
 				"startdisabled" "1"
@@ -1618,13 +1618,13 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			}
 			point_worldtext
 			{
-				"targetname" "stuck_message" 
-				"message" "you're stuck lol" 
-				"spawnflags" "0" 
+				"targetname" "stuck_message"
+				"message" "you're stuck lol"
+				"spawnflags" "0"
 				"origin" "-986 7458 326"
 				"angles" "-5 -120 0"
-				"font" 6 
-				"textsize" "15" 
+				"font" 6
+				"textsize" "15"
 			}
 			info_target
 			{
@@ -1812,17 +1812,17 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			}
 			logic_timer
 			{
-				"targetname" "dancing_pumpkin_timer" 
-				"startdisabled" 1 
+				"targetname" "dancing_pumpkin_timer"
+				"startdisabled" 1
 				"refiretime" 6
-				"OnTimer" "DancingPumpkin,ForceSpawnAtEntityOrigin,offset,0,-1" 
+				"OnTimer" "DancingPumpkin,ForceSpawnAtEntityOrigin,offset,0,-1"
 			}
 			logic_timer
 			{
-				"targetname" "player_detector_timer" 
-				"startdisabled" 1 
+				"targetname" "player_detector_timer"
+				"startdisabled" 1
 				"refiretime" 1
-				"OnTimer" "player_detector,$TargetTest,,0,-1" 
+				"OnTimer" "player_detector,$TargetTest,,0,-1"
 			}
 			$trigger_detector
 			{
@@ -1874,7 +1874,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			}
 			logic_relay
 			{
-				"targetname" "spooky_lose_relay" 
+				"targetname" "spooky_lose_relay"
 				"StartDisabled" 1
 				"OnTrigger" "force_respawn_relay,Disable,,0,-1"
 				"OnTrigger" "force_respawn_relay,CancelPending,,0,-1"
@@ -1901,47 +1901,47 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			}
 			point_worldtext
 			{
-				"targetname" "upgrade_message_1" 
-				"message" "CUSTOM" 
-				"spawnflags" "0" 
+				"targetname" "upgrade_message_1"
+				"message" "CUSTOM"
+				"spawnflags" "0"
 				"origin" "-7884 8637 602"
 				"color" "101 170 38"
 				"angles" "5 60 0"
-				"font" 6 
-				"textsize" "32" 
+				"font" 6
+				"textsize" "32"
 			}
 			point_worldtext
 			{
-				"targetname" "upgrade_message_2" 
-				"message" "UPGRADES" 
-				"spawnflags" "0" 
+				"targetname" "upgrade_message_2"
+				"message" "UPGRADES"
+				"spawnflags" "0"
 				"origin" "-7884 8635 582"
 				"color" "101 170 38"
 				"angles" "5 60 0"
-				"font" 6 
-				"textsize" "32" 
+				"font" 6
+				"textsize" "32"
 			}
 			point_worldtext
 			{
-				"targetname" "upgrade_message_3" 
-				"message" "AVAILABLE" 
-				"spawnflags" "0" 
+				"targetname" "upgrade_message_3"
+				"message" "AVAILABLE"
+				"spawnflags" "0"
 				"origin" "-7884 8633 562"
 				"color" "101 170 38"
 				"angles" "5 60 0"
-				"font" 6 
-				"textsize" "32" 
+				"font" 6
+				"textsize" "32"
 			}
 			point_worldtext
 			{
-				"targetname" "upgrade_message_4" 
-				"message" "& weapons" 
-				"spawnflags" "0" 
+				"targetname" "upgrade_message_4"
+				"message" "& weapons"
+				"spawnflags" "0"
 				"origin" "-7910 8649 571"
 				"color" "255 0 255"
 				"angles" "5 60 0"
-				"font" 6 
-				"textsize" "12" 
+				"font" 6
+				"textsize" "12"
 			}
 			env_shake
 			{
@@ -2150,11 +2150,11 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			}
 			func_movelinear
 			{
-				"targetname" "dancing_pumpkin_move" 
-				"origin" "-904 7110 298.5" 
-				"movedir" "0 90 0" 
-				"movedistance" "310" 
-				"spawnflags" "8" 
+				"targetname" "dancing_pumpkin_move"
+				"origin" "-904 7110 298.5"
+				"movedir" "0 90 0"
+				"movedistance" "310"
+				"spawnflags" "8"
 				"speed" "20"
 				"OnFullyOpen" "!caller,Kill,,0,-1"
 				// "OnFullyClosed" "dancing_pumpkin_move,Open,,0.1,-1"
@@ -2170,9 +2170,9 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"model" "models/props_gameplay/resupply_locker.mdl"
 			}
 		}
-		
+
 		///////////////// START OF MAZE LOGIC /////////////////
-		
+
 		Wave0Logic
 		{
 			RemoveIfKilled "w0_target"
@@ -2200,7 +2200,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnSpawn" "gamerules,CallScriptFunction,showAnnotationW0Key,0.6,-1"
 				"OnSpawn" "player,$DisplayTextChat,{8800FF}Now Playing {B800FF}: DELTARUNE Chapter 4 OST - A DARK ZONE,0.6,-1"
 				"OnTrigger" "gamerules,CallScriptFunction,hideNewAnnotation,0,-1"
-				"OnTrigger" "intel,$PlaySound,=120|misc/halloween/duck_pickup_pos_01.wav,0,-1" 
+				"OnTrigger" "intel,$PlaySound,=120|misc/halloween/duck_pickup_pos_01.wav,0,-1"
 				"OnTrigger" "outside_fog,SetMaxDensity,0.8,0,-1"
 				"OnTrigger" "gamerules,CallScriptFunction,showAnnotationW0Exit,0.3,-1"
 				"OnTrigger" "w0_exit,Enable,,0.3,-1"
@@ -2210,7 +2210,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnTrigger" "bomb_deploy_relay,Disable,,0,-1"
 			}
 			func_flagdetectionzone
-			{ 
+			{
 				"targetname" "w0_exit"
 				"origin" "-2198 7672 256"
 				"mins" "-48 -48 -48"
@@ -2231,7 +2231,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"startdisabled" "1"
 			}
 			logic_relay
-			{ 
+			{
 				"targetname" "w0_failsafe"
 				"OnTrigger" "intel,ForceResetAndDisableSilent,,0,-1"
 				"OnTrigger" "gamerules,CallScriptFunction,hideNewAnnotation,0,-1"
@@ -2318,7 +2318,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnSpawn" "respawnvis_red_entrance,Enable,,0,-1"
 				"OnSpawn" "roof_sound,Disable,,0,-1"
 				"OnTrigger" "gamerules,CallScriptFunction,hideNewAnnotation,0,-1"
-				"OnTrigger" "intel,$PlaySound,=120|misc/halloween/duck_pickup_pos_01.wav,0,-1" 
+				"OnTrigger" "intel,$PlaySound,=120|misc/halloween/duck_pickup_pos_01.wav,0,-1"
 				"OnTrigger" "spawnbot_altmode,Enable,,1.2,-1"
 				"OnTrigger" "!self,Disable,,0,-1"
 			}
@@ -2363,58 +2363,58 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			}
 			game_text
 			{
-				"targetname" "w1_text_your" 
-				"message" "YOUR"  
-				"x" "0.35" 
-				"y" "0.4" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "2" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w1_text_your"
+				"message" "YOUR"
+				"x" "0.35"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "2"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "2.25"
 			}
 			game_text
 			{
-				"targetname" "w1_text_taking" 
-				"message" "TAKING"  
-				"x" "0.45" 
-				"y" "0.4" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "3" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w1_text_taking"
+				"message" "TAKING"
+				"x" "0.45"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "3"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "1.7"
 			}
 			game_text
 			{
-				"targetname" "w1_text_too" 
-				"message" "TOO"  
-				"x" "0.55" 
-				"y" "0.4" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "4" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w1_text_too"
+				"message" "TOO"
+				"x" "0.55"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "4"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "1.3"
 			}
 			game_text
 			{
-				"targetname" "w1_text_long" 
-				"message" "LONG"  
-				"x" "0.625" 
-				"y" "0.4" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "5" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w1_text_long"
+				"message" "LONG"
+				"x" "0.625"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "5"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "0.9"
 			}
 			func_flagdetectionzone
-			{ 
+			{
 				"targetname" "w1_exit"
 				"origin" "-2176 4768 576"
 				"mins" "-48 -48 0"
@@ -2504,7 +2504,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnSpawn" "gamerules,CallScriptFunction,showAnnotationW2Key,0.6,-1"
 				"OnSpawn" "respawnvis_red_entrance,Enable,,0,-1"
 				"OnTrigger" "gamerules,CallScriptFunction,hideNewAnnotation,0,-1"
-				"OnTrigger" "intel,$PlaySound,=120|misc/halloween/duck_pickup_pos_01.wav,0,-1" 
+				"OnTrigger" "intel,$PlaySound,=120|misc/halloween/duck_pickup_pos_01.wav,0,-1"
 				"OnTrigger" "w2_trigger,Enable,,0.3,-1"
 				"OnTrigger" "!self,Disable,,0,-1"
 				"OnTrigger" "gamerules,CallScriptFunction,showAnnotationW2Exit,0.6,-1"
@@ -2548,7 +2548,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnTrigger" "w2_exit_prop,Skin,1,3,-1"
 			}
 			func_flagdetectionzone
-			{ 
+			{
 				"targetname" "w2_trigger"
 				"origin" "0 0 0"
 				"mins" "-3184 1280 1088"
@@ -2559,58 +2559,58 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			}
 			game_text
 			{
-				"targetname" "w2_text_your" 
-				"message" "YOUR"  
-				"x" "0.35" 
-				"y" "0.4" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "2" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w2_text_your"
+				"message" "YOUR"
+				"x" "0.35"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "2"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "2.25"
 			}
 			game_text
 			{
-				"targetname" "w2_text_taking" 
-				"message" "TAKING"  
-				"x" "0.45" 
-				"y" "0.4" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "3" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w2_text_taking"
+				"message" "TAKING"
+				"x" "0.45"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "3"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "1.7"
 			}
 			game_text
 			{
-				"targetname" "w2_text_too" 
-				"message" "TOO"  
-				"x" "0.55" 
-				"y" "0.4" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "4" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w2_text_too"
+				"message" "TOO"
+				"x" "0.55"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "4"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "1.3"
 			}
 			game_text
 			{
-				"targetname" "w2_text_long" 
-				"message" "LONG"  
-				"x" "0.625" 
-				"y" "0.4" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "5" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w2_text_long"
+				"message" "LONG"
+				"x" "0.625"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "5"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "0.9"
 			}
 			func_flagdetectionzone
-			{ 
+			{
 				"targetname" "w2_exit"
 				"origin" "-2176 1888 672"
 				"mins" "-48 -48 0"
@@ -2704,7 +2704,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnSpawn" "spawnbot_w3,Disable,,1,-1"
 				"OnSpawn" "gamerules,CallScriptFunction,showAnnotationKeyGeneric,0.6,-1"
 				"OnSpawn" "respawnvis_red_entrance,Enable,,0,-1"
-				"OnTrigger" "intel,$PlaySound,=120|misc/halloween/duck_pickup_pos_01.wav,0,-1" 
+				"OnTrigger" "intel,$PlaySound,=120|misc/halloween/duck_pickup_pos_01.wav,0,-1"
 				"OnTrigger" "w3_trigger,Enable,,0.3,-1"
 				"OnTrigger" "w3_fake_exit_relay,Trigger,,0,-1"
 				"OnTrigger" "!self,Disable,,0,-1"
@@ -2771,58 +2771,58 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			}
 			game_text
 			{
-				"targetname" "w3_text_your" 
-				"message" "YOUR"  
-				"x" "0.35" 
-				"y" "0.4" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "2" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w3_text_your"
+				"message" "YOUR"
+				"x" "0.35"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "2"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "2.25"
 			}
 			game_text
 			{
-				"targetname" "w3_text_taking" 
-				"message" "TAKING"  
-				"x" "0.45" 
-				"y" "0.4" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "3" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w3_text_taking"
+				"message" "TAKING"
+				"x" "0.45"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "3"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "1.7"
 			}
 			game_text
 			{
-				"targetname" "w3_text_too" 
-				"message" "TOO"  
-				"x" "0.55" 
-				"y" "0.4" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "4" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w3_text_too"
+				"message" "TOO"
+				"x" "0.55"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "4"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "1.3"
 			}
 			game_text
 			{
-				"targetname" "w3_text_long" 
-				"message" "LONG"  
-				"x" "0.625" 
-				"y" "0.4" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "5" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w3_text_long"
+				"message" "LONG"
+				"x" "0.625"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "5"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "0.9"
 			}
 			func_flagdetectionzone
-			{ 
+			{
 				"targetname" "w3_exit"
 				"origin" "-2176 4925 1088"
 				"mins" "-48 -48 0"
@@ -2973,41 +2973,41 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			}
 			game_text
 			{
-				"targetname" "w4_text_your" 
-				"message" "YOUR"  
-				"x" "0.4" 
-				"y" "0.4" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "2" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w4_text_your"
+				"message" "YOUR"
+				"x" "0.4"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "2"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "2.6"
 			}
 			game_text
 			{
-				"targetname" "w4_text_too" 
-				"message" "TOO"  
-				"x" "0.475" 
-				"y" "0.4" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "4" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w4_text_too"
+				"message" "TOO"
+				"x" "0.475"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "4"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "1.9"
 			}
 			game_text
 			{
-				"targetname" "w4_text_bright" 
-				"message" "BRIGHT"  
-				"x" "0.55" 
-				"y" "0.4" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "5" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w4_text_bright"
+				"message" "BRIGHT"
+				"x" "0.55"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "5"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "1.3"
 			}
 		}
@@ -3214,7 +3214,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"disablereceiveshadows" "0"
 				"disableshadows" "0"
 			}
-			
+
 			prop_dynamic
 			{
 				"targetname" "w5_crates"
@@ -3250,7 +3250,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"disableshadows" "1"
 				"rendermode" "10"
 				"SetBodyGroup" "0"
-				"skin" "0" 
+				"skin" "0"
 				"CollisionGroup" "0"
 				"solid" "6"
 				"spawnflags" "0"
@@ -3266,7 +3266,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"disableshadows" "1"
 				"rendermode" "10"
 				"SetBodyGroup" "0"
-				"skin" "0" 
+				"skin" "0"
 				"CollisionGroup" "0"
 				"solid" "6"
 				"spawnflags" "0"
@@ -3393,7 +3393,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 	 			"maxs" "-1872 2368 1408"
 				"StartDisabled" "0"
 			}
-			
+
 			prop_dynamic
 			{
 				"targetname" "w5_forcefield_prop"
@@ -3457,7 +3457,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnTrigger" "@f@filter_player@player,SetModelScale,2.8,0,-1"
 				"OnTrigger" "intel,SetModelScale,2.5,0.6,-1"
 				"OnTrigger" "@f@filter_player@player,$AddPlayerAttribute,mult max health|2.8,0,-1"
-				"OnTrigger" "intel,$PlaySound,=120|misc/halloween/duck_pickup_pos_01.wav,0,-1" 
+				"OnTrigger" "intel,$PlaySound,=120|misc/halloween/duck_pickup_pos_01.wav,0,-1"
 				"OnTrigger" "gamerules,CallScriptFunction,showAnnotationW5Exit,0.3,-1"
 				"OnTrigger" "spawnbot_altmode,Enable,,2.1,-1"
 				"OnTrigger" "!self,Disable,,0,-1"
@@ -3504,32 +3504,32 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			}
 			game_text
 			{
-				"targetname" "w5_text_your" 
-				"message" "YOUR"  
-				"x" "0.35" 
-				"y" "0.4" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "2" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w5_text_your"
+				"message" "YOUR"
+				"x" "0.35"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "2"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "1.55"
 			}
 			game_text
 			{
-				"targetname" "w5_text_long" 
-				"message" "LONG"  
-				"x" "0.625" 
-				"y" "0.4" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "5" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w5_text_long"
+				"message" "LONG"
+				"x" "0.625"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "5"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "0.9"
 			}
 			func_flagdetectionzone
-			{ 
+			{
 				"targetname" "w5_exit"
 				"origin" "-616 3652 1216"
 				"mins" "-48 -48 0"
@@ -3595,7 +3595,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnTrigger" "spawnbot_summon,Enable,,60,-1"
 				"OnTrigger" "pumpkin_interrupt_stop_relay_delayed,Trigger,,60,-1"
 			}
-			
+
 			prop_dynamic
 			{
 				"targetname" "w6_forcefield_prop"
@@ -3665,7 +3665,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 	 			"maxs" "-1800 5208 9999"
 				"StartDisabled" "0"
 			}
-			
+
 			prop_dynamic
 			{
 				"targetname" "w6_forcefield_prop"
@@ -3707,7 +3707,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 	 			"maxs" "-1536 5944 9999"
 				"StartDisabled" "0"
 			}
-			
+
 			prop_dynamic
 			{
 				"targetname" "w6_forcefield_prop"
@@ -3749,7 +3749,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 	 			"maxs" "-836 5244 9999"
 				"StartDisabled" "0"
 			}
-			
+
 			prop_dynamic
 			{
 				"targetname" "w6_forcefield_prop"
@@ -3819,7 +3819,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 	 			"maxs" "-2200 5948 9999"
 				"StartDisabled" "0"
 			}
-			
+
 			prop_dynamic
 			{
 				"targetname" "w6_forcefield_prop"
@@ -3861,7 +3861,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 	 			"maxs" "-592 5584 9999"
 				"StartDisabled" "0"
 			}
-			
+
 			prop_dynamic
 			{
 				"targetname" "w6_forcefield_prop_openable"
@@ -3931,7 +3931,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 	 			"maxs" "-946 6628 9999"
 				"StartDisabled" "0"
 			}
-			
+
 			prop_dynamic
 			{
 				"targetname" "w6_forcefield_prop"
@@ -3973,7 +3973,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 	 			"maxs" "-3080 7540 9999"
 				"StartDisabled" "0"
 			}
-			
+
 			prop_dynamic
 			{
 				"targetname" "w6_forcefield_prop"
@@ -4015,7 +4015,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 	 			"maxs" "-3004 7872 9999"
 				"StartDisabled" "0"
 			}
-			
+
 			prop_dynamic
 			{
 				"targetname" "w6_forcefield_prop"
@@ -4057,8 +4057,8 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 	 			"maxs" "-1264 6976 9999"
 				"StartDisabled" "0"
 			}
-			
-			
+
+
 			func_forcefield
 			{
 				"targetname" "w6_mansion_forcefield"
@@ -4085,7 +4085,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 	 			"maxs" "-1268 6602 9999"
 				"StartDisabled" "1"
 			}
-			
+
 			prop_dynamic
 			{
 				"targetname" "w6_mansion_forcefield"
@@ -4131,7 +4131,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 	 			"maxs" "-1864 4710 9999"
 				"StartDisabled" "1"
 			}
-			
+
 			logic_relay
 			{
 				"targetname" "w6_relay_1"
@@ -4196,19 +4196,19 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			}
 			game_text
 			{
-				"targetname" "w6_text" 
-				"message" "YOURTAKINGTOOLONG"  
-				"x" "-1" 
-				"y" "0.4" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "1" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w6_text"
+				"message" "YOURTAKINGTOOLONG"
+				"x" "-1"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "1"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "1"
 			}
 			func_flagdetectionzone
-			{ 
+			{
 				"targetname" "w6_exit"
 				"origin" "-3126 4560 703.5"
 				"mins" "-48 -48 0"
@@ -4408,7 +4408,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnSpawn" "gamerules,CallScriptFunction,showAnnotationKeyGeneric,0.6,-1"
 				"OnSpawn" "respawnvis_red_entrance,Enable,,0,-1"
 				"OnTrigger" "gamerules,CallScriptFunction,hideNewAnnotation,0,-1"
-				"OnTrigger" "intel,$PlaySound,=120|misc/halloween/duck_pickup_pos_01.wav,0,-1" 
+				"OnTrigger" "intel,$PlaySound,=120|misc/halloween/duck_pickup_pos_01.wav,0,-1"
 				"OnTrigger" "w7_trigger_1,Enable,,0.1,-1"
 				"OnTrigger" "!self,Disable,,0,-1"
 				"OnTrigger" "w7_forcef*,Disable,,0,-1"
@@ -4476,7 +4476,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnTrigger" "takingtoolong_colorcorrection,Enable,,3.9,-1"
 			}
 			func_flagdetectionzone
-			{ 
+			{
 				"targetname" "w7_trigger_1"
 				"origin" "0 0 0"
 				"mins" "-3648 2896 1088"
@@ -4486,7 +4486,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"startdisabled" "1"
 			}
 			func_flagdetectionzone
-			{ 
+			{
 				"targetname" "w7_trigger_2"
 				"origin" "0 0 0"
 				"mins" "-2752 1280 0"
@@ -4497,71 +4497,71 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			}
 			game_text
 			{
-				"targetname" "w7_text_niceguy" 
-				"message" "your taking too long :)"  
-				"x" "-1" 
-				"y" "0.4" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "1" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w7_text_niceguy"
+				"message" "your taking too long :)"
+				"x" "-1"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "1"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "1.65"
 			}
 			game_text
 			{
-				"targetname" "w7_text_is" 
-				"message" "IS"  
-				"x" "0.4" 
-				"y" "0.6" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "2" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w7_text_is"
+				"message" "IS"
+				"x" "0.4"
+				"y" "0.6"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "2"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "1.8"
 			}
 			game_text
 			{
-				"targetname" "w7_text_taking" 
-				"message" "TAKING"  
-				"x" "0.45" 
-				"y" "0.6" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "3" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w7_text_taking"
+				"message" "TAKING"
+				"x" "0.45"
+				"y" "0.6"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "3"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "1.7"
 			}
 			game_text
 			{
-				"targetname" "w7_text_too" 
-				"message" "TOO"  
-				"x" "0.55" 
-				"y" "0.6" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "4" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w7_text_too"
+				"message" "TOO"
+				"x" "0.55"
+				"y" "0.6"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "4"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "1.3"
 			}
 			game_text
 			{
-				"targetname" "w7_text_long" 
-				"message" "LONG"  
-				"x" "0.625" 
-				"y" "0.6" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "5" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w7_text_long"
+				"message" "LONG"
+				"x" "0.625"
+				"y" "0.6"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "5"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "0.9"
 			}
 			func_flagdetectionzone
-			{ 
+			{
 				"targetname" "w7_exit"
 				"origin" "-628 3424 705"
 				"mins" "-48 -48 0"
@@ -4854,7 +4854,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnTrigger" "w9_exit,Enable,,0.6,-1"
 			}
 			func_flagdetectionzone
-			{ 
+			{
 				"targetname" "w9_trigger_1"
 				"origin" "0 0 0"
 				"mins" "-3904 1280 9999"
@@ -4864,7 +4864,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"startdisabled" "1"
 			}
 			func_flagdetectionzone
-			{ 
+			{
 				"targetname" "w9_trigger_2"
 				"origin" "0 0 0"
 				"mins" "-3184 1280 1088"
@@ -4875,58 +4875,58 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			}
 			game_text
 			{
-				"targetname" "w9_text_your" 
-				"message" "YOUR"  
-				"x" "0.35" 
-				"y" "0.4" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "2" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w9_text_your"
+				"message" "YOUR"
+				"x" "0.35"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "2"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "2.25"
 			}
 			game_text
 			{
-				"targetname" "w9_text_taking" 
-				"message" "TAKING"  
-				"x" "0.45" 
-				"y" "0.4" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "3" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w9_text_taking"
+				"message" "TAKING"
+				"x" "0.45"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "3"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "1.7"
 			}
 			game_text
 			{
-				"targetname" "w9_text_too" 
-				"message" "TOO"  
-				"x" "0.55" 
-				"y" "0.4" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "4" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w9_text_too"
+				"message" "TOO"
+				"x" "0.55"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "4"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "1.2"
 			}
 			game_text
 			{
-				"targetname" "w9_text_too_2" 
-				"message" "TOO"  
-				"x" "0.625" 
-				"y" "0.4" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "5" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w9_text_too_2"
+				"message" "TOO"
+				"x" "0.625"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "5"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "0.9"
 			}
 			logic_relay
-			{ 
+			{
 				"targetname" "w9_anti_softlock_relay"
 				"OnTrigger" "player,$Stun,5,89,-1"
 				"OnTrigger" "player,$PlaySoundToSelf,ui/scored.wav,89,-1"
@@ -4953,7 +4953,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnTrigger" "w9_target,Kill,,90.6,-1"
 			}
 			func_flagdetectionzone
-			{ 
+			{
 				"targetname" "w9_exit"
 				"origin" "-1852 1408 1344"
 				"mins" "-48 -48 0"
@@ -5084,7 +5084,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 	 			"maxs" "-1456 4520 1408"
 				"StartDisabled" "0"
 			}
-			
+
 			prop_dynamic
 			{
 				"targetname" "w10_forcefield_prop"
@@ -5124,7 +5124,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 	 			"maxs" "-1280 3128 1408"
 				"StartDisabled" "0"
 			}
-			
+
 			prop_dynamic
 			{
 				"targetname" "w10_forcefield_prop"
@@ -5216,7 +5216,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 	 			"maxs" "-448 1728 1600"
 				"StartDisabled" "0"
 			}
-			
+
 			prop_dynamic
 			{
 				"targetname" "w10_forcefield_prop"
@@ -5256,7 +5256,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 	 			"maxs" "-3184 1952 1408"
 				"StartDisabled" "0"
 			}
-			
+
 			prop_dynamic
 			{
 				"targetname" "w10_forcefield_prop"
@@ -5294,7 +5294,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 	 			"maxs" "-2800 2368 1408"
 				"StartDisabled" "0"
 			}
-			
+
 			prop_dynamic
 			{
 				"targetname" "w10_forcefield_prop"
@@ -5334,7 +5334,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 	 			"maxs" "-2336 2736 1536"
 				"StartDisabled" "0"
 			}
-			
+
 			prop_dynamic
 			{
 				"targetname" "w10_forcefield_prop"
@@ -5374,7 +5374,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 	 			"maxs" "-2944 3376 1536"
 				"StartDisabled" "0"
 			}
-			
+
 			prop_dynamic
 			{
 				"targetname" "w10_forcefield_prop"
@@ -5414,7 +5414,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 	 			"maxs" "-2112 3768 1600"
 				"StartDisabled" "0"
 			}
-			
+
 			prop_dynamic
 			{
 				"targetname" "w10_forcefield_prop"
@@ -5454,7 +5454,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 	 			"maxs" "-2104 3760 1600"
 				"StartDisabled" "0"
 			}
-			
+
 			trigger_multiple
 			{
 				"targetname" "w10_trigger_1"
@@ -5486,7 +5486,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnStartTouch" "!self,Disable,,0.6,-1"
 			}
 			trigger_multiple
-			{ 
+			{
 				"targetname" "w10_trigger_4"
 				"filtername" "filter_player"
 				"spawnflags" 65
@@ -5537,7 +5537,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnTrigger" "spawnbot_invasion,Enable,,0,-1"
 				"OnTrigger" "spawnbot_right,Enable,,0,-1"
 				"OnTrigger" "gamerules,CallScriptFunction,hideNewAnnotation,0,-1"
-				"OnTrigger" "intel,$PlaySound,=120|misc/halloween/duck_pickup_pos_01.wav,0,-1" 
+				"OnTrigger" "intel,$PlaySound,=120|misc/halloween/duck_pickup_pos_01.wav,0,-1"
 				"OnTrigger" "w10_trigger_5,Enable,,0.3,-1"
 				"OnTrigger" "!self,Disable,,0,-1"
 				"OnTrigger" "gamerules,CallScriptFunction,showAnnotationW10ExitFix,0.6,-1"
@@ -5590,7 +5590,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnTrigger" "the_key_was_forgotten,Enable,,3,-1"
 			}
 			func_flagdetectionzone
-			{ 
+			{
 				"targetname" "w10_trigger_5"
 				"origin" "0 0 0"
 				"mins" "-3520 1280 448"
@@ -5621,84 +5621,84 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			}
 			game_text
 			{
-				"targetname" "w10_text" 
-				"message" "YOUR"  
-				"x" "0.56" 
-				"y" "0.37" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "1" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w10_text"
+				"message" "YOUR"
+				"x" "0.56"
+				"y" "0.37"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "1"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "0.9"
 			}
 			game_text
 			{
-				"targetname" "w10_text" 
-				"message" "YOUR"  
-				"x" "0.63" 
-				"y" "0.46" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "2" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w10_text"
+				"message" "YOUR"
+				"x" "0.63"
+				"y" "0.46"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "2"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "0.9"
 			}
 			game_text
 			{
-				"targetname" "w10_text" 
-				"message" "YOUR"  
-				"x" "0.33" 
-				"y" "0.51" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "3" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w10_text"
+				"message" "YOUR"
+				"x" "0.33"
+				"y" "0.51"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "3"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "0.9"
 			}
 			game_text
 			{
-				"targetname" "w10_text" 
-				"message" "YOUR"  
-				"x" "0.43" 
-				"y" "0.55" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "4" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w10_text"
+				"message" "YOUR"
+				"x" "0.43"
+				"y" "0.55"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "4"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "0.9"
 			}
 			game_text
 			{
-				"targetname" "w10_text" 
-				"message" "YOUR"  
-				"x" "0.69" 
-				"y" "0.5" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "5" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w10_text"
+				"message" "YOUR"
+				"x" "0.69"
+				"y" "0.5"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "5"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "1.3"
 			}
 			game_text
 			{
-				"targetname" "w10_text" 
-				"message" "YOUR"  
-				"x" "0.58" 
-				"y" "0.58" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "6" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w10_text"
+				"message" "YOUR"
+				"x" "0.58"
+				"y" "0.58"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "6"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "1.3"
 			}
 			func_flagdetectionzone
-			{ 
+			{
 				"targetname" "w10_exit"
 				"origin" "-1952 3576 1152"
 				"mins" "-48 -48 0"
@@ -5810,7 +5810,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			{
 				"targetname" "w11_relay_3"
 				"OnTrigger" "gamerules,CallScriptFunction,hideNewAnnotation,0,-1"
-				"OnTrigger" "intel,$PlaySound,=120|misc/halloween/duck_pickup_pos_01.wav,0,-1" 
+				"OnTrigger" "intel,$PlaySound,=120|misc/halloween/duck_pickup_pos_01.wav,0,-1"
 				"OnTrigger" "w11_tank_target,Kill,,0.3,-1"
 				"OnTrigger" "w11_exit_prop_fake,Skin,1,0.3,-1"
 				"OnTrigger" "w11_trigger_1,Enable,,0.3,-1"
@@ -5923,7 +5923,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnTrigger" "the_key_was_forgotten,Enable,,3.5,-1"
 			}
 			func_flagdetectionzone
-			{ 
+			{
 				"targetname" "w11_trigger_1"
 				"origin" "-3300 2608 640"
 				"mins" "-48 -48 0"
@@ -5940,9 +5940,9 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"modelscale" 1
 				"solid" "0"
 				"origin" "-3546 2606 80"
-				"DisableBoneFollowers" "1" 
-				"disablereceiveshadows" "1" 
-				"disableshadows" "1" 
+				"DisableBoneFollowers" "1"
+				"disablereceiveshadows" "1"
+				"disableshadows" "1"
 				"lightingorigin" "engibot"
 			}
 			func_respawnroom
@@ -6144,123 +6144,123 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			}
 			game_text
 			{
-				"targetname" "w11_text_your" 
-				"message" "YOUR"  
-				"x" "0.35" 
-				"y" "0.4" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "2" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w11_text_your"
+				"message" "YOUR"
+				"x" "0.35"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "2"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "2.25"
 			}
 			game_text
 			{
-				"targetname" "w11_text_taking" 
-				"message" "TAKING"  
-				"x" "0.45" 
-				"y" "0.4" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "3" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w11_text_taking"
+				"message" "TAKING"
+				"x" "0.45"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "3"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "1.7"
 			}
 			game_text
 			{
-				"targetname" "w11_text_your2" 
-				"message" "YOUR"  
-				"x" "0.55" 
-				"y" "0.4" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "4" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w11_text_your2"
+				"message" "YOUR"
+				"x" "0.55"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "4"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "1.3"
 			}
 			game_text
 			{
-				"targetname" "w11_text_break" 
-				"message" "BREAK"  
-				"x" "0.625" 
-				"y" "0.4" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "5" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w11_text_break"
+				"message" "BREAK"
+				"x" "0.625"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "5"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "0.75"
 			}
 			game_text
 			{
-				"targetname" "w11_text_oolong" 
-				"message" "OOLONG?"  
-				"x" "-1" 
-				"y" "0.4" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "5" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w11_text_oolong"
+				"message" "OOLONG?"
+				"x" "-1"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "5"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "1.1"
 			}
 			game_text
 			{
-				"targetname" "w11_text_is" 
-				"message" "IS"  
-				"x" "0.4" 
-				"y" "0.6" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "2" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w11_text_is"
+				"message" "IS"
+				"x" "0.4"
+				"y" "0.6"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "2"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "1.75"
 			}
 			game_text
 			{
-				"targetname" "w11_text_taking2" 
-				"message" "TAKING"  
-				"x" "0.45" 
-				"y" "0.6" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "3" 
-				"color" "255 255 255" 
+				"targetname" "w11_text_taking2"
+				"message" "TAKING"
+				"x" "0.45"
+				"y" "0.6"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "3"
+				"color" "255 255 255"
 				"holdtime" "1.5"
-				"fadeout" "0" 
+				"fadeout" "0"
 			}
 			game_text
 			{
-				"targetname" "w11_text_too" 
-				"message" "TOO"  
-				"x" "0.55" 
-				"y" "0.6" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "1" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w11_text_too"
+				"message" "TOO"
+				"x" "0.55"
+				"y" "0.6"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "1"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "1.1"
 			}
 			game_text
 			{
-				"targetname" "w11_text_long" 
-				"message" "LONG"  
-				"x" "0.625" 
-				"y" "0.6" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "6" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w11_text_long"
+				"message" "LONG"
+				"x" "0.625"
+				"y" "0.6"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "6"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "0.7"
 			}
 			func_flagdetectionzone
-			{ 
+			{
 				"targetname" "w11_exit"
 				"origin" "-1624 3900 704"
 				"mins" "-48 -48 0"
@@ -6553,43 +6553,43 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			}
 			point_worldtext
 			{
-				"targetname" "w13_blackboard_text_correct" 
-				"message" "~0.3" 
-				"spawnflags" "0" 
+				"targetname" "w13_blackboard_text_correct"
+				"message" "~0.3"
+				"spawnflags" "0"
 				"origin" "-518 3820 770"
 				"angles" "-5 0 0"
-				"font" 6 
-				"textsize" "0" 
+				"font" 6
+				"textsize" "0"
 			}
 			point_worldtext
 			{
-				"targetname" "w13_blackboard_text_incorrect" 
-				"message" "~0.7" 
-				"spawnflags" "0" 
+				"targetname" "w13_blackboard_text_incorrect"
+				"message" "~0.7"
+				"spawnflags" "0"
 				"origin" "-518 3600 770"
 				"angles" "-5 0 0"
-				"font" 6 
-				"textsize" "0" 
+				"font" 6
+				"textsize" "0"
 			}
 			point_worldtext
 			{
-				"targetname" "w13_blackboard_text_incorrect" 
-				"message" "~2.7" 
-				"spawnflags" "0" 
+				"targetname" "w13_blackboard_text_incorrect"
+				"message" "~2.7"
+				"spawnflags" "0"
 				"origin" "-518 3320 770"
 				"angles" "-5 0 0"
-				"font" 6 
-				"textsize" "0" 
+				"font" 6
+				"textsize" "0"
 			}
 			point_worldtext
 			{
-				"targetname" "w13_blackboard_text_explanation" 
-				"message" "Solve log(2)" 
-				"spawnflags" "0" 
+				"targetname" "w13_blackboard_text_explanation"
+				"message" "Solve log(2)"
+				"spawnflags" "0"
 				"origin" "-448.1 3800 900"
 				"angles" "0 0 0"
 				"font" 11
-				"textsize" "0" 
+				"textsize" "0"
 			}
 			prop_dynamic
 			{
@@ -6628,7 +6628,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"disableshadows" 1
 			}
 			func_flagdetectionzone
-			{ 
+			{
 				"targetname" "w13_trigger_correct"
 				"origin" "-576 3774 704"
 				"mins" "-24 -24 0"
@@ -6638,7 +6638,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"startdisabled" "1"
 			}
 			func_flagdetectionzone
-			{ 
+			{
 				"targetname" "w13_trigger_incorrect"
 				"origin" "-576 3554 704"
 				"mins" "-24 -24 0"
@@ -6648,7 +6648,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"startdisabled" "1"
 			}
 			func_flagdetectionzone
-			{ 
+			{
 				"targetname" "w13_trigger_incorrect"
 				"origin" "-576 3274 704"
 				"mins" "-24 -24 0"
@@ -6678,7 +6678,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnSpawn" "respawnvis_red_entrance,Enable,,0,-1"
 				"OnSpawn" "w13_shield_push,Enable,,0.1,-1"
 				"OnTrigger" "gamerules,CallScriptFunction,hideNewAnnotation,0,-1"
-				"OnTrigger" "intel,$PlaySound,=120|misc/halloween/duck_pickup_pos_01.wav,0,-1" 
+				"OnTrigger" "intel,$PlaySound,=120|misc/halloween/duck_pickup_pos_01.wav,0,-1"
 				"OnTrigger" "spawnbot_altmode,Enable,,0.6,-1"
 				"OnTrigger" "!self,Disable,,0,-1"
 			}
@@ -6838,110 +6838,110 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			}
 			game_text
 			{
-				"targetname" "w13_text_your" 
-				"message" "YOUR"  
-				"x" "0.35" 
-				"y" "0.4" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "2" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w13_text_your"
+				"message" "YOUR"
+				"x" "0.35"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "2"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "1.95"
 			}
 			game_text
 			{
-				"targetname" "w13_text_taking" 
-				"message" "TAKING"  
-				"x" "0.45" 
-				"y" "0.4" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "3" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w13_text_taking"
+				"message" "TAKING"
+				"x" "0.45"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "3"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "1.4"
 			}
 			game_text
 			{
-				"targetname" "w13_text_log" 
-				"message" "LOG"  
-				"x" "0.55" 
-				"y" "0.4" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "4" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w13_text_log"
+				"message" "LOG"
+				"x" "0.55"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "4"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "1"
 			}
 			game_text
 			{
-				"targetname" "w13_text_two" 
-				"message" "(2)"  
-				"x" "0.625" 
-				"y" "0.4" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "5" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w13_text_two"
+				"message" "(2)"
+				"x" "0.625"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "5"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "0.6"
 			}
 			game_text
 			{
-				"targetname" "w13_text_too" 
-				"message" "TOO"  
-				"x" "0.55" 
-				"y" "0.4" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "4" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w13_text_too"
+				"message" "TOO"
+				"x" "0.55"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "4"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "1.3"
 			}
 			game_text
 			{
-				"targetname" "w13_text_long" 
-				"message" "LONG"  
-				"x" "0.625" 
-				"y" "0.4" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "5" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w13_text_long"
+				"message" "LONG"
+				"x" "0.625"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "5"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "0.9"
 			}
 			game_text
 			{
-				"targetname" "w13_text_right" 
-				"message" "RIGHT"  
-				"x" "0.625" 
-				"y" "0.4" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "6" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w13_text_right"
+				"message" "RIGHT"
+				"x" "0.625"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "6"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "1.2"
 			}
 			game_text
 			{
-				"targetname" "w13_text_wrong" 
-				"message" "WRONG"  
-				"x" "0.625" 
-				"y" "0.4" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "6" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w13_text_wrong"
+				"message" "WRONG"
+				"x" "0.625"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "6"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "1"
 			}
 			func_flagdetectionzone
-			{ 
+			{
 				"targetname" "w13_exit"
 				"origin" "-3398 3782 1088"
 				"mins" "-48 -48 0"
@@ -6975,9 +6975,9 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"disableshadows" "1"
 			}
 		}
-		
+
 		///////////////////// USE NEW COORDINATES ////////////////////
-		
+
 		Wave14Logic
 		{
 			RemoveIfKilled "w14_target"
@@ -7186,7 +7186,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnSpawn" "respawnroom_blu_alt_entrance,Enable,,0,-1"
 				"OnSpawn" "dancing_pumpkin_timer,RefireTime,2,0,-1"
 				"OnTrigger" "gamerules,CallScriptFunction,hideNewAnnotation,0,-1"
-				"OnTrigger" "intel,$PlaySound,=120|misc/halloween/duck_pickup_pos_01.wav,0,-1" 
+				"OnTrigger" "intel,$PlaySound,=120|misc/halloween/duck_pickup_pos_01.wav,0,-1"
 				"OnTrigger" "w14_trigger,Enable,,0.01,-1"
 				"OnTrigger" "!self,Disable,,0,-1"
 				"OnTrigger" "w14_support_teleport,Kill,,0,-1"
@@ -7242,7 +7242,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnHitMax" "w14_relay_3,Trigger,,0,-1"
 			}
 			func_flagdetectionzone
-			{ 
+			{
 				"targetname" "w14_trigger"
 				"origin" "-6848 1152 256"
 				"mins" "-928 6736 0"
@@ -7253,32 +7253,32 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			}
 			game_text
 			{
-				"targetname" "w14_text_your" 
-				"message" "YOUR"  
-				"x" "0.35" 
-				"y" "0.4" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "2" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w14_text_your"
+				"message" "YOUR"
+				"x" "0.35"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "2"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "1.45"
 			}
 			game_text
 			{
-				"targetname" "w14_text_raking" 
-				"message" "RAKING"  
-				"x" "0.45" 
-				"y" "0.4" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "3" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w14_text_raking"
+				"message" "RAKING"
+				"x" "0.45"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "3"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "0.85"
 			}
 			logic_relay
-			{ 
+			{
 				"targetname" "w14_relay_3"
 				"OnTrigger" "w14_relay_2,CancelPending,,0,-1"
 				"OnTrigger" "alt_player_respawn_relay,CancelPending,,0,-1"
@@ -7375,7 +7375,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnTrigger" "!self,Disable,,0,-1"
 			}
 			func_flagdetectionzone
-			{ 
+			{
 				"targetname" "w15_trigger"
 				"origin" "-9192 4692 1024"
 				"mins" "-48 -48 0"
@@ -7428,7 +7428,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnTrigger" "player,$AddPlayerAttribute,no_attack|1,0,-1"
 				"OnTrigger" "player,$AddPlayerAttribute,no_jump|1,0,-1"
 				"OnTrigger" "@f@filter_player@player,$RemoveCond,7,0,-1"
-				"OnTrigger" "w14_pumpkin_teleport_case,PickRandom,,0,-1" 
+				"OnTrigger" "w14_pumpkin_teleport_case,PickRandom,,0,-1"
 				"OnTrigger" "@f@filter_player@player,$RemoveCond,7,0,-1"
 				"OnTrigger" "@f@filter_player@player,$AddCond,120 2.4,0,-1"
 				"OnTrigger" "@f@filter_player@player,$AddCond,79 2.4,0,-1"
@@ -7492,97 +7492,97 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			}
 			game_text
 			{
-				"targetname" "w15_text_your" 
-				"message" "YOUR"  
-				"x" "0.35" 
-				"y" "0.4" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "4" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w15_text_your"
+				"message" "YOUR"
+				"x" "0.35"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "4"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "1.25"
 			}
 			game_text
 			{
-				"targetname" "w15_text_taking" 
-				"message" "TAKING"  
-				"x" "0.45" 
-				"y" "0.4" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "3" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w15_text_taking"
+				"message" "TAKING"
+				"x" "0.45"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "3"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "1.1"
 			}
 			game_text
 			{
-				"targetname" "w15_text_uber" 
-				"message" "UBER"  
-				"x" "0.55" 
-				"y" "0.4" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "5" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w15_text_uber"
+				"message" "UBER"
+				"x" "0.55"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "5"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "0.75"
 			}
 			game_text
 			{
-				"targetname" "w15_text_is" 
-				"message" "IS"  
-				"x" "0.4" 
-				"y" "0.6" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "2" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w15_text_is"
+				"message" "IS"
+				"x" "0.4"
+				"y" "0.6"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "2"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "1.75"
 			}
 			game_text
 			{
-				"targetname" "w15_text_taking2" 
-				"message" "TAKING"  
-				"x" "0.45" 
-				"y" "0.6" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "3" 
-				"color" "255 255 255" 
+				"targetname" "w15_text_taking2"
+				"message" "TAKING"
+				"x" "0.45"
+				"y" "0.6"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "3"
+				"color" "255 255 255"
 				"holdtime" "1.5"
-				"fadeout" "0" 
+				"fadeout" "0"
 			}
 			game_text
 			{
-				"targetname" "w15_text_too" 
-				"message" "TOO"  
-				"x" "0.55" 
-				"y" "0.6" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "1" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w15_text_too"
+				"message" "TOO"
+				"x" "0.55"
+				"y" "0.6"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "1"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "1.1"
 			}
 			game_text
 			{
-				"targetname" "w15_text_long" 
-				"message" "LONG"  
-				"x" "0.625" 
-				"y" "0.6" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "6" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w15_text_long"
+				"message" "LONG"
+				"x" "0.625"
+				"y" "0.6"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "6"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "0.7"
 			}
 			func_flagdetectionzone
-			{ 
+			{
 				"targetname" "w15_exit"
 				"origin" "-10236 2620 1344"
 				"mins" "-48 -48 0"
@@ -7785,14 +7785,14 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			}
 			point_worldtext
 			{
-				"targetname" "w17_your_hou" 
-				"message" "your hou" 
-				"spawnflags" "0" 
+				"targetname" "w17_your_hou"
+				"message" "your hou"
+				"spawnflags" "0"
 				"origin" "-8403 8550 682"
 				"angles" "0 0 0"
 				"color" "50 50 60"
 				"font" 5
-				"textsize" "0" 
+				"textsize" "0"
 			}
 			logic_relay
 			{
@@ -7920,7 +7920,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnTrigger" "takingtoolong_colorcorrection,Enable,,3.1,-1"
 			}
 			func_flagdetectionzone
-			{ 
+			{
 				"targetname" "w17_trigger"
 	 			"mins" "-9600 8144 0"
 	 			"maxs" "-8416 9024 9999"
@@ -7930,29 +7930,29 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			}
 			env_screenoverlay
 			{
-				"targetname" "w17_overlay" 
-				"overlayname1" "missionfolderthatappearswhenyouhavetakentoolonginaghosthouse/w17_its.vtf" 
+				"targetname" "w17_overlay"
+				"overlayname1" "missionfolderthatappearswhenyouhavetakentoolonginaghosthouse/w17_its.vtf"
 				"overlaytime1" "1.2"
-				"overlayname2" "missionfolderthatappearswhenyouhavetakentoolonginaghosthouse/w17_its_t.vtf" 
+				"overlayname2" "missionfolderthatappearswhenyouhavetakentoolonginaghosthouse/w17_its_t.vtf"
 				"overlaytime2" "0.8"
-				"overlayname3" "missionfolderthatappearswhenyouhavetakentoolonginaghosthouse/w17_its_tv.vtf" 
+				"overlayname3" "missionfolderthatappearswhenyouhavetakentoolonginaghosthouse/w17_its_tv.vtf"
 				"overlaytime3" "0.8"
-				"overlayname4" "missionfolderthatappearswhenyouhavetakentoolonginaghosthouse/w17_its_tv_time.vtf" 
+				"overlayname4" "missionfolderthatappearswhenyouhavetakentoolonginaghosthouse/w17_its_tv_time.vtf"
 				"overlaytime4" "2"
 			}
 			point_worldtext
 			{
-				"targetname" "w17_text_coming" 
-				"message" "Coming" 
-				"spawnflags" "0" 
+				"targetname" "w17_text_coming"
+				"message" "Coming"
+				"spawnflags" "0"
 				"origin" "-9280 8608 528"
 				"angles" "0 90 0"
 				"color" "255 238 0"
-				"font" 4 
-				"textsize" "0" 
+				"font" 4
+				"textsize" "0"
 			}
 			func_flagdetectionzone
-			{ 
+			{
 				"targetname" "w17_exit"
 				"origin" "-9283 5024 1091"
 				"mins" "-48 -48 0"
@@ -8217,34 +8217,34 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			}
 			point_viewcontrol
 			{
-				"targetname" "w18_camera" 
-				"spawnflags" "0" 
-				"wait" "1" 
+				"targetname" "w18_camera"
+				"spawnflags" "0"
+				"wait" "1"
 				"origin" "-9600 -320 1520"
-				"angles" "0 180 0" 
+				"angles" "0 180 0"
 			}
 			game_text
 			{
-				"targetname" "w18_text_lol" 
-				"message" "LOL"  
-				"x" "0.5" 
-				"y" "0.4" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "2" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w18_text_lol"
+				"message" "LOL"
+				"x" "0.5"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "2"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "0.8"
 			}
 			point_worldtext
 			{
-				"targetname" "w18_text_boo" 
-				"message" "BOO" 
-				"spawnflags" "0" 
+				"targetname" "w18_text_boo"
+				"message" "BOO"
+				"spawnflags" "0"
 				"origin" "-9610 -321 1519"
 				"angles" "0 180 0"
 				"font" 0
-				"textsize" "1" 
+				"textsize" "1"
 			}
 			logic_case
 			{
@@ -8297,7 +8297,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnHitMax" "spawnbot_altmode,Enable,,0,-1"
 			}
 			func_flagdetectionzone
-			{ 
+			{
 				"targetname" "w18_exit_fake"
 				"origin" "-9728 -320 -1460"
 				"mins" "-96 -96 0"
@@ -8307,7 +8307,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"startdisabled" "1"
 			}
 			func_flagdetectionzone
-			{ 
+			{
 				"targetname" "w18_exit"
 				"origin" "-9728 -320 -1460"
 				"mins" "-48 -48 0"
@@ -8446,19 +8446,19 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			}
 			logic_timer
 			{
-				"targetname" "w19_blu_fix" 
+				"targetname" "w19_blu_fix"
 				"startdisabled" 0
 				"refiretime" 0.3
-				"OnTimer" "w19_switch_to_blu,Enable,,0,-1" 
-				"OnTimer" "w19_switch_to_blu,Disable,,0.15,-1" 
+				"OnTimer" "w19_switch_to_blu,Enable,,0,-1"
+				"OnTimer" "w19_switch_to_blu,Disable,,0.15,-1"
 			}
 			// logic_timer
 			// {
-				// "targetname" "w19_blu_fix" 
+				// "targetname" "w19_blu_fix"
 				// "startdisabled" 0
 				// "refiretime" 0.3
-				// "OnTimer" "w19_switch_to_blu,Enable,,0,-1" 
-				// "OnTimer" "w19_switch_to_blu,Disable,,0.15,-1" 
+				// "OnTimer" "w19_switch_to_blu,Enable,,0,-1"
+				// "OnTimer" "w19_switch_to_blu,Disable,,0.15,-1"
 			// }
 			trigger_push
 			{
@@ -8588,7 +8588,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnSpawn" "your_taking_19_long,Trigger,,1,-1"
 				// "OnSpawn" "gamerules,CallScriptFunction,showAnnotationKeyGeneric,0.6,-1"
 				"OnSpawn" "respawnvis_red_entrance,Disable,,0,-1"
-				// "OnTrigger" "intel,$PlaySound,=120|misc/halloween/duck_pickup_pos_01.wav,0,-1" 
+				// "OnTrigger" "intel,$PlaySound,=120|misc/halloween/duck_pickup_pos_01.wav,0,-1"
 				"OnTrigger" "w19_forcefield_2,Disable,,0,-1"
 				"OnTrigger" "w19_trigger_1,Enable,,0,-1"
 				"OnTrigger" "gamerules,CallScriptFunction,hideNewAnnotation,0,-1"
@@ -8636,7 +8636,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnTrigger" "@f@filter_player@player,$RemoveCond,120,2.7,-1"
 				"OnTrigger" "@f@filter_player@player,$RemoveCond,79,2.7,-1"
 				"OnTrigger" "player,$RemoveCond,87,2.7,-1"
-				
+
 				"OnTrigger" "player,$PlaySoundToSelf,=43|vo/spy_laughevil01.mp3,2.7,-1"
 				"OnTrigger" "player,$PlaySoundToSelf,=43|vo/sniper_laughlong02.mp3,2.7,-1"
 				"OnTrigger" "player,$PlaySoundToSelf,=43|vo/medic_laughhappy02.mp3,2.7,-1"
@@ -8646,7 +8646,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnTrigger" "player,$PlaySoundToSelf,=43|vo/pyro_laughevil01.mp3,2.7,-1"
 				"OnTrigger" "player,$PlaySoundToSelf,=43|vo/soldier_laughlong01.mp3,2.7,-1"
 				"OnTrigger" "player,$PlaySoundToSelf,=43|vo/scout_laughevil02.mp3,2.7,-1"
-				
+
 				"OnTrigger" "@f@filter_player@player,$AddPlayerAttribute,major move speed bonus|1.333,2.7,-1"
 				"OnTrigger" "force_respawn_relay,Disable,,0,-1"
 				"OnTrigger" "force_respawn_relay,CancelPending,,0,-1"
@@ -8744,7 +8744,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnTrigger" "w19_bomb_deploy_relay,Trigger,,21.6,-1"
 			}
 			func_flagdetectionzone
-			{ 
+			{
 				"targetname" "w19_trigger_1"
 				"origin" "0 0 0"
 				"mins" "-9724 2432 640"
@@ -8773,15 +8773,15 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			}
 			game_text
 			{
-				"targetname" "w19_text_niceguy" 
-				"message" "your taking too long :)"  
-				"x" "-1" 
-				"y" "0.4" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "1" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w19_text_niceguy"
+				"message" "your taking too long :)"
+				"x" "-1"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "1"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "1.65"
 			}
 			func_forcefield
@@ -8811,13 +8811,13 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"oncase08" "!activator,$SetLocalOrigin,-9664 3136 833,0.01,-1"
 				"oncase09" "!activator,$SetLocalOrigin,-9728 3136 833,0.01,-1"
 			}
-			color_correction 
+			color_correction
 			{
 				"targetname" "w19_colorcorrection"
 				"origin" "0 0 0"
 				"fadeInDuration" "0"
 				"fadeOutDuration" "0"
-				"maxfalloff" "-1" 
+				"maxfalloff" "-1"
 				"minfalloff" "-1"
 				"maxweight" "0.6"
 				"startdisabled" "1"
@@ -8833,7 +8833,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"oncase05" "!activator,$SetLocalOrigin,-7528 7884 916,0.01,-1"
 			}
 			func_flagdetectionzone
-			{ 
+			{
 				"targetname" "w19_exit"
 				"origin" "-9024 8322 528"
 				"mins" "-48 -48 0"
@@ -8843,7 +8843,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"startdisabled" "1"
 			}
 			logic_relay
-			{ 
+			{
 				"targetname" "w19_bomb_deploy_relay"
 				"OnTrigger" "w19_relay_6,CancelPending,,0,-1"
 				"OnTrigger" "player_detector_fail,Disable,,0,-1"
@@ -8859,7 +8859,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnTrigger" "hatch_hurt_inner,Enable,,1,-1"
 				"OnTrigger" "hatch_hurt_outer,Enable,,1,-1"
 				"OnTrigger" "hatch_hurt_outer,Disable,,1.5,-1"
-				
+
 				"OnTrigger" "the_key_was_forgotten,Disable,,0,-1"
 				"OnTrigger" "intel,ForceResetAndDisableSilent,,1,-1"
 				"OnTrigger" "light_*,TurnOff,,4,-1"
@@ -8953,10 +8953,10 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			}
 			logic_timer
 			{
-				"targetname" "w20_boss_timer_1" 
-				"startdisabled" 1 
+				"targetname" "w20_boss_timer_1"
+				"startdisabled" 1
 				"refiretime" 12
-				"OnTimer" "w20_boss_attack_case_1,PickRandomShuffle,,0,-1" 
+				"OnTimer" "w20_boss_attack_case_1,PickRandomShuffle,,0,-1"
 			}
 			logic_case
 			{
@@ -8965,7 +8965,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"oncase01" "player,$PlaySoundToSelf,missionfolderthatappearswhenyouhavetakentoolonginaghosthouse/snd_oolong.mp3,0,-1"
 				"oncase01" "w20_text_oolong,Display,,0.1,-1"
 				"oncase01" "@f@filter_pumpkin@player,$ChangeAttributes,DefaultMelee,6,-1"
-				
+
 				"oncase02" "@f@filter_pumpkin@player,$ChangeAttributes,YourTutu,0,-1"
 				"oncase02" "player,$PlaySoundToSelf,missionfolderthatappearswhenyouhavetakentoolonginaghosthouse/snd_your_tutu.mp3,0,-1"
 				"oncase02" "w20_text_your,$SetKey$holdtime,2.05,0,-1"
@@ -8973,14 +8973,14 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"oncase02" "w20_text_too,Display,,1,-1"
 				"oncase02" "w20_text_too_2,Display,,1.3,-1"
 				"oncase02" "@f@filter_pumpkin@player,$ChangeAttributes,DefaultMelee,6,-1"
-				
+
 				"oncase03" "@f@filter_pumpkin@player,$ChangeAttributes,YourRaking,0,-1"
 				"oncase03" "player,$PlaySoundToSelf,missionfolderthatappearswhenyouhavetakentoolonginaghosthouse/snd_your_raking.mp3,0,-1"
 				"oncase03" "w20_text_your,$SetKey$holdtime,1.45,0,-1"
 				"oncase03" "w20_text_your,Display,,0.15,-1"
 				"oncase03" "w20_text_raking,Display,,0.75,-1"
 				"oncase03" "@f@filter_pumpkin@player,$ChangeAttributes,DefaultMelee,6,-1"
-				
+
 				"oncase04" "@f@filter_pumpkin@player,$ChangeAttributes,Log2,0,-1"
 				"oncase04" "player,$PlaySoundToSelf,missionfolderthatappearswhenyouhavetakentoolonginaghosthouse/snd_log_2.mp3,0,-1"
 				"oncase04" "w20_text_log,Display,,0.05,-1"
@@ -8989,10 +8989,10 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			}
 			logic_timer
 			{
-				"targetname" "w20_boss_timer_2" 
-				"startdisabled" 1 
+				"targetname" "w20_boss_timer_2"
+				"startdisabled" 1
 				"refiretime" 12
-				"OnTimer" "w20_boss_attack_case_2,PickRandomShuffle,,0,-1" 
+				"OnTimer" "w20_boss_attack_case_2,PickRandomShuffle,,0,-1"
 			}
 			logic_case
 			{
@@ -9016,7 +9016,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"oncase01" "player,$RemovePlayerAttribute,dmg taken increased,5.2,-1"
 				"oncase01" "w20_bomb_explode,Stop,,6,-1"
 				"oncase01" "@f@filter_pumpkin@player,$ChangeAttributes,DefaultMelee,6,-1"
-				
+
 				"oncase02" "@f@filter_pumpkin@player,$ChangeAttributes,YourLong,0,-1"
 				"oncase02" "player,$PlaySoundToSelf,missionfolderthatappearswhenyouhavetakentoolonginaghosthouse/snd_your_long.mp3,0,-1"
 				"oncase02" "w20_text_your,$SetKey$holdtime,1.55,0,-1"
@@ -9025,7 +9025,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"oncase02" "@f@filter_player@player,$AddPlayerAttribute,torso scale|3,0.8,-1"
 				"oncase02" "@f@filter_player@player,$RemovePlayerAttribute,torso scale,6,-1"
 				"oncase02" "@f@filter_pumpkin@player,$ChangeAttributes,DefaultMelee,6,-1"
-				
+
 				"oncase03" "@f@filter_pumpkin@player,$ChangeAttributes,YourInLake,0,-1"
 				"oncase03" "player,$AddCond,86 6,0,-1"
 				"oncase03" "player,$PlaySoundToSelf,missionfolderthatappearswhenyouhavetakentoolonginaghosthouse/snd_your_in_lake.mp3,0,-1"
@@ -9034,7 +9034,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"oncase03" "w20_text_in,Display,,0.65,-1"
 				"oncase03" "w20_text_lake,Display,,0.75,-1"
 				"oncase03" "@f@filter_pumpkin@player,$ChangeAttributes,DefaultMelee,6,-1"
-				
+
 				"oncase04" "w20_lol,Trigger,,0,-1"
 				"oncase04" "w20_reroll,Trigger,,0,-1"
 			}
@@ -9061,9 +9061,9 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			logic_timer
 			{
 				"targetname" "w20_boss_timer_3"
-				"startdisabled" 1 
+				"startdisabled" 1
 				"refiretime" 6
-				"OnTimer" "w20_boss_attack_case_3,PickRandomShuffle,,0,-1" 
+				"OnTimer" "w20_boss_attack_case_3,PickRandomShuffle,,0,-1"
 			}
 			logic_case
 			{
@@ -9072,7 +9072,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"oncase01" "player,$PlaySoundToSelf,missionfolderthatappearswhenyouhavetakentoolonginaghosthouse/snd_oolong.mp3,0,-1"
 				"oncase01" "w20_text_oolong,Display,,0.1,-1"
 				"oncase01" "@f@filter_pumpkin@player,$ChangeAttributes,DefaultMelee,3,-1"
-				
+
 				"oncase02" "@f@filter_pumpkin@player,$ChangeAttributes,YourTutu,0,-1"
 				"oncase02" "player,$PlaySoundToSelf,missionfolderthatappearswhenyouhavetakentoolonginaghosthouse/snd_your_tutu.mp3,0,-1"
 				"oncase02" "w20_text_your,$SetKey$holdtime,2.05,0,-1"
@@ -9080,20 +9080,20 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"oncase02" "w20_text_too,Display,,1,-1"
 				"oncase02" "w20_text_too_2,Display,,1.3,-1"
 				"oncase02" "@f@filter_pumpkin@player,$ChangeAttributes,DefaultMelee,3,-1"
-				
+
 				"oncase03" "@f@filter_pumpkin@player,$ChangeAttributes,YourRaking,0,-1"
 				"oncase03" "player,$PlaySoundToSelf,missionfolderthatappearswhenyouhavetakentoolonginaghosthouse/snd_your_raking.mp3,0,-1"
 				"oncase03" "w20_text_your,$SetKey$holdtime,1.45,0,-1"
 				"oncase03" "w20_text_your,Display,,0.15,-1"
 				"oncase03" "w20_text_raking,Display,,0.75,-1"
 				"oncase03" "@f@filter_pumpkin@player,$ChangeAttributes,DefaultMelee,3,-1"
-				
+
 				"oncase04" "@f@filter_pumpkin@player,$ChangeAttributes,Log2,0,-1"
 				"oncase04" "player,$PlaySoundToSelf,missionfolderthatappearswhenyouhavetakentoolonginaghosthouse/snd_log_2.mp3,0,-1"
 				"oncase04" "w20_text_log,Display,,0.05,-1"
 				"oncase04" "w20_text_two,Display,,0.55,-1"
 				"oncase04" "@f@filter_pumpkin@player,$ChangeAttributes,DefaultMelee,3,-1"
-				
+
 				"oncase05" "@f@filter_pumpkin@player,$ChangeAttributes,Bomb,0,-1"
 				"oncase05" "@f@filter_player@player,$AddCond,82 2.5,0,-1"
 				"oncase05" "@f@filter_player@player,$AddCond,83 0.5,2,-1"
@@ -9111,7 +9111,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"oncase05" "player,$RemovePlayerAttribute,dmg taken increased,2.6,-1"
 				"oncase05" "w20_bomb_explode,Stop,,3,-1"
 				"oncase05" "@f@filter_pumpkin@player,$ChangeAttributes,DefaultMelee,3,-1"
-				
+
 				"oncase06" "@f@filter_pumpkin@player,$ChangeAttributes,YourLong,0,-1"
 				"oncase06" "player,$PlaySoundToSelf,missionfolderthatappearswhenyouhavetakentoolonginaghosthouse/snd_your_long.mp3,0,-1"
 				"oncase06" "w20_text_your,$SetKey$holdtime,1.55,0,-1"
@@ -9120,7 +9120,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"oncase06" "@f@filter_player@player,$AddPlayerAttribute,torso scale|3,0.8,-1"
 				"oncase06" "@f@filter_player@player,$RemovePlayerAttribute,torso scale,3,-1"
 				"oncase06" "@f@filter_pumpkin@player,$ChangeAttributes,DefaultMelee,3,-1"
-				
+
 				"oncase07" "@f@filter_pumpkin@player,$ChangeAttributes,YourInLake,0,-1"
 				"oncase07" "player,$AddCond,86 3,0,-1"
 				"oncase07" "player,$PlaySoundToSelf,missionfolderthatappearswhenyouhavetakentoolonginaghosthouse/snd_your_in_lake.mp3,0,-1"
@@ -9132,158 +9132,158 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			}
 			game_text
 			{
-				"targetname" "w20_text_your" 
-				"message" "YOUR"  
-				"x" "0.35" 
-				"y" "0.4" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "2" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w20_text_your"
+				"message" "YOUR"
+				"x" "0.35"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "2"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "2.25"
 			}
 			game_text
 			{
-				"targetname" "w20_text_oolong" 
-				"message" " OOLONG "  
-				"x" "-1" 
-				"y" "0.4" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "5" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w20_text_oolong"
+				"message" " OOLONG "
+				"x" "-1"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "5"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "1.1"
 			}
 			game_text
 			{
-				"targetname" "w20_text_too" 
-				"message" "TOO"  
-				"x" "0.55" 
-				"y" "0.4" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "4" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w20_text_too"
+				"message" "TOO"
+				"x" "0.55"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "4"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "1.2"
 			}
 			game_text
 			{
-				"targetname" "w20_text_too_2" 
-				"message" "TOO"  
-				"x" "0.625" 
-				"y" "0.4" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "5" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w20_text_too_2"
+				"message" "TOO"
+				"x" "0.625"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "5"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "0.9"
 			}
 			game_text
 			{
-				"targetname" "w20_text_raking" 
-				"message" "RAKING"  
-				"x" "0.45" 
-				"y" "0.4" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "3" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w20_text_raking"
+				"message" "RAKING"
+				"x" "0.45"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "3"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "0.85"
 			}
 			game_text
 			{
-				"targetname" "w20_text_log" 
-				"message" "LOG"  
-				"x" "0.45" 
-				"y" "0.4" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "4" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w20_text_log"
+				"message" "LOG"
+				"x" "0.45"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "4"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "1.1"
 			}
 			game_text
 			{
-				"targetname" "w20_text_two" 
-				"message" "(2)"  
-				"x" "0.525" 
-				"y" "0.4" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "5" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w20_text_two"
+				"message" "(2)"
+				"x" "0.525"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "5"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "0.6"
 			}
 			game_text
 			{
-				"targetname" "w20_text_bomb" 
-				"message" " BOMB "  
-				"x" "0.5" 
-				"y" "0.4" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "5" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w20_text_bomb"
+				"message" " BOMB "
+				"x" "0.5"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "5"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "0.8"
 			}
 			game_text
 			{
-				"targetname" "w20_text_long" 
-				"message" "LONG"  
-				"x" "0.625" 
-				"y" "0.4" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "5" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w20_text_long"
+				"message" "LONG"
+				"x" "0.625"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "5"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "0.9"
 			}
 			game_text
 			{
-				"targetname" "w20_text_in" 
-				"message" "IN"  
-				"x" "0.45" 
-				"y" "0.4" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "4" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w20_text_in"
+				"message" "IN"
+				"x" "0.45"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "4"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "0.75"
 			}
 			game_text
 			{
-				"targetname" "w20_text_lake" 
-				"message" "LAKE"  
-				"x" "0.55" 
-				"y" "0.4" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "5" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w20_text_lake"
+				"message" "LAKE"
+				"x" "0.55"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "5"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "0.65"
 			}
 			game_text
 			{
-				"targetname" "w20_text_lol" 
-				"message" " LOL "  
-				"x" "0.5" 
-				"y" "0.4" 
-				"spawnflags" "1" 
-				"effect" "0" 
-				"channel" "2" 
-				"color" "255 255 255" 
-				"fadeout" "0" 
+				"targetname" "w20_text_lol"
+				"message" " LOL "
+				"x" "0.5"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "0"
+				"channel" "2"
+				"color" "255 255 255"
+				"fadeout" "0"
 				"holdtime" "0.8"
 			}
 			logic_relay
@@ -9354,13 +9354,13 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"mins" "-2400 -2400 -1200"
 				"maxs" "2400 2400 1200"
 			}
-			color_correction 
+			color_correction
 			{
 				"targetname" "the_air_crackles_green_with_freedom"
 				"origin" "0 0 0"
 				"fadeInDuration" "0"
 				"fadeOutDuration" "0"
-				"maxfalloff" "-1" 
+				"maxfalloff" "-1"
 				"minfalloff" "-1"
 				"maxweight" "0.6"
 				"startdisabled" "1"
@@ -9412,7 +9412,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				// "UseRandomTime" 1
 				// "LowerRandomBound" 1.333
 				// "UpperRandomBound" 3
-				// "OnTimer" "w21_boss_teleport_case_2,PickRandom,,0,-1" 
+				// "OnTimer" "w21_boss_teleport_case_2,PickRandom,,0,-1"
 			// }
 			// logic_timer
 			// {
@@ -9421,7 +9421,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				// "UseRandomTime" 1
 				// "LowerRandomBound" 4
 				// "UpperRandomBound" 6
-				// "OnTimer" "w21_boss_attack_case_1,PickRandomShuffle,,0,-1" 
+				// "OnTimer" "w21_boss_attack_case_1,PickRandomShuffle,,0,-1"
 			// }
 			// logic_case
 			// {
@@ -9575,9 +9575,9 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnTrigger" "mission_end_failsafe,Trigger,,16,-1"
 			}
 		}
-		
+
 		//////////////////////// END OF MAZE LOGIC //////////////////////////////////
-		
+
 		Lolololol /// rename during each test
 		{
 			NoFixup	1
@@ -9827,7 +9827,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 					automatic = false
 				})
 				TextualTimer.AddCallbacks({
-					
+
 					`63` : function()
 					{
 						EntFire(`spawnbot_altmode`, `Enable`, ``)
@@ -10194,10 +10194,10 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			}
 			logic_timer
 			{
-				"targetname" "text_spacing_timer" 
+				"targetname" "text_spacing_timer"
 				"startdisabled" 0
 				"refiretime" 0.05
-				"OnTimer" "text_spacing,Add,1,0,-1" 
+				"OnTimer" "text_spacing,Add,1,0,-1"
 			}
 			math_counter
 			{
@@ -10208,7 +10208,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			}
 			point_worldtext
 			{
-				"targetname" "your_text" 
+				"targetname" "your_text"
 				"message" "your"
 				"spawnflags" "0"
 				"origin" "-8328 8634 552"
@@ -10220,7 +10220,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			}
 			point_worldtext
 			{
-				"targetname" "house_text" 
+				"targetname" "house_text"
 				"message" "house"
 				"spawnflags" "0"
 				"origin" "-8328 8386 552"
@@ -10232,11 +10232,11 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			}
 			func_movelinear
 			{
-				"targetname" "your_house_move" 
-				"origin" "-904 7110 298.5" 
-				"movedir" "0 180 0" 
-				"movedistance" "450" 
-				"spawnflags" "8" 
+				"targetname" "your_house_move"
+				"origin" "-904 7110 298.5"
+				"movedir" "0 180 0"
+				"movedistance" "450"
+				"spawnflags" "8"
 				"speed" "300"
 				"OnFullyOpen" "!caller,Kill,,0,-1"
 			}
@@ -10566,7 +10566,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			}
 			CharacterAttributes
 			{
-				"bot medic uber health threshold" 444 
+				"bot medic uber health threshold" 444
 				"dmg from melee increased" 2
 				"cannot pick up intelligence" 1
 			}
@@ -10631,7 +10631,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"ignored by bots" 1
 				"dmg taken mult from special damage type 2" 2.5
 			}
-			Addcond 
+			Addcond
 			{
 				Name TF_COND_REPROGRAMMED_NEUTRAL
 			}
@@ -10736,7 +10736,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			Attributes HoldFireUntilFullReload
 			AlwaysGlow 1
 			UseHumanModel 1
-			Action Mobber 					 
+			Action Mobber
 			UseBestWeapon 1
 			UseMeleeThreatPrioritization 1
 			ItemAttributes
@@ -10765,7 +10765,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"move speed bonus" 1.3
 				"increased jump height" 1.2
 			}
-			AddCond  
+			AddCond
 			{
 				Name TF_COND_REPROGRAMMED
 			}
@@ -10790,7 +10790,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			// Attributes AlwaysFireWeapon
 			AlwaysGlow 1
 			UseHumanModel 1
-			Action Mobber		 
+			Action Mobber
 			UseMeleeThreatPrioritization 1
 			ItemAttributes
 			{
@@ -10821,7 +10821,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"health regen" 8
 				"move speed bonus" 1.3
 			}
-			AddCond  
+			AddCond
 			{
 				Name TF_COND_REPROGRAMMED
 			}
@@ -10843,7 +10843,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			Item "Flammable Favor"
 			AlwaysGlow 1
 			UseHumanModel 1
-			Action Mobber 					 
+			Action Mobber
 			UseBestWeapon 1
 			MoveBehindEnemy 1
 			UseMeleeThreatPrioritization 1
@@ -10873,7 +10873,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"kill forces attacker to laugh" 1
 			}
 			// Attributes AlwaysFireWeapon
-			AddCond  
+			AddCond
 			{
 				Name TF_COND_REPROGRAMMED
 			}
@@ -10896,7 +10896,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			Item "The Hood of Sorrows"
 			AlwaysGlow 1
 			UseHumanModel 1
-			Action Mobber 					 
+			Action Mobber
 			UseBestWeapon 1
 			UseMeleeThreatPrioritization 1
 			ItemAttributes
@@ -10929,7 +10929,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"kill forces attacker to laugh" 1
 			}
 			// Attributes AlwaysFireWeapon
-			AddCond  
+			AddCond
 			{
 				Name TF_COND_REPROGRAMMED
 			}
@@ -10952,7 +10952,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			Item "Kritz Or Treat Canteen"
 			AlwaysGlow 1
 			UseHumanModel 1
-			Action Mobber			 				 
+			Action Mobber
 			UseMeleeThreatPrioritization 1
 			ItemAttributes
 			{
@@ -10986,7 +10986,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				Cooldown 0.1
 				Type "Action"
 			}
-			AddCond  
+			AddCond
 			{
 				Name TF_COND_REPROGRAMMED
 			}
@@ -11005,7 +11005,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			Item "Technician's Tunic"
 			AlwaysGlow 1
 			UseHumanModel 1
-			Action Mobber			 				 
+			Action Mobber
 			UseMeleeThreatPrioritization 1
 			UseBestWeapon 1
 			ItemAttributes
@@ -11032,7 +11032,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"kill forces attacker to laugh" 1
 			}
 			// Attributes AlwaysFireWeapon
-			AddCond  
+			AddCond
 			{
 				Name TF_COND_REPROGRAMMED
 			}
@@ -11080,7 +11080,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"dmg penalty vs players" 0.2
 			}
 			// Attributes AlwaysFireWeapon
-			AddCond  
+			AddCond
 			{
 				Name TF_COND_REPROGRAMMED
 			}
@@ -11116,7 +11116,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"move speed bonus" 1.3
 				"kill forces attacker to laugh" 1
 			}
-			AddCond  
+			AddCond
 			{
 				Name TF_COND_REPROGRAMMED
 			}
@@ -11139,7 +11139,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			UseHumanModel 1
 			UseCustomModel "models/player/spy.mdl"
 			StripItemSlot 0
-			Action Mobber			 				 
+			Action Mobber
 			UseMeleeThreatPrioritization 1
 			ItemAttributes
 			{
@@ -11157,7 +11157,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"move speed bonus" 1.391
 				"kill forces attacker to laugh" 1
 			}
-			AddCond  
+			AddCond
 			{
 				Name TF_COND_REPROGRAMMED
 			}
@@ -11189,7 +11189,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				Delay 0.02
 				Repeats 1
 			}
-			AddCond  
+			AddCond
 			{
 				Index 87
 			}
@@ -11505,7 +11505,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			{
 				Index 70
 			}
-			ChangeAttributes  
+			ChangeAttributes
 			{
 				Delay 0.001
 				Repeats 1
@@ -11651,7 +11651,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			// - log 2
 			// - oolong
 			// - your raking
-			
+
 			// - your long
 			// - your UBER
 			// - your in lake
@@ -11741,7 +11741,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 						"fire rate bonus" 0.5
 						"mult bleeding dmg" 0
 					}
-					FireWeapon  
+					FireWeapon
 					{
 						Delay 0.1
 						Repeats 0
@@ -11840,7 +11840,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 					{
 						"move speed bonus" 0.8
 					}
-					FireWeapon  
+					FireWeapon
 					{
 						Delay 1
 						Repeats 0
@@ -11870,7 +11870,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 						"custom weapon fire sound" "Weapon_StickyBombLauncher.SingleCrit"
 						"stickybomb fizzle time" 3
 					}
-					FireWeapon  
+					FireWeapon
 					{
 						Delay 5.4
 						Repeats 5
@@ -11911,18 +11911,18 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			Target wave_start_relay
 			Action Trigger
 		}
-		DoneOutput					
+		DoneOutput
 		{
 			Target wave_finished_relay
 			Action Trigger
 		}
-		Explanation 
+		Explanation
 		{
 			Line "{FE7100}... GHO HO HO... IT SEAMS YOU'VE FOUND YOARSELVES IN MY [DARK ZONE]."
 			Line "{FE7100}THERE'S NO ESCAIPE FROM THIS SPOOKEY PLACE..."
 			Line "{FE7100}UNLESS... YOU LEAVE"
 		}
-		SpawnTemplate		
+		SpawnTemplate
 		{
 			Name "Wave0Logic"
 			"origin" "-6848 1152 256"
@@ -12091,7 +12091,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 					"always allow taunt" 1
 					"no_jump" 1
 					"move speed bonus" 0.001
-					"damage force reduction" 0 
+					"damage force reduction" 0
 					"airblast vulnerability multiplier" 0
 					"airblast vertical vulnerability multiplier" 0
 					// "attach particle effect" 3071
@@ -12127,7 +12127,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 					Delay 29
 					Repeats 1
 				}
-				ChangeAttributes  
+				ChangeAttributes
 				{
 					Delay 30
 					Repeats 1
@@ -12206,7 +12206,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 					"no_jump" 1
 					"move speed bonus" 0.001
 					"dmg taken increased" 0.01
-					"damage force reduction" 0 
+					"damage force reduction" 0
 					"airblast vulnerability multiplier" 0
 					"airblast vertical vulnerability multiplier" 0
 					"not solid to players" 1
@@ -12224,7 +12224,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 					Index 87
 					Duration 30
 				}
-				ChangeAttributes  
+				ChangeAttributes
 				{
 					Delay 29
 					Repeats 1
@@ -12338,7 +12338,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				{
 					"always allow taunt" 1
 					"move speed bonus" 0.001
-					"damage force reduction" 0 
+					"damage force reduction" 0
 					"airblast vulnerability multiplier" 0
 					"airblast vertical vulnerability multiplier" 0
 				}
@@ -12541,7 +12541,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				{
 					"always allow taunt" 1
 					"move speed bonus" 0.001
-					"damage force reduction" 0 
+					"damage force reduction" 0
 					"airblast vulnerability multiplier" 0
 					"airblast vertical vulnerability multiplier" 0
 				}
@@ -12739,7 +12739,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 					"always allow taunt" 1
 					"Projectile speed increased" 0.9
 					"move speed bonus" 0.001
-					"damage force reduction" 0 
+					"damage force reduction" 0
 					"airblast vulnerability multiplier" 0
 					"airblast vertical vulnerability multiplier" 0
 				}
@@ -12967,14 +12967,14 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 					"no_attack" 1
 					"move speed bonus" 2.4
 				}
-				ChangeAttributes  
+				ChangeAttributes
 				{
 					Delay 0
 					IfHealthBelow 149000
 					Repeats 1
 					Name MamaMia
 				}
-				ChangeAttributes  
+				ChangeAttributes
 				{
 					Delay 0
 					IfHealthBelow 135000
@@ -13185,7 +13185,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				{
 					"always allow taunt" 1
 					"move speed bonus" 0.001
-					"damage force reduction" 0 
+					"damage force reduction" 0
 					"airblast vulnerability multiplier" 0
 					"airblast vertical vulnerability multiplier" 0
 				}
@@ -13349,7 +13349,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 					{
 						"always allow taunt" 1
 						"move speed bonus" 0.001
-						"damage force reduction" 0 
+						"damage force reduction" 0
 						"airblast vulnerability multiplier" 0
 						"airblast vertical vulnerability multiplier" 0
 					}
@@ -13459,7 +13459,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				{
 					"always allow taunt" 1
 					"move speed bonus" 0.001
-					"damage force reduction" 0 
+					"damage force reduction" 0
 					"airblast vulnerability multiplier" 0
 					"airblast vertical vulnerability multiplier" 0
 				}
@@ -13606,7 +13606,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				{
 					"always allow taunt" 1
 					"move speed bonus" 0.001
-					"damage force reduction" 0 
+					"damage force reduction" 0
 					"airblast vulnerability multiplier" 0
 					"airblast vertical vulnerability multiplier" 0
 					"increase buff duration" 90
@@ -13877,14 +13877,14 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 					"move speed bonus" 0.001
 					"dmg taken increased" 1.5
 				}
-				ChangeAttributes  
+				ChangeAttributes
 				{
 					Delay 0
 					IfHealthBelow 134000
 					Repeats 1
 					Name MamaMia
 				}
-				ChangeAttributes  
+				ChangeAttributes
 				{
 					Delay 0
 					IfHealthBelow 115000
@@ -14108,7 +14108,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				{
 					"always allow taunt" 1
 					"move speed bonus" 0.001
-					"damage force reduction" 0 
+					"damage force reduction" 0
 					"airblast vulnerability multiplier" 0
 					"airblast vertical vulnerability multiplier" 0
 				}
@@ -14406,7 +14406,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 					{
 						"always allow taunt" 1
 						"move speed bonus" 0.001
-						"damage force reduction" 0 
+						"damage force reduction" 0
 						"airblast vulnerability multiplier" 0
 						"airblast vertical vulnerability multiplier" 0
 					}
@@ -14437,7 +14437,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 					{
 						"always allow taunt" 1
 						"move speed bonus" 0.001
-						"damage force reduction" 0 
+						"damage force reduction" 0
 						"airblast vulnerability multiplier" 0
 						"airblast vertical vulnerability multiplier" 0
 					}
@@ -14464,7 +14464,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 					{
 						"always allow taunt" 1
 						"move speed bonus" 0.001
-						"damage force reduction" 0 
+						"damage force reduction" 0
 						"airblast vulnerability multiplier" 0
 						"airblast vertical vulnerability multiplier" 0
 					}
@@ -14494,7 +14494,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 					{
 						"always allow taunt" 1
 						"move speed bonus" 0.001
-						"damage force reduction" 0 
+						"damage force reduction" 0
 						"airblast vulnerability multiplier" 0
 						"airblast vertical vulnerability multiplier" 0
 					}
@@ -14520,7 +14520,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 					{
 						"always allow taunt" 1
 						"move speed bonus" 0.001
-						"damage force reduction" 0 
+						"damage force reduction" 0
 						"airblast vulnerability multiplier" 0
 						"airblast vertical vulnerability multiplier" 0
 					}
@@ -14549,7 +14549,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 					{
 						"always allow taunt" 1
 						"move speed bonus" 0.001
-						"damage force reduction" 0 
+						"damage force reduction" 0
 						"airblast vulnerability multiplier" 0
 						"airblast vertical vulnerability multiplier" 0
 					}
@@ -14575,7 +14575,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 					{
 						"always allow taunt" 1
 						"move speed bonus" 0.001
-						"damage force reduction" 0 
+						"damage force reduction" 0
 						"airblast vulnerability multiplier" 0
 						"airblast vertical vulnerability multiplier" 0
 					}
@@ -14608,7 +14608,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 					{
 						"always allow taunt" 1
 						"move speed bonus" 0.001
-						"damage force reduction" 0 
+						"damage force reduction" 0
 						"airblast vulnerability multiplier" 0
 						"airblast vertical vulnerability multiplier" 0
 					}
@@ -15053,7 +15053,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			RandomChoice
 			{
 				Tank
-				{ 
+				{
 					Name "combattank_bomb|minigun|rocketpod"
 					ClassIcon blu2_lite
 					DisableSmokeStack 1
@@ -15074,7 +15074,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 					}
 				}
 				Tank
-				{ 
+				{
 					Name "combattank_bomb|fireball|rocketpod"
 					ClassIcon blu2_lite
 					DisableSmokeStack 1
@@ -15095,7 +15095,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 					}
 				}
 				Tank
-				{ 
+				{
 					Name "combattank_bomb|rocketpod|railgun"
 					ClassIcon blu2_lite
 					DisableSmokeStack 1
@@ -15116,7 +15116,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 					}
 				}
 				Tank
-				{ 
+				{
 					Name "combattank_bomb|railgun|fireball"
 					ClassIcon blu2_lite
 					DisableSmokeStack 1
@@ -15137,7 +15137,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 					}
 				}
 				Tank
-				{ 
+				{
 					Name "combattank_bomb|railgun|minigun"
 					ClassIcon blu2_lite
 					DisableSmokeStack 1
@@ -15158,7 +15158,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 					}
 				}
 				Tank
-				{ 
+				{
 					Name "combattank_bomb|fireball|minigun"
 					ClassIcon blu2_lite
 					DisableSmokeStack 1
@@ -15414,14 +15414,14 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 					"move speed bonus" 0.001
 					"dmg taken increased" 1.5
 				}
-				ChangeAttributes  
+				ChangeAttributes
 				{
 					Delay 0
 					IfHealthBelow 114000
 					Repeats 1
 					Name MamaMia
 				}
-				ChangeAttributes  
+				ChangeAttributes
 				{
 					Delay 0
 					IfHealthBelow 90000
@@ -15723,7 +15723,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				CharacterAttributes
 				{
 					"always allow taunt" 1
-					"damage force reduction" 0 
+					"damage force reduction" 0
 					"airblast vulnerability multiplier" 0
 					"airblast vertical vulnerability multiplier" 0
 					"mod teleporter speed boost" 1
@@ -16096,7 +16096,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 					"dmg penalty vs players" 1.62
 					"mult bleeding dmg" 0
 				}
-				FireWeapon  
+				FireWeapon
 				{
 					Delay 0.1
 					Repeats 0
@@ -16117,7 +16117,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				{
 					"always allow taunt" 1
 					"move speed bonus" 0.001
-					"damage force reduction" 0 
+					"damage force reduction" 0
 					"airblast vulnerability multiplier" 0
 					"airblast vertical vulnerability multiplier" 0
 				}
@@ -16534,7 +16534,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 					Name "Giant Burst Shotgun Heavy"
 					ClassIcon blu2_lite
 					Skill Expert
-					Health 5000 
+					Health 5000
 					MaxVisionRange 1200
 					Attributes MiniBoss
 					Attributes DisableDodge
@@ -16557,7 +16557,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 					{
 						"always allow taunt" 1
 						"move speed bonus" 0.001
-						"damage force reduction" 0 
+						"damage force reduction" 0
 						"airblast vulnerability multiplier" 0
 						"airblast vertical vulnerability multiplier" 0
 					}
@@ -16976,14 +16976,14 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 					"move speed bonus" 0.001
 					"dmg taken increased" 1.5
 				}
-				ChangeAttributes  
+				ChangeAttributes
 				{
 					Delay 0
 					IfHealthBelow 89000
 					Repeats 1
 					Name MamaMia
 				}
-				ChangeAttributes  
+				ChangeAttributes
 				{
 					Delay 0
 					IfHealthBelow 60000
@@ -17260,7 +17260,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 					"always allow taunt" 1
 					"no_jump" 1
 					"move speed bonus" 0.001
-					"damage force reduction" 0 
+					"damage force reduction" 0
 					"airblast vulnerability multiplier" 0
 					"airblast vertical vulnerability multiplier" 0
 					"no self effect" 1
@@ -18095,7 +18095,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 					"no_jump" 1
 					"move speed bonus" 0.001
 					"dmg taken increased" 0.01
-					"damage force reduction" 0 
+					"damage force reduction" 0
 					"airblast vulnerability multiplier" 0
 					"airblast vertical vulnerability multiplier" 0
 					"not solid to players" 1
@@ -18113,7 +18113,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 					Index 87
 					Duration 5
 				}
-				ChangeAttributes  
+				ChangeAttributes
 				{
 					Delay 4
 					Repeats 1
@@ -18440,7 +18440,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 					"no_jump" 1
 					"no_duck" 1
 					"move speed bonus" 0.001
-					"damage force reduction" 0 
+					"damage force reduction" 0
 					"airblast vulnerability multiplier" 0
 					"airblast vertical vulnerability multiplier" 0
 					"dmg taken increased" 6.66
@@ -18463,11 +18463,11 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 					Delay 0.11
 					Repeats 1
 				}
-				Addcond 
+				Addcond
 				{
 					Name TF_COND_REPROGRAMMED_NEUTRAL
 				}
-				ChangeAttributes  
+				ChangeAttributes
 				{
 					Delay 0
 					IfHealthBelow 100000
@@ -18561,7 +18561,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 					Delay 0.01
 					Repeats 1
 				}
-				Addcond 
+				Addcond
 				{
 					Name TF_COND_REPROGRAMMED_NEUTRAL
 				}
@@ -18953,7 +18953,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 					Repeats 1
 					Delay 0.001
 				}
-				// FireWeapon  
+				// FireWeapon
 				// {
 					// Delay 0.1
 					// Repeats 0
@@ -18984,7 +18984,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				// - log 2
 				// - oolong
 				// - your raking
-				
+
 				// - your long
 				// - your UBER
 				// - your in lake
