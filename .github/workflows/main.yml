@@ -8,9 +8,6 @@ on:
   push:
     branches: [ "main" ]
 
-  repository_dispatch:
-    types: [moonlight-updated]
-
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -77,15 +74,8 @@ jobs:
             SSH_AUTH_SOCK: /tmp/ssh_agent.sock
         run: |
             ssh-agent -a $SSH_AUTH_SOCK > /dev/null
-            ssh-add - <<< "${{ secrets.DEPLOY_KEY_NEW }}"
+            ssh-add - <<< "${{ secrets.DEPLOY_KEY }}"
 
-      - name: Merge repositories locally for fastdl
-        run: |
-
-          mkdir -p tf/download
-
-          rsync -a --ignore-existing --remove-source-files tf/potato/* tf/download/
-          rsync -a --ignore-existing --remove-source-files tf/moonlight/* tf/download/
 
       - name: Create bz2 archives
         run: |
@@ -123,7 +113,7 @@ jobs:
             SSH_AUTH_SOCK: /tmp/ssh_agent.sock
         run: |
             ssh-agent -a $SSH_AUTH_SOCK > /dev/null
-            ssh-add - <<< "${{ secrets.DEPLOY_KEY_NEW }}"
+            ssh-add - <<< "${{ secrets.DEPLOY_KEY }}"
 
       - name: Merge repositories locally
         run: |
