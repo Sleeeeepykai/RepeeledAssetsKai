@@ -548,8 +548,6 @@ WaveSchedule
                 "OnTrigger" "tits,Enable,,0.1,-1"
                 "OnTrigger" "skyboxblack,Disable,,0,-1"
                 "OnTrigger" "player*,SetHUDVisibility,1,2.5,-1"
-                "OnTrigger" "bignetRunScriptCodeConvars.SetValue(`mp_tournament`, 0)0-1"
-                "OnTrigger" "bignetRunScriptCodeConvars.SetValue(`mp_tournament`, 1)2.5-1"
             }
 
 			prop_dynamic
@@ -4441,6 +4439,7 @@ WaveSchedule
 				"targetname" "w6_subwave2_done"
 
 				"OnTrigger" "healthbar_target,$SetLocalOrigin,1094 -128 3011,0,-1"
+				"OnTrigger" "god_giveth,Disable,,0,-1"
 				"OnTrigger" "god_takethaway,Enable,,0,-1"
 				"OnTrigger" "god_takethaway,Disable,,1,-1"
 				"OnTrigger" "crit_looper_1,CancelPending,,0,-1"
@@ -4480,6 +4479,7 @@ WaveSchedule
 				"targetname" "w6_subwave3_done"
 
 				"OnTrigger" "healthbar_target,$SetLocalOrigin,-17 -2538 2935,0,-1"
+				"OnTrigger" "god_giveth,Disable,,0,-1"
 				"OnTrigger" "god_takethaway,Enable,,0,-1"
 				"OnTrigger" "god_takethaway,Disable,,1,-1"
 				"OnTrigger" "crit_looper_2,CancelPending,,0,-1"
@@ -4505,6 +4505,7 @@ WaveSchedule
 				"targetname" "w6_single_soldier_event"
 
 				"OnTrigger" "rocketmortar_attack_relay,CancelPending,,0,-1"
+				"OnTrigger" "god_giveth,Disable,,0,-1"
 				"OnTrigger" "god_takethaway,Enable,,0,-1"
 				"OnTrigger" "god_takethaway,Disable,,1,-1"
 				"OnTrigger" "tf_gamerules,$StopVO,fat_soldier_mortar_phase2.mp3,0,-1"
@@ -4649,6 +4650,7 @@ WaveSchedule
 
 				"OnTrigger" "rocketmortar_homing_attack_relay,CancelPending,,0,-1"
 				"OnTrigger" "rocketmortar_homing_loop,CancelPending,,0,-1"
+				"OnTrigger" "god_giveth,Disable,,0,-1"
 				"OnTrigger" "god_takethaway,Enable,,0,-1"
 				"OnTrigger" "god_takethaway,Disable,,1,-1"
 				"OnTrigger" "tf_gamerules,$StopVO,fat_soldier_mortar_phase3.mp3,0,-1"
@@ -4749,6 +4751,9 @@ WaveSchedule
 				"OnTrigger" "tf_gamerules,PlayVO,fat_w6_end.mp3,0,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,fat_w6_end.mp3,0,-1"
 				"OnTrigger" "rocketmortar_homing_attack_relay,CancelPending,,0,-1"
+				"OnTrigger" "god_giveth,Disable,,0,-1"
+				"OnTrigger" "god_takethaway,Enable,,0,-1"
+				"OnTrigger" "god_takethaway,Disable,,2,-1"
 				"OnTrigger" "w6_cutscene_camera1,$EnableAll,,0,-1"
 				"OnTrigger" "random_sparks_timer,Enable,,0,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,fat_w6_soldier_cutscene1.mp3,0.4,-1"
@@ -5389,16 +5394,6 @@ WaveSchedule
 
             Action Mobber
 
-			Item "The Beggar's Bazooka"
-			Item "The Concheror"
-
-			ItemAttributes
-			{
-				ItemName "The Concheror"
-				"single wep holster time increased" 0.35
-            	"single wep deploy time increased" 0.35
-			}
-
 			Item "Ellis Hat"
 
 			AddCond "TF_COND_REPROGRAMMED"  
@@ -5432,14 +5427,21 @@ WaveSchedule
 			{
 				Delay  10
 				Cooldown  9999
-				Name  "Hostile"
+				Name  "Hostile_Primary"
 			}
 
 			ChangeAttributes   
 			{
-				Delay  13
+				Delay  12
 				Cooldown  9999
-				Name  "Conch"
+				Name  "Hostile_Secondary"
+			}
+
+			ChangeAttributes   
+			{
+				Delay  16
+				Cooldown  9999
+				Name  "Hostile_Primary"
 			}
 
             CharacterAttributes
@@ -5456,8 +5458,17 @@ WaveSchedule
                     Attributes SuppressFire
                 }
 
-				Conch
+				Hostile_Primary
 				{
+					WeaponRestrictions PrimaryOnly
+					Item "The Beggar's Bazooka"
+					Item "The Concheror"
+					ItemAttributes
+					{
+						ItemName "The Concheror"
+						"single wep holster time increased" 0.35
+						"single wep deploy time increased" 0.35
+					}
 					ItemAttributes
 					{
 						ItemName "The Beggar's Bazooka"
@@ -5480,8 +5491,17 @@ WaveSchedule
 					}
 				}
 
-				Hostile
+				Hostile_Secondary
 				{
+					WeaponRestrictions SecondaryOnly
+					Item "The Beggar's Bazooka"
+					Item "The Concheror"
+					ItemAttributes
+					{
+						ItemName "The Concheror"
+						"single wep holster time increased" 0.35
+						"single wep deploy time increased" 0.35
+					}
 					ItemAttributes
 					{
 						ItemName "The Beggar's Bazooka"
@@ -5496,6 +5516,11 @@ WaveSchedule
 						"can overload" 0
 						"mod projectile heat seek power" 360
 						"mod projectile heat aim error" 90
+					}
+
+					CharacterAttributes
+					{
+						"increase buff duration" 10
 					}
 				}
             }
