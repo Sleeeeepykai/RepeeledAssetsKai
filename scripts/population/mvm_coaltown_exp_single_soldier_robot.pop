@@ -35,6 +35,7 @@ WaveSchedule
 	DisableSound "MVM.TankDeploy"  
 
 	PrecacheModel "models/props_mvm/reversemvm_redwall_640x418.mdl"
+	PrecacheModel "models/flags/scrap_metal_flag.mdl"
 
 	PrecacheGeneric "materials/colorcorrection/one_more_group.raw"
 	PrecacheGeneric "materials/colorcorrection/the_entity.raw"
@@ -2058,7 +2059,7 @@ WaveSchedule
             {
                 "effect_name" "eb_death_vortex01"
                 "targetname" "w3_merasmus_particle"
-                "origin" "0 0 200" 
+                "origin" "0 0 0" 
 				"flag_as_weather" "0"
                 "start_active" "0"
             }
@@ -2067,7 +2068,7 @@ WaveSchedule
             {
                 "effect_name" "eb_death_vortex02"
                 "targetname" "w3_merasmus_particle"
-                "origin" "0 0 200" 
+                "origin" "0 0 0" 
 				"flag_as_weather" "0"
                 "start_active" "0"
             }
@@ -2076,7 +2077,7 @@ WaveSchedule
             {
                 "effect_name" "eb_death_vortex03"
                 "targetname" "w3_merasmus_particle"
-                "origin" "0 0 200" 
+                "origin" "0 0 0" 
 				"flag_as_weather" "0"
                 "start_active" "0"
             }
@@ -2084,7 +2085,7 @@ WaveSchedule
 			info_target
 			{
 				"targetname" "merasmus_target"
-				"origin" "0 0 200"
+				"origin" "0 0 0"
 			}
 		}	
 
