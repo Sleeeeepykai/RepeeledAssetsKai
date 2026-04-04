@@ -1362,20 +1362,20 @@ WaveSchedule
 		"projectile spread angle penalty"						4
 		"set_item_texture_wear"									0.2
 	}
-	ItemAttributes // Shotgun Soldier
-	{
-		ItemName "TF_WEAPON_SHOTGUN_SOLDIER"
-		"special taunt"											1
-		"damage bonus"											8.25
-		"clip size bonus upgrade"								8.3
-		"fire rate bonus"										0.015
-		"faster reload rate"									0.25
-		"maxammo secondary increased"							20
-		"restore health on kill"								16
-		"bullets per shot bonus"								3
-		"spread penalty"										3
-		"mod crit while airborne"								1
-	}
+//	ItemAttributes // Shotgun Soldier
+//	{
+//		ItemName "TF_WEAPON_SHOTGUN_SOLDIER"
+//		"special taunt"											1
+//		"damage bonus"											8.25
+//		"clip size bonus upgrade"								8.3
+//		"fire rate bonus"										0.015
+//		"faster reload rate"									0.25
+//		"maxammo secondary increased"							20
+//		"restore health on kill"								16
+//		"bullets per shot bonus"								3
+//		"spread penalty"										3
+//		"mod crit while airborne"								1
+//	}
 	ItemAttributes // Shovel
 	{
 		SimilarToItem "tf_weapon_shovel"
@@ -1445,20 +1445,20 @@ WaveSchedule
 		"extinguish restores health"							475
 		"set_item_texture_wear"									0.2
 	}
-	ItemAttributes // Shotgun Pyro
-	{
-		ItemName "TF_WEAPON_SHOTGUN_PYRO"
-		"special taunt"											1
-		"damage bonus"											12
-		"clip size bonus upgrade"								10
-		"fire rate bonus"										0.2
-		"faster reload rate"									0.2
-		"maxammo secondary increased"							20
-		"restore health on kill"								20
-		"bullets per shot bonus"								3
-		"spread penalty"										3
-		"crit vs burning players"								1
-	}
+//	ItemAttributes // Shotgun Pyro
+//	{
+//		ItemName "TF_WEAPON_SHOTGUN_PYRO"
+//		"special taunt"											1
+//		"damage bonus"											12
+//		"clip size bonus upgrade"								10
+//		"fire rate bonus"										0.2
+//		"faster reload rate"									0.2
+//		"maxammo secondary increased"							20
+//		"restore health on kill"								20
+//		"bullets per shot bonus"								3
+//		"spread penalty"										3
+//		"crit vs burning players"								1
+//	}
 	ItemAttributes // Fire Axe
 	{
 		SimilarToItem "tf_weapon_fireaxe"
@@ -1534,18 +1534,18 @@ WaveSchedule
 		"minicritboost on kill"									3
 		"set_item_texture_wear"									0.2
 	}
-	ItemAttributes // Shotgun Heavy
-	{
-		ItemName "TF_WEAPON_SHOTGUN_HWG"
-		"special taunt"											1
-		"damage bonus"											35
-		"clip size penalty"										0.16
-		"fire rate penalty"										20
-		"restore health on kill"								150
-		"bullets per shot bonus"								8
-		"spread penalty"										4
-		"critboost on kill"										8
-	}
+//	ItemAttributes // Shotgun Heavy
+//	{
+//		ItemName "TF_WEAPON_SHOTGUN_HWG"
+//		"special taunt"											1
+//		"damage bonus"											35
+//		"clip size penalty"										0.16
+//		"fire rate penalty"										20
+//		"restore health on kill"								150
+//		"bullets per shot bonus"								8
+//		"spread penalty"										4
+//		"critboost on kill"										8
+//	}
 	ItemAttributes // Fists
 	{
 		SimilarToItem "tf_weapon_fists"
@@ -1564,20 +1564,20 @@ WaveSchedule
 		"critboost on kill"										5
 		"ragdolls become ash"									1
 	}
-	ItemAttributes // Shotgun Engineer
-	{
-		ItemName "TF_WEAPON_SHOTGUN_PRIMARY"
-		"special taunt"											1
-		"damage bonus"											12
-		"clip size bonus upgrade"								10
-		"fire rate bonus"										0.2
-		"faster reload rate"									0.2
-		"maxammo primary increased"								20
-		"restore health on kill"								15
-		"bullets per shot bonus"								3
-		"spread penalty"										3
-		"damage bonus bullet vs sentry target"					4
-	}
+//	ItemAttributes // Shotgun Engineer
+//	{
+//		ItemName "TF_WEAPON_SHOTGUN_PRIMARY"
+//		"special taunt"											1
+//		"damage bonus"											12
+//		"clip size bonus upgrade"								10
+//		"fire rate bonus"										0.2
+//		"faster reload rate"									0.2
+//		"maxammo primary increased"								20
+//		"restore health on kill"								15
+//		"bullets per shot bonus"								3
+//		"spread penalty"										3
+//		"damage bonus bullet vs sentry target"					4
+//	}
 	ItemAttributes // Who the fuck is going to have this
 	{
 		ItemName "Golden Wrench"
@@ -1856,11 +1856,11 @@ WaveSchedule
 	{
 		ItemName "The Dead Ringer"
 		"set cloak is feign death"								0
-		"cloak consume rate decreased"							10
+		"cloak consume rate decreased"							8
 		"cloak regen rate increased"							2
 		"mult decloak rate"										0.1
 		"mult cloak rate"										3
-		"add attributes when active"							"dmg taken increased|0.2|move speed bonus|10|no_jump|1"
+		"add attributes when active"							"dmg taken increased|0.2|move speed bonus|10|no_jump|1|no_attack|1"
 	}
 	ItemAttributes // Multiclass Shotgun
 	{
@@ -1870,6 +1870,9 @@ WaveSchedule
 		"restore health on kill"								10
 		"bullets per shot bonus"								10
 		"spread penalty"										1.8
+		"damage bonus vs burning"								1.5
+		"mod crit while airborne"								1
+		"damage bonus bullet vs sentry target"					2
 		"set_item_texture_wear"									0.2
 	}
 	ItemAttributes
@@ -1956,6 +1959,7 @@ WaveSchedule
 		"cancel falling damage"									1
 		"engy building health bonus"							32
 		"engy sentry damage bonus"								80
+		"set item tint RGB"										12073019
 	}
 	ItemAttributes
 	{
@@ -2620,7 +2624,7 @@ WaveSchedule
 		"rocket specialist"										4
 		"add attributes when active"							"move speed penalty|0.75"
 		"closerange backattack minicrits"						1
-		"maxammo primary increased"								10
+		"maxammo primary increased"								2
 		"mod rage damage boost"									1.25
 		"auto fires when full"									1
 		"auto fires full clip penalty"							1
@@ -3683,21 +3687,26 @@ WaveSchedule
 		"provide on active"										0
 		"hit self on miss"										1
 		"crit mod disabled"										99
-		"apply z velocity on damage"							1275
+		"apply z velocity on damage"							450 //1275
+		"self dmg push force increased"							3.25
+		"apply look velocity on damage"							200
 		"health from healers increased"							200
 		"melee range multiplier"								0.05
 		"max health additive bonus"								19700
 		"boots falling stomp"									1
 		"health regen"											400
 		"move speed bonus"										1.4
-		"halloween increased jump height"						1.3
-		"fire rate penalty"										5.5
+		"halloween increased jump height"						1.2
+		"fire rate penalty"										5
 		"maxammo primary reduced"								0
 		"maxammo secondary reduced"								0
 		"maxammo metal reduced"									0
 		"model scale"											1.25
 		"damage bonus"											1
 		"dmg taken increased"									1
+		"mult dmg vs giants"									2
+		"mult dmg vs tanks"										10
+		"add attributes on kill"								"hud overlay|effects/invuln_overlay_red|5|apply z velocity on damage|700|5|add cond when active|11|5"
 	}
 	ItemAttributes
 	{
@@ -4594,6 +4603,7 @@ WaveSchedule
         "melee range multiplier"								1.25
         "armor piercing"										3000
         "add attributes on kill"								"ignored by bots|1"
+		"mult cloak meter consume rate"							1
 	}
 	ItemAttributes
 	{

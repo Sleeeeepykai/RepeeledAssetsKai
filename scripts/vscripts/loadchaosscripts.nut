@@ -9,6 +9,7 @@ IncludeScript("chaosmvm/item-helper")
 IncludeScript("chaosmvm/translations")
 //IncludeScript("chaosmvm/responses")
 
+SetCvar("tf_use_fixed_weaponspreads", 0, false)
 SetCvar("tf_forced_holiday", 2, false)
 SetCvar("tf_mvm_respec_enabled", 0, false)
 SetCvar("tf_parachute_deploy_toggle_allowed", 1, false)
