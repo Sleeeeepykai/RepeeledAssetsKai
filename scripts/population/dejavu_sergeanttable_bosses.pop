@@ -14151,6 +14151,15 @@ WaveSchedule
 
                     FireInput
                     {
+                        Target SkullcutterSlamAttack
+                        Action CancelPending
+                        Delay 0
+                        Repeats 1
+                        Cooldown -1
+                    }
+
+                    FireInput
+                    {
                         Target !self
                         Action $TauntFromItem
                         Param "Taunt: Unleashed Rage"
@@ -14757,6 +14766,7 @@ WaveSchedule
 			{
 				"no_attack" 1
 				"no_jump" 1
+                "cannot be sapped" 1
 				"move speed bonus" 0.01
 				"damage force reduction" 0.1
 				"blast dmg to self increased" 0.2
@@ -14765,7 +14775,7 @@ WaveSchedule
 			}
             WeaponResist
             {
-                "TF_WEAPON_KNIFE"    0.025    // makes it so that you can't just instakill him with a backstab but still do SOMETHING as spy
+                "TF_WEAPON_KNIFE"    0.0075    // makes it so that you can't just instakill him with a backstab but still do SOMETHING as spy
             }
 
 			ItemAttributes
@@ -15452,6 +15462,7 @@ WaveSchedule
 			{
 				"no_jump" 1
 				"no_attack" 1
+                "cannot be sapped" 1
 				"move speed bonus" 0
 				"damage force reduction" 0.1
 				"blast dmg to self increased" 0.2
@@ -15460,7 +15471,7 @@ WaveSchedule
 			}
             WeaponResist
             {
-                "TF_WEAPON_KNIFE"    0.025    // makes it so that you can't just instakill him with a backstab but still do SOMETHING as spy
+                "TF_WEAPON_KNIFE"    0.0075    // makes it so that you can't just instakill him with a backstab but still do SOMETHING as spy
             }
 
 			ItemAttributes
@@ -16109,6 +16120,7 @@ WaveSchedule
 			{
 				"no_jump" 1
 				"no_attack" 1
+                "cannot be sapped" 1
 				"move speed bonus" 0.01
 				"damage force reduction" 0.1
 				"blast dmg to self increased" 0.2
@@ -16116,7 +16128,7 @@ WaveSchedule
 			}
             WeaponResist
             {
-                "TF_WEAPON_KNIFE"    0.025    // makes it so that you can't just instakill him with a backstab but still do SOMETHING as spy
+                "TF_WEAPON_KNIFE"    0.0075    // makes it so that you can't just instakill him with a backstab but still do SOMETHING as spy
             }
 
 			ItemAttributes
