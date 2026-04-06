@@ -844,6 +844,7 @@ WaveSchedule
 			CharacterAttributes
 			{
 				"airblast vulnerability multiplier" 0.4
+				"dmg taken increased" 1.25
 				"damage force reduction" 0.4
 				"override footstep sound set" 3
 				"single wep deploy time increased" 0.5
@@ -857,7 +858,7 @@ WaveSchedule
 			Name "Mr. Devil"
 			Class Pyro
 			Skill Expert
-			Health 20000
+			Health 14000
 			ClassIcon 100oj_yuuki_devil
 			Item "Duality of Mantle"
 			Item "The Backburner"
@@ -892,7 +893,7 @@ WaveSchedule
 			Name "Mr. Angel"
 			Class Medic
 			Skill Expert
-			Health 20000
+			Health 14000
 			ClassIcon 100oj_yuuki_angel
 			Item "Duality of Mantle"
 			Attributes SpawnWithFullCharge
@@ -6793,7 +6794,7 @@ WaveSchedule
 			SpawnCount 2
 			MaxActive 4
 			WaitBeforeStarting 8
-			WaitBetweenSpawns 30
+			WaitBetweenSpawns 33.5
 			FirstSpawnMessage "Subwave by Package O' Lies"
 			Squad
 			{
@@ -6876,9 +6877,9 @@ WaveSchedule
 			support 1
 			Where spawnbot
 			TotalCurrency 50
-			TotalCount 30
-			SpawnCount 6
-			MaxActive 13
+			TotalCount 24
+			SpawnCount 4
+			MaxActive 9
 			WaitBeforeStarting 9
 			WaitBetweenSpawns 8
 			Squad
@@ -6909,7 +6910,7 @@ WaveSchedule
 
             Tank
             {
-                Health 30000
+                Health 26500
                 Speed 75
                 Name "tankboss"
                 StartingPathTrackNode boss_path_a1
@@ -6935,7 +6936,7 @@ WaveSchedule
 				Target wave_start_relay
 				Action RunScriptCode
 				Param "
-				ClientPrint(null,3,`\x0799CCFFA Tank has arrived with \x07ffffff30,000 \x0799CCFFHP!`)
+				ClientPrint(null,3,`\x0799CCFFA Tank has arrived with \x07ffffff26,500 \x0799CCFFHP!`)
 				"
 			}
 		}
@@ -7371,11 +7372,11 @@ WaveSchedule
 			Name 1a
 			WaitForAllSpawned "tmc chaos"
 			Where spawnbot_flank_right
-			TotalCount 12
-			MaxActive 12
+			TotalCount 10
+			MaxActive 10
 			SpawnCount 2
 			WaitBeforeStarting 8
-			WaitBetweenSpawns 13
+			WaitBetweenSpawns 15
 			TotalCurrency 100
 			FirstSpawnMessage "Subwave by Lyney"
 			
