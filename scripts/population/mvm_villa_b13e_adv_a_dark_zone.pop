@@ -6,7 +6,7 @@
 //Lite for the refund enabler (and the timer) (and the icon manipulator)
 //Charlie and Lite for the combat tank
 //NYS for the Pyr'o Lantern icon
-//Seelpit for custom TakeDamageEx function
+//Seelpit for custom TakeDamageEx function and Buddha Mode script
 //Braindawg for help with changing respawn times (even if it ended up not getting used)
 //Athazar and The Fat for color correction
 //Colonel for Sawblade Launcher
@@ -1047,6 +1047,36 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			}
 			logic_relay
 			{
+				"targetname" "noob_compensation_relay_short"
+				"OnTrigger" "@f@filter_player@player,$AddPlayerAttribute,CARD: damage bonus|1.25,60,-1"
+				"OnTrigger" "@f@filter_player@player,$AddPlayerAttribute,CARD: damage bonus|1.5,70,-1"
+				"OnTrigger" "@f@filter_player@player,$AddPlayerAttribute,CARD: damage bonus|1.75,80,-1"
+				"OnTrigger" "@f@filter_player@player,$AddPlayerAttribute,CARD: damage bonus|2,90,-1"
+			}
+			logic_relay
+			{
+				"targetname" "noob_compensation_relay_long" // waves 6, 10, 18
+				"OnTrigger" "@f@filter_player@player,$AddPlayerAttribute,CARD: damage bonus|1.25,90,-1"
+				"OnTrigger" "@f@filter_player@player,$AddPlayerAttribute,CARD: damage bonus|1.5,100,-1"
+				"OnTrigger" "@f@filter_player@player,$AddPlayerAttribute,CARD: damage bonus|1.75,110,-1"
+				"OnTrigger" "@f@filter_player@player,$AddPlayerAttribute,CARD: damage bonus|2,120,-1"
+			}
+			logic_relay
+			{
+				"targetname" "noob_compensation_relay_boss" // wave 20
+				"OnTrigger" "@f@filter_player@player,$AddPlayerAttribute,CARD: damage bonus|1.25,120,-1"
+				"OnTrigger" "@f@filter_player@player,$AddPlayerAttribute,CARD: damage bonus|1.5,140,-1"
+				"OnTrigger" "@f@filter_player@player,$AddPlayerAttribute,CARD: damage bonus|1.75,160,-1"
+				"OnTrigger" "@f@filter_player@player,$AddPlayerAttribute,CARD: damage bonus|2,180,-1"
+			}
+			logic_relay
+			{
+				"targetname" "noob_compensation_stop"
+				"OnTrigger" "noob_compensation_relay*,CancelPending,,0,-1"
+				"OnTrigger" "@f@filter_player@player,$RemovePlayerAttribute,CARD: damage bonus,0.01,-1"
+			}
+			logic_relay
+			{
 				"spawnflags" 2
 				"targetname" "force_respawn_relay"
 				"OnTrigger" "!activator,$ForceRespawnDead,,5,-1"
@@ -1392,8 +1422,8 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"case04" "20"
 				"oncase01" "Wave17Logic,ForceSpawn,,0,-1" // tv time (starts at $4700)
 				"oncase02" "Wave18Logic,ForceSpawn,,0,-1" // lol (starts at $4925)
-				"oncase03" "Wave19Logic,ForceSpawn,,0,-1" // reverse (starts at 5441)
-				"oncase04" "Wave20Logic,ForceSpawn,,0,-1" // final boss (starts at 6666)
+				"oncase03" "Wave19Logic,ForceSpawn,,0,-1" // reverse (starts at $5441)
+				"oncase04" "Wave20Logic,ForceSpawn,,0,-1" // final boss (starts at $6666)
 			}
 			math_counter
 			{
@@ -2317,7 +2347,8 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnSpawn" "spawnbot_w1,Disable,,1,-1"
 				"OnSpawn" "gamerules,CallScriptFunction,showAnnotationKeyGeneric,0.6,-1"
 				"OnSpawn" "respawnvis_red_entrance,Enable,,0,-1"
-				"OnSpawn" "roof_sound,Disable,,0,-1"
+				"OnSpawn" "noob_compensation_relay_short,Trigger,,0,-1"
+				"OnTrigger" "noob_compensation_stop,Trigger,,0,-1"
 				"OnTrigger" "gamerules,CallScriptFunction,hideNewAnnotation,0,-1"
 				"OnTrigger" "intel,$PlaySound,=120|misc/halloween/duck_pickup_pos_01.wav,0,-1"
 				"OnTrigger" "spawnbot_altmode,Enable,,1.2,-1"
@@ -2504,6 +2535,8 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnSpawn" "spawnbot_w2,Disable,,1,-1"
 				"OnSpawn" "gamerules,CallScriptFunction,showAnnotationW2Key,0.6,-1"
 				"OnSpawn" "respawnvis_red_entrance,Enable,,0,-1"
+				"OnSpawn" "noob_compensation_relay_short,Trigger,,0,-1"
+				"OnTrigger" "noob_compensation_stop,Trigger,,0,-1"
 				"OnTrigger" "gamerules,CallScriptFunction,hideNewAnnotation,0,-1"
 				"OnTrigger" "intel,$PlaySound,=120|misc/halloween/duck_pickup_pos_01.wav,0,-1"
 				"OnTrigger" "w2_trigger,Enable,,0.3,-1"
@@ -2705,6 +2738,8 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnSpawn" "spawnbot_w3,Disable,,1,-1"
 				"OnSpawn" "gamerules,CallScriptFunction,showAnnotationKeyGeneric,0.6,-1"
 				"OnSpawn" "respawnvis_red_entrance,Enable,,0,-1"
+				"OnSpawn" "noob_compensation_relay_short,Trigger,,0,-1"
+				"OnTrigger" "noob_compensation_stop,Trigger,,0,-1"
 				"OnTrigger" "intel,$PlaySound,=120|misc/halloween/duck_pickup_pos_01.wav,0,-1"
 				"OnTrigger" "w3_trigger,Enable,,0.3,-1"
 				"OnTrigger" "w3_fake_exit_relay,Trigger,,0,-1"
@@ -3451,6 +3486,8 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnSpawn" "gamerules,CallScriptFunction,showAnnotationKeyGeneric,0.6,-1"
 				"OnSpawn" "respawnvis_red_entrance,Enable,,0,-1"
 				"OnSpawn" "dancing_pumpkin_timer,RefireTime,5,0,-1"
+				"OnSpawn" "noob_compensation_relay_short,Trigger,,0,-1"
+				"OnTrigger" "noob_compensation_stop,Trigger,,0,-1"
 				"OnTrigger" "gamerules,CallScriptFunction,hideNewAnnotation,0,-1"
 				// "OnTrigger" "@f@filter_despawn@player,$TeleportToEntity,spawnbot_altmode,0,-1"
 				"OnTrigger" "@f@filter_despawn@player,$Suicide,,0.01,-1"
@@ -4152,6 +4189,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnSpawn" "black_wall,Enable,,0,-1"
 				"OnSpawn" "foyer_right_brush,Enable,,0,-1"
 				"OnSpawn" "respawnvis_red_entrance,Enable,,0,-1"
+				"OnSpawn" "noob_compensation_relay_long,Trigger,,0,-1"
 				"OnTrigger" "gamerules,CallScriptFunction,hideNewAnnotation,0,-1"
 				"OnTrigger" "intel,$PlaySound,=120|misc/halloween/duck_pickup_pos_01.wav,0,-1"
 				"OnTrigger" "inside_fog,SetMaxDensity,0.8,0,-1"
@@ -4408,6 +4446,8 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnSpawn" "spawnbot_w7,Disable,,1,-1"
 				"OnSpawn" "gamerules,CallScriptFunction,showAnnotationKeyGeneric,0.6,-1"
 				"OnSpawn" "respawnvis_red_entrance,Enable,,0,-1"
+				"OnSpawn" "noob_compensation_relay_short,Trigger,,0,-1"
+				"OnTrigger" "noob_compensation_stop,Trigger,,0,-1"
 				"OnTrigger" "gamerules,CallScriptFunction,hideNewAnnotation,0,-1"
 				"OnTrigger" "intel,$PlaySound,=120|misc/halloween/duck_pickup_pos_01.wav,0,-1"
 				"OnTrigger" "w7_trigger_1,Enable,,0.1,-1"
@@ -4756,6 +4796,8 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnSpawn" "spawnbot_w9,Disable,,1,-1"
 				"OnSpawn" "gamerules,CallScriptFunction,showAnnotationKeyGeneric,0.6,-1"
 				"OnSpawn" "respawnvis_red_entrance,Enable,,0,-1"
+				"OnSpawn" "noob_compensation_relay_short,Trigger,,0,-1"
+				"OnTrigger" "noob_compensation_stop,Trigger,,0,-1"
 				"OnTrigger" "gamerules,CallScriptFunction,hideNewAnnotation,0,-1"
 				"OnTrigger" "intel,$PlaySound,=120|misc/halloween/duck_pickup_pos_01.wav,0,-1"
 				"OnTrigger" "w9_trigger_1,Enable,,0,-1"
@@ -5530,8 +5572,10 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnSpawn" "spawnbot_altmode,Disable,,0,-1"
 				"OnSpawn" "gamerules,CallScriptFunction,showAnnotationKeyGeneric,0.6,-1"
 				"OnSpawn" "spawnbot_w10,Disable,,1,-1"
-				"OnSpawn" "gamerules,CallScriptFunction,F,0.6,-1"
+				// "OnSpawn" "gamerules,CallScriptFunction,F,0.6,-1" // how long was this here?
 				"OnSpawn" "respawnvis_red_entrance,Enable,,0,-1"
+				"OnSpawn" "noob_compensation_relay_long,Trigger,,0,-1"
+				"OnTrigger" "noob_compensation_stop,Trigger,,0,-1"
 				"OnTrigger" "flag_pickup_relay,Enable,,0,-1"
 				"OnTrigger" "spawnbot_sniper,Enable,,0,-1"
 				"OnTrigger" "spawnbot_spy,Enable,,0,-1"
@@ -5793,6 +5837,8 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnSpawn" "w11_respawnroom,Disable,,1,-1"
 				"OnSpawn" "w11_table,DisableCollision,,1,-1"
 				"OnSpawn" "w11_tea,DisableCollision,,1,-1"
+				"OnSpawn" "noob_compensation_relay_short,Trigger,,0,-1"
+				"OnTrigger" "noob_compensation_stop,Trigger,,0,-1"
 				"OnTrigger" "gamerules,CallScriptFunction,showAnnotationW11Key1,0.3,-1"
 				"OnTrigger" "intel,SetParent,w11_tank_target,0.1,-1"
 				"OnTrigger" "!self,Disable,,0,-1"
@@ -6678,6 +6724,8 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnSpawn" "gamerules,CallScriptFunction,showAnnotationKeyGeneric,0.6,-1"
 				"OnSpawn" "respawnvis_red_entrance,Enable,,0,-1"
 				"OnSpawn" "w13_shield_push,Enable,,0.1,-1"
+				"OnSpawn" "noob_compensation_relay_short,Trigger,,0,-1"
+				"OnTrigger" "noob_compensation_stop,Trigger,,0,-1"
 				"OnTrigger" "gamerules,CallScriptFunction,hideNewAnnotation,0,-1"
 				"OnTrigger" "intel,$PlaySound,=120|misc/halloween/duck_pickup_pos_01.wav,0,-1"
 				"OnTrigger" "spawnbot_altmode,Enable,,0.6,-1"
@@ -7186,6 +7234,8 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnSpawn" "foyer_right_brush,Enable,,0,-1"
 				"OnSpawn" "respawnroom_blu_alt_entrance,Enable,,0,-1"
 				"OnSpawn" "dancing_pumpkin_timer,RefireTime,2,0,-1"
+				"OnSpawn" "noob_compensation_relay_short,Trigger,,0,-1"
+				"OnTrigger" "noob_compensation_stop,Trigger,,0,-1"
 				"OnTrigger" "gamerules,CallScriptFunction,hideNewAnnotation,0,-1"
 				"OnTrigger" "intel,$PlaySound,=120|misc/halloween/duck_pickup_pos_01.wav,0,-1"
 				"OnTrigger" "w14_trigger,Enable,,0.01,-1"
@@ -7369,6 +7419,8 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnSpawn" "spawnbot_w15,Disable,,1,-1"
 				"OnSpawn" "gamerules,CallScriptFunction,showAnnotationKeyGeneric,0.6,-1"
 				"OnSpawn" "respawnvis_red_entrance,Enable,,0,-1"
+				"OnSpawn" "noob_compensation_relay_short,Trigger,,0,-1"
+				"OnTrigger" "noob_compensation_stop,Trigger,,0,-1"
 				"OnTrigger" "intel,$PlaySound,=120|misc/halloween/duck_pickup_pos_01.wav,0,-1"
 				"OnTrigger" "@f@filter_bot@player,$AddPlayerAttribute,no_attack|1,0,-1"
 				"OnTrigger" "spawnbot_altmode,Enable,,0.9,-1"
@@ -7823,6 +7875,8 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnSpawn" "spawnbot_altmode,Disable,,0,-1"
 				"OnSpawn" "spawnbot_w17,Disable,,1,-1"
 				"OnSpawn" "gamerules,CallScriptFunction,showAnnotationW17Key,0.6,-1"
+				"OnSpawn" "noob_compensation_relay_short,Trigger,,0,-1"
+				"OnTrigger" "noob_compensation_stop,Trigger,,0,-1"
 				"OnTrigger" "intel,$PlaySound,=120|misc/halloween/duck_pickup_pos_01.wav,0,-1"
 				"OnTrigger" "w17_teleport,Enable,,0,-1"
 				"OnTrigger" "spawnbot_altmode,Enable,,1.2,-1"
@@ -8118,6 +8172,8 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnSpawn" "gamerules,CallScriptFunction,showAnnotationKeyGeneric,0.6,-1"
 				"OnSpawn" "respawnvis_red_entrance,Enable,,0,-1"
 				"OnSpawn" "w18_exit_teleport_case_2,PickRandomShuffle,,0.1,-1"
+				"OnSpawn" "noob_compensation_relay_long,Trigger,,0,-1"
+				"OnTrigger" "noob_compensation_stop,Trigger,,0,-1"
 				"OnTrigger" "gamerules,CallScriptFunction,hideNewAnnotation,0,-1"
 				"OnTrigger" "intel,$PlaySound,=120|misc/halloween/duck_pickup_pos_01.wav,0,-1"
 				"OnTrigger" "!self,Disable,,0,-1"
@@ -8589,6 +8645,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnSpawn" "your_taking_19_long,Trigger,,1,-1"
 				// "OnSpawn" "gamerules,CallScriptFunction,showAnnotationKeyGeneric,0.6,-1"
 				"OnSpawn" "respawnvis_red_entrance,Disable,,0,-1"
+				"OnSpawn" "noob_compensation_relay_short,Trigger,,0,-1"
 				// "OnTrigger" "intel,$PlaySound,=120|misc/halloween/duck_pickup_pos_01.wav,0,-1"
 				"OnTrigger" "w19_forcefield_2,Disable,,0,-1"
 				"OnTrigger" "w19_trigger_1,Enable,,0,-1"
@@ -8728,6 +8785,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			{
 				"targetname" "w19_relay_6"
 				"OnTrigger" "!self,Disable,,0,-1"
+				"OnTrigger" "noob_compensation_stop,Trigger,,0,-1"
 				"OnTrigger" "player_unleash_relay,Disable,,0,-1"
 				"OnTrigger" "player,DispatchEffect,ParticleEffectStop,0,-1"
 				"OnTrigger" "@f@filter_player@player,$RemovePlayerAttribute,stomp player damage,0,-1"
@@ -8938,6 +8996,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnSpawn" "maze_event_fade,Fade,,0,-1"
 				"OnSpawn" "spawnbot_altmode,Disable,,0,-1"
 				"OnSpawn" "spawnbot_w20,Disable,,1,-1"
+				"OnSpawn" "noob_compensation_relay_boss,Trigger,,0,-1"
 				"OnTrigger" "!self,Disable,,0,-1"
 				"OnTrigger" "force_respawn_relay,Disable,,0,-1"
 				"OnTrigger" "stop_the_music,Trigger,,0,-1"
@@ -9291,6 +9350,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			{
 				"targetname" "w20_relay_2"
 				"OnTrigger" "!self,Disable,,0,-1"
+				"OnTrigger" "noob_compensation_stop,Trigger,,0,-1"
 				"OnTrigger" "w20_boss_timer_3,Disable,,0,-1"
 				"OnTrigger" "stop_the_music,Trigger,,0,-1"
 				"OnTrigger" "force_respawn_relay,Disable,,0,-1"
@@ -9365,7 +9425,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"minfalloff" "-1"
 				"maxweight" "0.6"
 				"startdisabled" "1"
-				"filename" "greenasfuck.raw"
+				"filename" "materials/colorcorrection/greenasfuck.raw"
 			}
 			logic_relay
 			{
@@ -9523,9 +9583,9 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnTrigger" "spawnbot_spy,Enable,,3.4,-1"
 				"OnTrigger" "gamerules,PlayVO,missionfolderthatappearswhenyouhavetakentoolonginaghosthouse/mus_gerson_defeated.mp3,3.5,-1"
 				"OnTrigger" "player,$DisplayTextChat,{8800FF}Now Playing {B800FF}: DELTARUNE Chapter 4 OST - Wise words,3.5,-1"
-				"OnTrigger" "spawnbot_endtrigger,Enable,,15,-1"
-				"OnTrigger" "mission_end_failsafe,Enable,,15,-1"
-				"OnTrigger" "mission_end_failsafe,Trigger,,16,-1"
+				"OnTrigger" "spawnbot_endtrigger,Enable,,14,-1"
+				"OnTrigger" "mission_end_failsafe,Enable,,14,-1"
+				"OnTrigger" "mission_end_failsafe,Trigger,,14.6,-1"
 			}
 			logic_relay
 			{
@@ -9547,9 +9607,9 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnTrigger" "spawnbot_sniper,Enable,,3.4,-1"
 				"OnTrigger" "gamerules,PlayVO,missionfolderthatappearswhenyouhavetakentoolonginaghosthouse/mus_gerson_defeated.mp3,3.5,-1"
 				"OnTrigger" "player,$DisplayTextChat,{8800FF}Now Playing {B800FF}: DELTARUNE Chapter 4 OST - Wise words,3.5,-1"
-				"OnTrigger" "spawnbot_endtrigger,Enable,,15,-1"
-				"OnTrigger" "mission_end_failsafe,Enable,,15,-1"
-				"OnTrigger" "mission_end_failsafe,Trigger,,16,-1"
+				"OnTrigger" "spawnbot_endtrigger,Enable,,14,-1"
+				"OnTrigger" "mission_end_failsafe,Enable,,14,-1"
+				"OnTrigger" "mission_end_failsafe,Trigger,,14.6,-1"
 			}
 			logic_relay
 			{
@@ -9571,9 +9631,9 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnTrigger" "spawnbot_invasion,Enable,,3.4,-1"
 				"OnTrigger" "gamerules,PlayVO,missionfolderthatappearswhenyouhavetakentoolonginaghosthouse/mus_gerson_defeated.mp3,3.5,-1"
 				"OnTrigger" "player,$DisplayTextChat,{8800FF}Now Playing {B800FF}: DELTARUNE Chapter 4 OST - Wise words,3.5,-1"
-				"OnTrigger" "spawnbot_endtrigger,Enable,,15,-1"
-				"OnTrigger" "mission_end_failsafe,Enable,,15,-1"
-				"OnTrigger" "mission_end_failsafe,Trigger,,16,-1"
+				"OnTrigger" "spawnbot_endtrigger,Enable,,14,-1"
+				"OnTrigger" "mission_end_failsafe,Enable,,14,-1"
+				"OnTrigger" "mission_end_failsafe,Trigger,,14.6,-1"
 			}
 		}
 
@@ -11642,11 +11702,19 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			FireInput
 			{
 				Target "!activator"
-				IfHealthBelow 999
+				IfHealthBelow 2
 				Action "$AddCond"
 				Param "14"
 				Repeats 1
 				Delay 0
+			}
+			FireInput   //Enable buddha mode.
+			{
+ 				Target !self
+  				Action RunScriptCode
+  				Param "self.EnableBuddha()"
+  				Repeats 1
+  				Delay 0.1
 			}
 			// boss attacks:
 			// - your tutu
@@ -11666,10 +11734,19 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 					FireInput
 					{
 						Target "w20_relay_2"
-						IfHealthBelow 1000
+						IfHealthBelow 2
 						Action Trigger
 						Repeats 1
 						Delay 1
+					}
+					FireInput   //Disable buddhamode.
+					{
+						Target !self
+						Action RunScriptCode
+						Param "self.DisableBuddha()"
+						Repeats 1
+						Delay 2
+						IfHealthBelow 2
 					}
 				}
 				Oolong
@@ -11897,6 +11974,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			Param "IncludeScript(`a_dark_zone.nut`, getroottable())
 			EntFire(`altmode_init_reviveonly_locked_relay`,`Trigger`)
 			IncludeScript(`alternatewaves.nut`, getroottable())
+			IncludeScript(`buddhamode.nut`, getroottable())
 			IncludeScript(`tankextensions_main`, getroottable())
 			IncludeScript(`tankextensions/combattank`, getroottable())
 			IncludeScript(`tankextensions/combattank_weapons/fireball`, getroottable())
@@ -12997,7 +13075,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 					{
 						CharacterAttributes
 						{
-							"dmg taken increased" 1.5
+							"dmg taken increased" 2.5
 							"move speed bonus" 0.001
 						}
 						FireInput
@@ -13012,7 +13090,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 					{
 						CharacterAttributes
 						{
-							"dmg taken increased" 1.5
+							"dmg taken increased" 2.5
 							"move speed bonus" 4
 						}
 						FireInput
@@ -13877,7 +13955,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				{
 					"no_attack" 1
 					"move speed bonus" 0.001
-					"dmg taken increased" 1.5
+					"dmg taken increased" 2.5
 				}
 				ChangeAttributes
 				{
@@ -13915,7 +13993,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 					{
 						CharacterAttributes
 						{
-							"dmg taken increased" 1.5
+							"dmg taken increased" 2.5
 							"move speed bonus" 4
 						}
 						FireInput
@@ -15414,7 +15492,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				{
 					"no_attack" 1
 					"move speed bonus" 0.001
-					"dmg taken increased" 1.5
+					"dmg taken increased" 2.5
 				}
 				ChangeAttributes
 				{
@@ -15452,7 +15530,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 					{
 						CharacterAttributes
 						{
-							"dmg taken increased" 1.5
+							"dmg taken increased" 2.5
 							"move speed bonus" 4
 						}
 						FireInput
@@ -16976,7 +17054,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				{
 					"no_attack" 1
 					"move speed bonus" 0.001
-					"dmg taken increased" 1.5
+					"dmg taken increased" 2.5
 				}
 				ChangeAttributes
 				{
@@ -17014,7 +17092,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 					{
 						CharacterAttributes
 						{
-							"dmg taken increased" 1.5
+							"dmg taken increased" 2.5
 							"move speed bonus" 4
 						}
 						FireInput
