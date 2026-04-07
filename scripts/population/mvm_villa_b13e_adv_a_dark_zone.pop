@@ -1339,7 +1339,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnTrigger" "gamerules,CallScriptFunction,showAnnotationRefund,0,-1"
 				"OnTrigger" "gamerules,PlayVO,Announcer.MVM_Get_To_Upgrade,0,-1"
 				"OnTrigger" "!self,Disable,,1,-1"
-				"OnTrigger" "gamerules,CallScriptFunction,hideNewAnnotation,5,-1"
+				"OnTrigger" "gamerules,CallScriptFunction,hideNewAnnotation,8,-1"
 			}
 			logic_relay
 			{
@@ -1352,7 +1352,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnTrigger" "intel,$SetKey$renderfx,16,0,-1"
 				"OnTrigger" "intel,Color,153 204 255,0,-1"
 				"OnTrigger" "gamerules,CallScriptFunction,showAnnotationBombHint,0,-1"
-				"OnTrigger" "gamerules,CallScriptFunction,hideNewAnnotation,5,-1"
+				"OnTrigger" "gamerules,CallScriptFunction,hideNewAnnotation,8,-1"
 				"OnTrigger" "intel,ForceResetAndDisableSilent,,8,-1"
 				"OnTrigger" "intel,$SetKey$renderfx,0,8,-1"
 				"OnTrigger" "intel,Color,255 255 255,8,-1"
@@ -1850,6 +1850,13 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			}
 			logic_timer
 			{
+				"targetname" "dancing_pumpkin_synchronized_dance_timer"
+				"startdisabled" 1
+				"refiretime" 2.5
+				"OnTimer" "dancing_pumpkin_prop*,SetAnimation,taunt06,0,-1"
+			}
+			logic_timer
+			{
 				"targetname" "player_detector_timer"
 				"startdisabled" 1
 				"refiretime" 1
@@ -2168,12 +2175,12 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			{
 				"targetname" "dancing_pumpkin_prop"
 				"model" "models/bots/headless_hatman.mdl"
-				"origin" "-904 7110 298.5"
+				"origin" "-904 7060 298.5"
 				"angles" "0 180 0"
 				"disableshadows" "1"
 				"fademindist" "1200"
 				"fademaxdist" "1300"
-				"DefaultAnim" "taunt06"
+				"DefaultAnim" "ragdollspawn"
 				"modelscale" "0.25"
 				"disableshadows" "1"
 				"disablebonefollowers" "1"
@@ -2182,9 +2189,9 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			func_movelinear
 			{
 				"targetname" "dancing_pumpkin_move"
-				"origin" "-904 7110 298.5"
+				"origin" "-904 7060 298.5"
 				"movedir" "0 90 0"
-				"movedistance" "310"
+				"movedistance" "360"
 				"spawnflags" "8"
 				"speed" "20"
 				"OnFullyOpen" "!caller,Kill,,0,-1"
@@ -2661,7 +2668,8 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnStartTouchFlag" "@f@filter_bot@player,$TeleportToEntity,spawnbot_altmode,0,-1"
 				"OnStartTouchFlag" "@f@filter_bot@player,$Suicide,,0.01,-1"
 				"OnStartTouchFlag" "dancing_pumpkin_timer,Enable,,0,-1"
-				"OnStartTouchFlag" "dancing_pumpkin_timer,FireTimer,,0.6,-1"
+				"OnStartTouchFlag" "dancing_pumpkin_synchronized_dance_timer,Enable,,0,-1"
+				"OnStartTouchFlag" "dancing_pumpkin_timer,FireTimer,,0.1,-1"
 				"OnStartTouchFlag" "maze_event_counter,Add,1,0.6,-1"
 				"OnStartTouchFlag" "maze_event_relay,Trigger,,0.6,-1"
 				"OnStartTouchFlag" "w2_target,Kill,,0.6,-1"
@@ -5917,7 +5925,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnTrigger" "player,$PlaySoundToSelf,missionfolderthatappearswhenyouhavetakentoolonginaghosthouse/mus_church_dark_study.mp3,6.4,-1"
 				"OnTrigger" "player,$DisplayTextChat,{8800FF}Now Playing {B800FF}: DELTARUNE Chapter 4 OST - Fireplace,6.4,-1"
 				"OnTrigger" "gamerules,CallScriptFunction,showAnnotationRefund2,7,-1"
-				"OnTrigger" "gamerules,CallScriptFunction,hideNewAnnotation,12,-1"
+				"OnTrigger" "gamerules,CallScriptFunction,hideNewAnnotation,15,-1"
 			}
 			logic_relay
 			{
@@ -8939,6 +8947,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnTrigger" "spawnbot_w19,Disable,,4.6,-1"
 				// "OnTrigger" "player_detector_fail,Enable,,4.6,-1"
 				"OnTrigger" "dancing_pumpkin_timer,Disable,,4.6,-1"
+				"OnTrigger" "dancing_pumpkin_synchronized_dance_timer,Disable,,4.6,-1"
 				"OnTrigger" "w19_target,Kill,,4.6,-1"
 				"OnTrigger" "pop_interface,$CollectCash,,5,-1"
 			}
@@ -13983,7 +13992,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				{
 					Target "!self"
 					Action RunScriptCode
-					Param "self.TakeDamageEx(self, self, null, Vector(0,0,0) , self.GetOrigin(), 10000, 2048)"
+					Param "self.TakeDamageEx(self, self, null, Vector(0,0,0) , self.GetOrigin(), 6000, 2048)"
 					Repeats 1
 					Delay -1
 				}
@@ -15520,7 +15529,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				{
 					Target "!self"
 					Action RunScriptCode
-					Param "self.TakeDamageEx(self, self, null, Vector(0,0,0) , self.GetOrigin(), 23333, 2048)"
+					Param "self.TakeDamageEx(self, self, null, Vector(0,0,0) , self.GetOrigin(), 14000, 2048)"
 					Repeats 1
 					Delay -1
 				}
@@ -17082,7 +17091,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				{
 					Target "!self"
 					Action RunScriptCode
-					Param "self.TakeDamageEx(self, self, null, Vector(0,0,0) , self.GetOrigin(), 40000, 2048)"
+					Param "self.TakeDamageEx(self, self, null, Vector(0,0,0) , self.GetOrigin(), 24000, 2048)"
 					Repeats 1
 					Delay -1
 				}
