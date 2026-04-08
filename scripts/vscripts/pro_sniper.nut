@@ -709,7 +709,7 @@ if("prosniper" in ROOT) return
 					//instance.hWeapon.PrimaryAttack()
 					hOwner.PressFireButton(0.01)
 					
-					gaze_timer = CreateTimer(@() {}, 0.1)
+					// gaze_timer = CreateTimer(@() {}, 0.1)
 					
 					// printl("flick shot")
 					return true
