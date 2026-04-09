@@ -542,7 +542,7 @@ if("prodemoknight" in ROOT) return
 	}
 	
 	ignore = false
-	version = "1.66.42"
+	version = "1.66.44"
 	debug_state = false
 	bot_tag_list = ["bot_pro_demoknight", "bot_pro_demoknight_homewrecker", "bot_pro_busterknight"]
 	function assign(hBot, tag)
@@ -1287,14 +1287,22 @@ enum State
 	moving_time = 0
 	moving_opposite_time = 0
 	
-	immediateThreatsAttack_timeout_timer = CreateTimer(@() {}, 0.1)
-	prepareFor_chargeAtTarget_timer		 = CreateTimer(@() {}, 0.1)
-	lockon_timer 					= CreateTimer(@() {}, 0.1)
+	// immediateThreatsAttack_timeout_timer = CreateTimer(@() {}, 0.1)
+	// prepareFor_chargeAtTarget_timer		 = CreateTimer(@() {}, 0.1)
+	// lockon_timer 					= CreateTimer(@() {}, 0.1)
 	lenient_TRIMPSTRAFE_timer		= CreateTimer(@() {}, 0.1)
 	wait_before_forcedAttack_timer	= CreateTimer(@() {}, 0.1)
 	// wait_before_ipad_timer			= CreateTimer(@() {}, 0.1)
 	wait_after_ipad_timer			= CreateTimer(@() {}, 0.1)
-	temp_non_solid_timer			= CreateTimer(@() {}, 0.1)
+	// temp_non_solid_timer			= CreateTimer(@() {}, 0.1)
+	wait_before_start_charge_GOTOTRIMPSPOT_timer	= CreateTimer(@() {}, 0.1)
+	circumvent_timeout_for_melee_attack_timer		= CreateTimer(@() {}, 0.1)
+	circumvent_timeout_for_buster_det_timer			= CreateTimer(@() {}, 0.1)
+	
+	SimpleCharge_Timer				= CreateTimer(@() {}, 0.1)
+	circumvent_timeout_timer		= CreateTimer(@() {}, 0.1)
+	stuck_check_timeout 			= CreateTimer(@() {}, 0.1)
+	stuck_check_2_timeout			= CreateTimer(@() {}, 0.1)
 	
 	wait_1_frame	= false
 	wait_x_frame	= null
@@ -1360,9 +1368,13 @@ enum State
 		
 		this.hOwner.ValidateScriptScope()
 		this.hOwner.GetScriptScope().me <- this
+		this.hOwner.GetScriptScope().b_ProDemoknight_Alive <- true
 		this.hOwner.GetScriptScope().Think <- function()
 		{
-			return me.Think()
+			if ( b_ProDemoknight_Alive )
+				return me.Think()
+			else
+				return 1
 		}
 		AddThinkToEnt(this.hOwner, "Think")
 		
@@ -1389,9 +1401,13 @@ enum State
 		// timeToStopPhasingOtherDemos	= AI_Bot_myDemo.time
 	}
 	
-	circumvent_timeout_timer = CreateTimer(@() {}, 0.1)
 	function circumventSpeedCap_func( state )
 	{
+		if ( !hOwner )
+		{
+			return false
+		}
+		
 		if (state)
 		{
 			// if ( circumvent_timeout_timer.IsValid() )
@@ -1878,7 +1894,7 @@ enum State
 						if ( circumventByAD43 )
 						{
 							local ref = this
-							CreateTimer( @() ref.circumvent_timeout(), 0.19 )
+							circumvent_timeout_for_melee_attack_timer = CreateTimer( @() ref.circumvent_timeout(), 0.19 )
 						}
 						break
 					}
@@ -2008,7 +2024,6 @@ enum State
 	State_AIRBORNE_delay_by_x_ticks = 0
 	can_do_AIRBORNE_trimp = false
 	AIRBORNE_halted		= false
-	SimpleCharge_Timer	=	null
 	save_angle = null
 	function AIRBORNE_Think()
 	{
@@ -2138,7 +2153,6 @@ enum State
 	
 	max_stuck_count = 3
 	current_stuck_count = 0
-	stuck_check_timeout = CreateTimer(@() {}, 0.1)
 	function checkStuck()
 	{
 		// printl(current_stuck_count)
@@ -2177,7 +2191,6 @@ enum State
 	}
 	
 	past_location = []
-	stuck_check_2_timeout = CreateTimer(@() {}, 0.1)
 	function checkStuck2()
 	{
 		if ( !stuck_check_2_timeout.IsValid() )
@@ -3302,7 +3315,7 @@ enum State
 					SetPropBool(hOwner, "m_bViewingCYOAPDA", true)
 				
 				local ref = this
-				CreateTimer(function() {
+				wait_before_start_charge_GOTOTRIMPSPOT_timer = CreateTimer(function() {
 					ref.startCharge( true )
 					ref.prepare = false
 					SetPropBool(ref.hOwner, "m_bViewingCYOAPDA", false)
@@ -4702,22 +4715,35 @@ enum State
 		return true
 	}
 	
+	cleanup_count = 0
 	function cleanup()
 	{
-		changeState( State.CLEANUP )
+		// printl("cleanup_count: " + cleanup_count)
+		if ( cleanup_count )
+		{
+			cleanup_count++
+			return
+		}
+		else
+		{
+			cleanup_count++
+		}
 		
-		// if ( !hOwner || !hOwner.IsValid() )
-		// {
-			// local index = findIndex()
-			// if ( index != null )
-				// prodemoknight.ListOfProDemoknight.remove(index)
-				
-			// prodemoknight.ListOfProDemoknights.rawdelete(hOwner)
-			// return
-		// }
+		local index = findIndex()
+		if ( index != null )
+			prodemoknight.ListOfProDemoknight.remove(index)
+		
+		prodemoknight.ListOfProDemoknights.rawdelete(hOwner)
+		
+		changeState( State.CLEANUP )
 		
 		try
 		{
+			local scope = hOwner.GetScriptScope()
+			scope.me = null 
+			scope.b_ProDemoknight_Alive = false
+			AddThinkToEnt(this.hOwner, null)
+			
 			if ( circumventByAD43 )
 			{
 				SetPropBool(hOwner, "m_bForcedSkin", false)
@@ -4726,8 +4752,31 @@ enum State
 			
 			// if ( wait_before_ipad_timer.IsValid() )
 				// wait_before_ipad_timer.Destroy()
-			// if ( wait_after_ipad_timer.IsValid() )
-				// wait_after_ipad_timer.Destroy()
+			
+			if ( wait_after_ipad_timer.IsValid() )
+				wait_after_ipad_timer.Destroy()
+			if ( stuck_check_timeout.IsValid() )
+				stuck_check_timeout.Destroy()
+			if ( stuck_check_2_timeout.IsValid() )
+				stuck_check_2_timeout.Destroy()
+			if ( lenient_TRIMPSTRAFE_timer.IsValid() )
+				lenient_TRIMPSTRAFE_timer.Destroy()
+			if ( wait_before_start_charge_GOTOTRIMPSPOT_timer.IsValid() )
+				wait_before_start_charge_GOTOTRIMPSPOT_timer.Destroy()
+			if ( wait_before_forcedAttack_timer.IsValid() )
+				wait_before_forcedAttack_timer.Destroy()
+			if ( circumvent_timeout_timer.IsValid() )
+				circumvent_timeout_timer.Destroy()
+			if ( SimpleCharge_Timer.IsValid() )
+				SimpleCharge_Timer.Destroy()
+			if ( m_detonateTimer.IsValid() )
+				m_detonateTimer.Destroy()
+			
+			if ( circumvent_timeout_for_melee_attack_timer.IsValid() )
+				circumvent_timeout_for_melee_attack_timer.Destroy()
+			if ( circumvent_timeout_for_buster_det_timer.IsValid() )
+				circumvent_timeout_for_buster_det_timer.Destroy()
+			
 			// hOwner.SetSolid(2)
 			SetPropInt(hOwner, "m_afButtonForced", 0)
 			SetPropBool(hOwner, "m_bViewingCYOAPDA", false)
@@ -4737,22 +4786,14 @@ enum State
 			hOwner.RemoveBotAttribute(IGNORE_FLAG)
 			hOwner.RemoveBotAttribute(IGNORE_ENEMIES)
 			hOwner.RemoveBotAttribute(SUPPRESS_FIRE)
+			hOwner.TerminateScriptScope()
+			hOwner = null
 		}
 		catch(e)
 		{
 			printl("-----------X ermmm: i SHOULD deal with this X-----------")
 			printl(e)
-		}
-		
-		local index = findIndex()
-		if ( index != null )
-			prodemoknight.ListOfProDemoknight.remove(index)
-			
-		prodemoknight.ListOfProDemoknights.rawdelete(hOwner)
-		
-		if ( hOwner && hOwner.IsValid() )
-		{
-			hOwner.TerminateScriptScope()
+			// ClientPrint(null, 3, format("\x079EC34F%s\x01", hOwner.tostring()))
 		}
 	}
 	
@@ -4811,7 +4852,8 @@ enum State
 	
 	function On_Death()
 	{
-		changeState( State.CLEANUP )
+		// changeState( State.CLEANUP )
+		cleanup()
 	}
 	function On_Hurt( actor )
 	{
@@ -5575,7 +5617,7 @@ enum State
 			local ref = this
 			SimpleCharge_Timer = CreateTimer(function() {
 				ref.hOwner.SnapEyeAngles(Target_Info[prime_target].angle)
-				ref.startCharge( )
+				ref.startCharge()
 				ref.changeState( State.TRIMPSTRAFE )
 				ref.lenient_TRIMPSTRAFE_timer = CreateTimer(@() ref.changeState( State.IDLE ), 0.5)
 				ref.wait_for_crit = true
@@ -6051,7 +6093,7 @@ enum State
 			hOwner.HandleTauntCommand(0)
 		local ref = this
 		m_detonateTimer = CreateTimer(@() ref.Detonate(), 2)
-		CreateTimer(@() ref.circumvent_timeout(), 1.95)
+		circumvent_timeout_for_buster_det_timer = CreateTimer(@() ref.circumvent_timeout(), 1.95)
 		hOwner.EmitSound( "MvM.SentryBusterSpin" )
 	}
 	

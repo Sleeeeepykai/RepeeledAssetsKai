@@ -727,6 +727,7 @@ if("prosniper" in ROOT) return
 		{
 			if (reason == "death")
 			{
+				TakeOver( false, true )
 				hOwner.TerminateScriptScope()
 			}
 			return true		// Yuh Uh
