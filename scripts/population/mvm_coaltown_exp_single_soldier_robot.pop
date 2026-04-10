@@ -775,7 +775,6 @@ WaveSchedule
 
 				"OnTrigger" "tf_gamerules,PlayVO,ambient\volcano_rumble.wav,0,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,fat_event_horizon_intro.mp3,1,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,fat_event_horizon_intro.mp3,1,-1"
 				"OnTrigger" "w6_shake_intro,StartShake,,0,-1"
 				"OnTrigger" "w6_shake_intro,StopShake,,8.5,-1"
 				"OnTrigger" "tf_gamerules,$StopVO,ambient\volcano_rumble.wav,8.5,-1"
@@ -843,16 +842,10 @@ WaveSchedule
 				"OnTrigger" "tf_gamerules,PlayVO,misc\rd_finale_beep01.wav,1,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,misc\rd_finale_beep01.wav,2,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,passtime\ball_intercepted.wav,3,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,misc\rd_finale_beep01.wav,0,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,misc\rd_finale_beep01.wav,1,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,misc\rd_finale_beep01.wav,2,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,passtime\ball_intercepted.wav,3,-1"
 				"OnTrigger" "god_giveth,Enable,,3,-1"
 				"OnTrigger" "god_giveth,Disable,,4,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,npc\scanner\cbot_energyexplosion1.wav,9,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,npc\scanner\cbot_energyexplosion1.wav,9,-1"
 				"OnTrigger" "god_takethaway,Enable,,11,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,ambient\energy\zap2.wav,11.25,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,ambient\energy\zap2.wav,11.25,-1"
 				"OnTrigger" "god_takethaway,Disable,,12,-1"
 			}
@@ -888,7 +881,6 @@ WaveSchedule
 
 				"OnTrigger" "point_populator_interface,$ResumeWaveSpawn,wave6koniec,28,-1"
 
-				"OnTrigger" "tf_gamerules,PlayVO,mvm\mvm_warning.wav,24,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,mvm\mvm_warning.wav,24,-1"
 			}
 
@@ -1275,43 +1267,35 @@ WaveSchedule
 
                 "OnTrigger" "w1_text1,Display,,1,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,ui\trade_failure.wav,1,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,ui\trade_failure.wav,1,-1"
+
 
                 "OnTrigger" "w1_text2,Display,,3.5,-1"
                 "OnTrigger" "tf_gamerules,PlayVO,ui\trade_ready.wav,3.5,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,ui\trade_ready.wav,3.5,-1"
+
 
                 "OnTrigger" "w1_text3,Display,,6,-1"
                 "OnTrigger" "tf_gamerules,PlayVO,ui\trade_success.wav,6,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,ui\trade_success.wav,6,-1"
 
                 "OnTrigger" "w1_text4,Display,,8.5,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,ui\vote_no.wav,8.5,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,ui\vote_no.wav,8.5,-1"
 
                 "OnTrigger" "w1_text5,Display,,11,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,ui\duel_challenge.wav,11,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,ui\duel_challenge.wav,11,-1"
 
                 "OnTrigger" "w1_text6,Display,,13.4,-1"
                 "OnTrigger" "tf_gamerules,PlayVO,ui\duel_challenge_accepted.wav,13.4,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,ui\duel_challenge_accepted.wav,13.4,-1"
 
                 "OnTrigger" "w1_text7,Display,,15.8,-1"
                 "OnTrigger" "tf_gamerules,PlayVO,ui\duel_challenge_accepted_with_restriction.wav,15.8,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,ui\duel_challenge_accepted_with_restriction.wav,15.8,-1"
 
                 "OnTrigger" "w1_text8,Display,,18.2,-1"
                 "OnTrigger" "tf_gamerules,PlayVO,ui\itemcrate_smash_common.wav,18.2,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,ui\itemcrate_smash_common.wav,18.2,-1"
 
                 "OnTrigger" "w1_text9,Display,,19.2,-1"
                 "OnTrigger" "tf_gamerules,PlayVO,ui\itemcrate_smash_common.wav,19.2,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,ui\itemcrate_smash_common.wav,19.2,-1"
 
                 "OnTrigger" "w1_text10,Display,,20.2,-1"
                 "OnTrigger" "tf_gamerules,PlayVO,ui\itemcrate_smash_ultrarare_short.wav,20.2,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,ui\itemcrate_smash_ultrarare_short.wav,20.2,-1"
 
                 "OnTrigger" "w1_boss_music*,PlaySound,,17,-1"
                 "OnTrigger" "w1_boss_music*,Volume,10,21,-1"
@@ -1322,11 +1306,10 @@ WaveSchedule
                 "targetname" "w1_victory_relay"
 
                 "OnTrigger" "tf_gamerules,PlayVO,vo\mvm\norm\soldier_mvm_paincrticialdeath03.mp3,0,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,vo\mvm\norm\soldier_mvm_paincrticialdeath03.mp3,0,-1"
+
                 "OnTrigger" "w1_boss_music*,StopSound,,0,-1"
 
 				"OnTrigger" "tf_gamerules,PlayVO,misc\tf_crowd_walla_intro.wav,3,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,ui\gamestartup3.mp3,3,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,ui\gamestartup3.mp3,3,-1"
 
                 "OnTrigger" "w1_text_victory1,Display,,9,-1"
@@ -1335,7 +1318,6 @@ WaveSchedule
                 "OnTrigger" "w1_text_victory4,Display,,19.5,-1"
 
                 "OnTrigger" "cock,Enable,,19.5,-1"
-				"OnTrigger" "tf_gamerules,$StopVO,ui\gamestartup3.mp3,19.5,-1"
 				"OnTrigger" "tf_gamerules,$StopVO,ui\gamestartup3.mp3,19.5,-1"
 
                 "OnTrigger" "soldier_fog,Enable,,22,-1"
@@ -1548,9 +1530,7 @@ WaveSchedule
 				"targetname" "sound_relays"
 
 				"OnTrigger" "tf_gamerules,PlayVO,mvm\mvm_warning.wav,0,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,mvm\mvm_warning.wav,0,-1"
 
-				"OnTrigger" "tf_gamerules,PlayVO,misc\achievement_earned.wav,14.5,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,misc\achievement_earned.wav,14.5,-1"
 			}
 
@@ -1576,7 +1556,6 @@ WaveSchedule
 				"OnTrigger" "w2_fadeout,Fade,,20,-1"
 
 				"OnTrigger" "tf_gamerules,PlayVO,fat_massacre.mp3,9,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,fat_massacre.mp3,9,-1"
 
 				"OnTrigger" "w2_text5,Display,,25,-1"
 				"OnTrigger" "w2_text6,Display,,29,-1"
@@ -1595,7 +1574,6 @@ WaveSchedule
 				"targetname" "end_times"
 
 				"OnTrigger" "@p@hydrogen_target,$AddPlayerAttribute,hand scale|40,0,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,vo\soldier_paincrticialdeath03.mp3,0,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,vo\soldier_paincrticialdeath03.mp3,0,-1"
 				"OnTrigger" "end_times_hurter,Enable,,0,-1"
 				"OnTrigger" "@p@hydrogen_target,$ChangeAttributes,Passive,0,-1"
@@ -2367,7 +2345,6 @@ WaveSchedule
 				"OnTrigger" "tf_gamerules,$StopVO,ui\gamestartup2.mp3,2,-1"
 				"OnTrigger" "w4_teleporter,Enable,,2,-1"
 				"OnTrigger" "w4_teleporter,Disable,,3,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,fat_one_more_group.mp3,2,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,fat_one_more_group.mp3,2,-1"
 				"OnTrigger" "one_more_color_correction,Enable,,2,-1"
 				"OnTrigger" "w4_blackout,Fade,,12,-1" //14 //24.2 - 12 = 12.2 <- delta
@@ -4207,16 +4184,10 @@ WaveSchedule
 				"OnTrigger" "tf_gamerules,PlayVO,misc\rd_finale_beep01.wav,1,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,misc\rd_finale_beep01.wav,2,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,passtime\ball_intercepted.wav,3,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,misc\rd_finale_beep01.wav,0,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,misc\rd_finale_beep01.wav,1,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,misc\rd_finale_beep01.wav,2,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,passtime\ball_intercepted.wav,3,-1"
 				"OnTrigger" "god_giveth,Enable,,3,-1"
 				"OnTrigger" "god_giveth,Disable,,4,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,npc\scanner\cbot_energyexplosion1.wav,11,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,npc\scanner\cbot_energyexplosion1.wav,11,-1"
 				"OnTrigger" "god_takethaway,Enable,,13,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,ambient\energy\zap2.wav,13.25,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,ambient\energy\zap2.wav,13.25,-1"
 				"OnTrigger" "god_takethaway,Disable,,14,-1"
 			}
@@ -4228,12 +4199,8 @@ WaveSchedule
 				"spawnflags" "2"
 
 				"OnTrigger" "tf_gamerules,PlayVO,misc\rd_finale_beep01.wav,0,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,misc\rd_finale_beep01.wav,0,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,misc\rd_finale_beep01.wav,1,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,misc\rd_finale_beep01.wav,1,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,misc\rd_finale_beep01.wav,2,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,misc\rd_finale_beep01.wav,2,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,passtime\ball_intercepted.wav,3,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,passtime\ball_intercepted.wav,3,-1"
 				"OnTrigger" "god_giveth,Enable,,3,-1"
 			}
@@ -4264,7 +4231,6 @@ WaveSchedule
 
 				"spawnflags" "2"
 
-				"OnTrigger" "tf_gamerules,PlayVO,fat_event_horizon_loop.mp3,0,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,fat_event_horizon_loop.mp3,0,-1"
 				"OnTrigger" "!self,Trigger,,131.3,-1"
 			}
@@ -4301,9 +4267,7 @@ WaveSchedule
 				"spawnflags" "2"
 
 				"OnTrigger" "tf_gamerules,PlayVO,fat_soldier_rocketrain_attack.mp3,0,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,fat_soldier_rocketrain_attack.mp3,0,-1"
 				"OnTrigger" "rocket_rain_particle,Start,,0,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,weapons\rpg\rocketfire1.wav,4,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,weapons\rpg\rocketfire1.wav,4,-1"
 				"OnTrigger" "soldier_rocket_rain,$StartFiring,100,4,-1"
 				"OnTrigger" "soldier_rocket_rain,$StopFiring,,12,-1"
@@ -4318,10 +4282,7 @@ WaveSchedule
 				"spawnflags" "2"
 
 				"OnTrigger" "tf_gamerules,PlayVO,fat_soldier_mortar_phase2.mp3,0,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,fat_soldier_mortar_phase2.mp3,0,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,mvm\mvm_cpoint_klaxon.wav,1,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,mvm\mvm_cpoint_klaxon.wav,1,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,mvm\mvm_cpoint_klaxon.wav,2,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,mvm\mvm_cpoint_klaxon.wav,2,-1"
 				"OnTrigger" "soldier_mortar_mimic1,FireOnce,,2,-1"
 				"OnTrigger" "soldier_mortar_mimic2,FireOnce,,2.5,-1"
@@ -4342,7 +4303,6 @@ WaveSchedule
 				"OnTrigger" "rocketmortar_loop,Trigger,,6.4,-1"
 				"OnTrigger" "rocketmortar_loop,CancelPending,,11.15,-1"
 
-				"OnTrigger" "tf_gamerules,PlayVO,weapons\loose_cannon_charge.wav,11.15,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,weapons\loose_cannon_charge.wav,11.15,-1"
 				"OnTrigger" "mortar_particle1,Start,,11.15,-1"
 				"OnTrigger" "mortar_particle2,Start,,11.15,-1"
@@ -4367,10 +4327,7 @@ WaveSchedule
 				"spawnflags" "2"
 
 				"OnTrigger" "tf_gamerules,PlayVO,fat_soldier_mortar_phase3.mp3,0,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,fat_soldier_mortar_phase3.mp3,0,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,mvm\mvm_cpoint_klaxon.wav,1,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,mvm\mvm_cpoint_klaxon.wav,1,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,mvm\mvm_cpoint_klaxon.wav,2,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,mvm\mvm_cpoint_klaxon.wav,2,-1"
 				"OnTrigger" "soldier_mortar_mimic_homing1,FireOnce,,2,-1"
 				"OnTrigger" "soldier_mortar_mimic_homing2,FireOnce,,2.4,-1"
@@ -4391,7 +4348,6 @@ WaveSchedule
 				"OnTrigger" "rocketmortar_homing_loop,Trigger,,6.2,-1"
 				"OnTrigger" "rocketmortar_homing_loop,CancelPending,,10.95,-1"
 
-				"OnTrigger" "tf_gamerules,PlayVO,weapons\loose_cannon_charge.wav,10.95,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,weapons\loose_cannon_charge.wav,10.95,-1"
 				"OnTrigger" "mortar_particle1,Start,,10.95,-1"
 				"OnTrigger" "mortar_particle2,Start,,10.95,-1"
@@ -4530,12 +4486,10 @@ WaveSchedule
 				"OnTrigger" "w6_soldier_forcefield2,Enable,,0,-1"
 				"OnTrigger" "w6_phase1_loop,CancelPending,,0,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,fat_w6_gong.mp3,0,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,fat_w6_gong.mp3,0,-1"
 				"OnTrigger" "robot_freeze,Enable,,0,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,vo\mvm\norm\taunts\soldier_mvm_taunts07.mp3,1,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,vo\mvm\norm\soldier_mvm_laughevil02.mp3,4,-1"
 				"OnTrigger" "soldier_rotator1,Start,,5,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,physics\concrete\rock_scrape_rough_loop1.wav,5,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,physics\concrete\rock_scrape_rough_loop1.wav,5,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,vo\mvm\norm\taunts\soldier_mvm_taunts17.mp3,7,-1"
 				"OnTrigger" "tf_gamerules,$StopVO,physics\concrete\rock_scrape_rough_loop1.wav,11,-1"
@@ -4552,7 +4506,6 @@ WaveSchedule
 				"OnTrigger" "tf_gamerules,PlayVO,vo\mvm\norm\soldier_mvm_headright01.mp3,16,-1"
 				"OnTrigger" "soldier_rotator2,Start,,17,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,physics\concrete\concrete_scrape_smooth_loop1.wav,17,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,physics\concrete\concrete_scrape_smooth_loop1.wav,17,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,vo\mvm\norm\soldier_mvm_headright03.mp3,18,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,vo\mvm\norm\soldier_mvm_go03.mp3,20,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,vo\mvm\norm\soldier_mvm_go03.mp3,21,-1"
@@ -4568,7 +4521,6 @@ WaveSchedule
 				"OnTrigger" "mega_soldier,SetParent,soldier_rotator3,25.5,-1"
 				"OnTrigger" "soldier_rotator3,Start,,27,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,physics\metal\metal_box_scrape_rough_loop1.wav,27,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,physics\metal\metal_box_scrape_rough_loop1.wav,27,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,vo\mvm\norm\soldier_mvm_thanks01.mp3,28,-1"
 				"OnTrigger" "tf_gamerules,$StopVO,physics\metal\metal_box_scrape_rough_loop1.wav,30,-1"
 				"OnTrigger" "tf_gamerules,$StopVO,physics\metal\metal_box_scrape_rough_loop1.wav,30,-1"
@@ -4583,13 +4535,11 @@ WaveSchedule
 				"OnTrigger" "tf_gamerules,PlayVO,vo\mvm\norm\taunts\soldier_mvm_taunts03.mp3,33,-1"
 				"OnTrigger" "soldier_rotator4,Start,,34,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,physics\metal\metal_box_scrape_smooth_loop1.wav,34,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,physics\metal\metal_box_scrape_smooth_loop1.wav,34,-1"
 				"OnTrigger" "tf_gamerules,$StopVO,physics\metal\metal_box_scrape_smooth_loop1.wav,37,-1"
 				"OnTrigger" "tf_gamerules,$StopVO,physics\metal\metal_box_scrape_smooth_loop1.wav,37,-1"
 				"OnTrigger" "soldier_rotator4,Stop,,37,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,vo\mvm\norm\taunts\soldier_mvm_taunts10.mp3,39,-1"
 				"OnTrigger" "w6_shake_soldier,StartShake,,39,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,ui\gamestartup18.mp3,39,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,ui\gamestartup18.mp3,39,-1"
 				"OnTrigger" "w6_single_soldier_introcard1,Display,,39,-1"
 				"OnTrigger" "w6_single_soldier_introcard2,Display,,40,-1"
@@ -4604,7 +4554,6 @@ WaveSchedule
 
 				"OnTrigger" "tf_gamerules,$StopVO,ui\gamestartup18.mp3,0,-1"
 				"OnTrigger" "tf_gamerules,$StopVO,ui\gamestartup18.mp3,0,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,vo\mvm\norm\soldier_mvm_paincrticialdeath02.mp3,0,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,vo\mvm\norm\soldier_mvm_paincrticialdeath02.mp3,0,-1"
 				"OnTrigger" "w6_sound_soldier_single_voiceline1*,PlaySound,,4,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,fat_womp_womp.mp3,6,-1"
@@ -4641,7 +4590,6 @@ WaveSchedule
 				"spawnflags" "2"
 
 				"OnTrigger" "tf_gamerules,PlayVO,fat_event_horizon_lastphase_loop.mp3,0,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,fat_event_horizon_lastphase_loop.mp3,0,-1"
 				"OnTrigger" "!self,Trigger,,42.6,-1"
 			}
 
@@ -4674,7 +4622,6 @@ WaveSchedule
 				"OnTrigger" "w6_soldier_forcefield2,Enable,,0,-1"
 
 				"OnTrigger" "tf_gamerules,PlayVO,fat_event_horizon_lastphase_intro.mp3,0,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,fat_event_horizon_lastphase_intro.mp3,0,-1"
 				"OnTrigger" "w6_phase1_loop,CancelPending,,0,-1"
 
 				"OnTrigger" "w6_sound_soldier_finale_voiceline1*,PlaySound,,2,-1"
@@ -4685,7 +4632,6 @@ WaveSchedule
 				"OnTrigger" "tf_gamerules,PlayVO,vo\mvm\mght\soldier_mvm_m_yes03.mp3,10,-1"
 
 				"OnTrigger" "tf_gamerules,PlayVO,mvm\mvm_tele_deliver.wav,12,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,mvm\mvm_tele_deliver.wav,12,-1"
 
 				"OnTrigger" "w6_finale_introcard1,Display,,16,-1"
 				"OnTrigger" "w6_finale_introcard2,Display,,17,-1"
@@ -4694,7 +4640,6 @@ WaveSchedule
 				"OnTrigger" "tf_gamerules,PlayVO,vo\mvm\mght\taunts\soldier_mvm_m_taunts15.mp3,17,-1"
 
 
-				"OnTrigger" "tf_gamerules,PlayVO,mvm\giant_heavy\giant_heavy_entrance.wav,21.3,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,mvm\giant_heavy\giant_heavy_entrance.wav,21.3,-1"
 
 				"OnTrigger" "w6_soldier_forcefield2,Disable,,19.5,-1"
@@ -4758,16 +4703,13 @@ WaveSchedule
 				"OnTrigger" "w6_cutscene_camera1,$EnableAll,,0,-1"
 				"OnTrigger" "random_sparks_timer,Enable,,0,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,fat_w6_soldier_cutscene1.mp3,0.4,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,fat_w6_soldier_cutscene1.mp3,0.4,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,weapons\airstrike_small_explosion_02.wav,1.3,-1"
 				"OnTrigger" "w6_end_cutscene_particle_launcher1,Start,,1.3,-1"
 				"OnTrigger" "rocket_launcher1,Disable,,1.3,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,fat_w6_soldier_cutscene2.mp3,1.6,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,fat_w6_soldier_cutscene2.mp3,1.6,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,weapons\loose_cannon_explode.wav,1.85,-1"
 				"OnTrigger" "w6_end_cutscene_particle_launcher2,Start,,1.85,-1"
 				"OnTrigger" "rocket_launcher4,Disable,,1.85,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,fat_w6_soldier_cutscene3.mp3,4,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,fat_w6_soldier_cutscene3.mp3,4,-1"
 				"OnTrigger" "w6_cutscene_camera1,$DisableAll,,2.5,-1"
 				"OnTrigger" "w6_cutscene_camera2,$EnableAll,,2.55,-1"
@@ -4782,9 +4724,7 @@ WaveSchedule
 				"OnTrigger" "mega_soldier,SetAnimation,stand_loser,5.2,-1"
 
 				"OnTrigger" "tf_gamerules,PlayVO,fat_w6_soldier_cutscene4.mp3,6.8,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,fat_w6_soldier_cutscene4.mp3,6.8,-1"
 
-				"OnTrigger" "tf_gamerules,PlayVO,fat_w6_soldier_cutscene5.mp3,7.9,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,fat_w6_soldier_cutscene5.mp3,7.9,-1"
 
 				"OnTrigger" "tf_gamerules,PlayVO,weapons\rocket_blackbox_explode2.wav,6,-1"
@@ -4810,21 +4750,17 @@ WaveSchedule
 				"OnTrigger" "w6_cutscene_camera4,$EnableAll,,10.65,-1"
 				"OnTrigger" "random_sparks_timer,Disable,,10.7,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,ambient\explosions\explode_1.wav,10.8,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,ambient\explosions\explode_1.wav,10.8,-1"
 				"OnTrigger" "w6_end_cutscene_particle_last1,Start,,10.8,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,fat_w6_soldier_cutscene6.mp3,10.8,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,fat_w6_soldier_cutscene6.mp3,10.8,-1"
 				"OnTrigger" "mega_soldier,SetAnimation,primary_death_headshot,10.8,-1"
 				"OnTrigger" "mega_soldier,SetPlaybackRate,0.1,10.85,-1"
 				"OnTrigger" "mega_soldier,SetPlaybackRate,0.05,12.1,-1"
 
 				"OnTrigger" "tf_gamerules,PlayVO,fat_w6_soldier_death.mp3,16,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,fat_w6_soldier_death.mp3,16,-1"
 
 				"OnTrigger" "w6_fadein,Fade,,21.25,-1"
 				"OnTrigger" "@p@health_target,$TakeDamage,99999999,21.25,-1"
 				"OnTrigger" "@p@health_target,$removecond,51,21.15,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,ambient\explosions\explode_6.wav,21.25,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,ambient\explosions\explode_6.wav,21.25,-1"
 				"OnTrigger" "w6_end_cutscene_particle_end*,Start,,21.1,-1"
 				"OnTrigger" "tf_gamerules,$StopVO,fat_w6_end.mp3,22,-1"
@@ -5116,7 +5052,6 @@ WaveSchedule
 				"OnTrigger" "w7_fade,Fade,,22.2,-1"
 
 				"OnTrigger" "tf_gamerules,$StopVO,ui\itemcrate_smash_ultrarare_short.wav,24,-1"
-				"OnTrigger" "tf_gamerules,PlayVO,fat_w7_cipher.mp3,24,-1"
 				"OnTrigger" "tf_gamerules,PlayVO,fat_w7_cipher.mp3,24,-1"
             }
 
@@ -6081,6 +6016,7 @@ WaveSchedule
 				"dmg from melee increased" 20
 				"dmg from ranged reduced" 20
 				"boots falling stomp" 1
+				"force distribute currency on death" 1
 			}
 
 			EventChangeAttributes
@@ -6227,6 +6163,7 @@ WaveSchedule
 					{
 						"move speed bonus" 1
 						"dmg taken increased" 0
+						"subtract victim medigun charge on hit" 100
 					}
 				}
 
@@ -6239,6 +6176,7 @@ WaveSchedule
 						"increased jump height" 0.01
 						"dmg taken increased" 0
 						"damage force reduction" 0
+						"subtract victim medigun charge on hit" 100
 					}
 				}
 
@@ -6252,6 +6190,7 @@ WaveSchedule
 						"always crit" 1
 						"dmg taken increased" 0
 						"damage force reduction" 0
+						"subtract victim medigun charge on hit" 100
 					}
 				}
 
@@ -6276,6 +6215,7 @@ WaveSchedule
 						"damage force reduction" 0
 						"cancel falling damage" 1
 						"force distribute currency on death" 1
+						"subtract victim medigun charge on hit" 100
 					}
 				}
 
@@ -6468,6 +6408,9 @@ WaveSchedule
                         "move speed bonus" 0.1
 						"increased jump height" 0.01
 						"force distribute currency on death" 1
+						"damage force reduction" 0.01
+						"airblast vulnerability multiplier" 0.01
+						"airblast vertical vulnerability multiplier" 0.01
                     }
                 }
 
@@ -6479,6 +6422,9 @@ WaveSchedule
 						"increased jump height" 0.01
 						"stomp player damage" 200
 						"force distribute currency on death" 1
+						"damage force reduction" 0.01
+						"airblast vulnerability multiplier" 0.01
+						"airblast vertical vulnerability multiplier" 0.01
                     }
                 }
             }
@@ -6540,15 +6486,6 @@ WaveSchedule
 				Repeats 1
 			}
 
-			FireInput
-			{
-				Target tf_gamerules
-				Action PlayVO
-				Param "vo\mvm\mght\heavy_mvm_m_specialcompleted05.mp3"
-				Delay 3
-				Repeats 1
-			}
-
 			InterruptAction
 			{
 				Target "RandomEnemy"
@@ -6573,24 +6510,6 @@ WaveSchedule
 			{
 				Target tf_gamerules
 				Action PlayVO
-				Param "vo\mvm\mght\heavy_mvm_m_jeers02.mp3"
-				Delay 14
-				Repeats 1
-			}
-
-			FireInput
-			{
-				Target tf_gamerules
-				Action PlayVO
-				Param "vo\mvm\mght\heavy_mvm_m_jeers01.mp3"
-				Delay 16
-				Repeats 1
-			}
-
-			FireInput
-			{
-				Target tf_gamerules
-				Action PlayVO
 				Param "vo\mvm\mght\heavy_mvm_m_jeers01.mp3"
 				Delay 16
 				Repeats 1
@@ -6601,24 +6520,6 @@ WaveSchedule
 				Target tf_gamerules
 				Action $StopVO
 				Param "fat_punch_sequence.mp3"
-				Delay 10
-				Repeats 1
-			}
-
-			FireInput
-			{
-				Target tf_gamerules
-				Action PlayVO
-				Param "fat_record_scratch.mp3"
-				Delay 10
-				Repeats 1
-			}
-
-			FireInput
-			{
-				Target tf_gamerules
-				Action PlayVO
-				Param "fat_record_scratch.mp3"
 				Delay 10
 				Repeats 1
 			}
@@ -6634,15 +6535,6 @@ WaveSchedule
 			{
 				Name "competitive_loserstate_idle"
 				Delay 18
-				Repeats 1
-			}
-
-			FireInput
-			{
-				Target tf_gamerules
-				Action PlayVO
-				Param "vo\mvm\mght\heavy_mvm_m_yes03.mp3"
-				Delay 20
 				Repeats 1
 			}
 
@@ -6884,15 +6776,6 @@ WaveSchedule
 			{
 				Target w5_heavy_death
 				Action Trigger
-				Delay 26
-				Repeats 1
-			}
-
-			FireInput
-			{
-				Target tf_gamerules
-				Action PlayVO
-				Param "fat_fuck_off.mp3"
 				Delay 26
 				Repeats 1
 			}
@@ -7344,6 +7227,7 @@ WaveSchedule
                 CharacterAttributes
                 {
                     "dmg taken increased" 6.7
+					"force distribute currency on death" 1
                 }
 			}
 		}
@@ -7520,6 +7404,7 @@ WaveSchedule
 			TFBot
 			{
 				Template T_TFBot_Major_Crits_First
+				DeathSound "~mvm\giant_soldier\giant_soldier_explode.wav"
 			}
 		}
 
@@ -7644,6 +7529,7 @@ WaveSchedule
 			TFBot
 			{
 				Template T_TFBot_Major_Crits_74
+				DeathSound "mvm\giant_soldier\giant_soldier_explode.wav"
 			}
 		}
 
@@ -7675,6 +7561,7 @@ WaveSchedule
 			TFBot
 			{
 				Template T_TFBot_Major_Crits_74
+				DeathSound "misc/null.wav"
 			}
 		}
 
@@ -7695,6 +7582,7 @@ WaveSchedule
 			TFBot
 			{
 				Template T_TFBot_Major_Crits_74
+				DeathSound "misc/null.wav"
 			}
 		}
 
@@ -7726,6 +7614,7 @@ WaveSchedule
 			TFBot
 			{
 				Template T_TFBot_Major_Crits_74
+				DeathSound "misc/null.wav"
 			}
 		}
 
@@ -7746,6 +7635,7 @@ WaveSchedule
 			TFBot
 			{
 				Template T_TFBot_Major_Crits_74
+				DeathSound "misc/null.wav"
 				CharacterAttributes
 				{
 					"move speed bonus" 0.5
@@ -7866,6 +7756,29 @@ WaveSchedule
 			Action Trigger
 		}
 
+		Explanation
+		{
+			Line "{FFFFFF}--------------------------------------------------------------------------"
+			Line "{FFFFFF}For this wave only, you will be unable to use {FF0000}ubercharge canteens{FFFFFF}."
+			Line "{FFFFFF}Medic's uber build up rate is also reduced to near zero."
+			Line "{FFFFFF}Rest assured that there is {12E8EE}absolutely zero logical reason {FFFFFFfor this balancing to exist in this wave."
+			Line "{FFFFFF}I just {12E8EE}felt like it{FFFFFF}."
+			Line "{FFFFFF}After this wave, the aforemntioned will return to normal."
+			Line "{FFFFFF}--------------------------------------------------------------------------"
+		}
+
+		ItemAttributes   //Adds attributes to specified item given to players
+		{
+			ClassName "tf_weapon_medigun"
+			"ubercharge rate penalty" 0.001
+		}
+
+		ItemAttributes   //Adds attributes to specified item given to players
+		{
+			ClassName "tf_powerup_bottle"
+			"ubercharge" 0
+		}
+
 		SpawnTemplate "Wave4Relays"
 		SpawnTemplate "Wave4Text"
 		SpawnTemplate "Wave4Misc"
@@ -7928,6 +7841,7 @@ WaveSchedule
 						CharacterAttributes
 						{
 							"dmg taken increased" 0
+							"subtract victim medigun charge on hit" 100
 						}
 					}
 
@@ -7937,6 +7851,7 @@ WaveSchedule
 						{
 							"dmg taken increased" 1
 							"force distribute currency on death" 1
+							"subtract victim medigun charge on hit" 100
 						}
 					}
 				}
@@ -7999,6 +7914,7 @@ WaveSchedule
 						CharacterAttributes
 						{
 							"dmg taken increased" 0
+							"subtract victim medigun charge on hit" 100
 						}
 					}
 
@@ -8008,6 +7924,7 @@ WaveSchedule
 						{
 							"dmg taken increased" 1
 							"force distribute currency on death" 1
+							"subtract victim medigun charge on hit" 100
 						}
 					}
 				}
@@ -8058,6 +7975,7 @@ WaveSchedule
 						CharacterAttributes
 						{
 							"dmg taken increased" 0
+							"subtract victim medigun charge on hit" 100
 						}
 					}
 
@@ -8067,6 +7985,7 @@ WaveSchedule
 						{
 							"dmg taken increased" 1
 							"force distribute currency on death" 1
+							"subtract victim medigun charge on hit" 100
 						}
 					}
 				}
@@ -8117,6 +8036,7 @@ WaveSchedule
 						CharacterAttributes
 						{
 							"dmg taken increased" 0
+							"subtract victim medigun charge on hit" 100
 						}
 					}
 
@@ -8126,6 +8046,7 @@ WaveSchedule
 						{
 							"dmg taken increased" 1
 							"force distribute currency on death" 1
+							"subtract victim medigun charge on hit" 100
 						}
 					}
 				}
@@ -8188,6 +8109,7 @@ WaveSchedule
 						CharacterAttributes
 						{
 							"dmg taken increased" 0
+							"subtract victim medigun charge on hit" 100
 						}
 					}
 
@@ -8197,6 +8119,7 @@ WaveSchedule
 						{
 							"dmg taken increased" 1
 							"force distribute currency on death" 1
+							"subtract victim medigun charge on hit" 100
 						}
 					}
 				}
@@ -8246,6 +8169,7 @@ WaveSchedule
 						CharacterAttributes
 						{
 							"dmg taken increased" 0
+							"subtract victim medigun charge on hit" 100
 						}
 					}
 
@@ -8255,6 +8179,7 @@ WaveSchedule
 						{
 							"dmg taken increased" 1
 							"force distribute currency on death" 1
+							"subtract victim medigun charge on hit" 100
 						}
 					}
 				}
@@ -8317,6 +8242,7 @@ WaveSchedule
 						CharacterAttributes
 						{
 							"dmg taken increased" 0
+							"subtract victim medigun charge on hit" 100
 						}
 					}
 
@@ -8326,6 +8252,7 @@ WaveSchedule
 						{
 							"dmg taken increased" 1
 							"force distribute currency on death" 1
+							"subtract victim medigun charge on hit" 100
 						}
 					}
 				}
@@ -8375,6 +8302,7 @@ WaveSchedule
 						CharacterAttributes
 						{
 							"dmg taken increased" 0
+							"subtract victim medigun charge on hit" 100
 						}
 					}
 
@@ -8384,6 +8312,7 @@ WaveSchedule
 						{
 							"dmg taken increased" 1
 							"force distribute currency on death" 1
+							"subtract victim medigun charge on hit" 100
 						}
 					}
 				}
