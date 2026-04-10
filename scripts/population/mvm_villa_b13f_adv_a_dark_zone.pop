@@ -5982,6 +5982,8 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnTrigger" "w11_exit,Enable,,3.5,-1"
 				"OnTrigger" "w11_exit_prop_real,Enable,3.5,-1"
 				"OnTrigger" "w11_player_push,Disable,,3.5,-1"
+				"OnTrigger" "intel,Enable,,3.5,-1"
+				"OnTrigger" "intel,$TeleportToEntity,w11_exit_prop_real,3.5,-1"
 				"OnTrigger" "the_key_was_forgotten,Enable,,3.5,-1"
 			}
 			func_flagdetectionzone
@@ -8652,8 +8654,8 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnSpawn" "intel,SetTeam,3,0,-1"
 				"OnSpawn" "intel,$SetLocalOrigin,-9248 2280 897,0,-1"
 				"OnSpawn" "intel,addoutput,onpickupteam2 w19_relay_1:Trigger::0:-1,0,-1"
-				"OnSpawn" "intel,addoutput,onpickup1 !activator:$AddCond:42:0:-1,0,-1"
-				"OnSpawn" "intel,addoutput,ondrop1 !activator:$RemoveCond:42:0:-1,0,-1"
+				// "OnSpawn" "intel,addoutput,onpickup1 !activator:$AddCond:42:0:-1,0,-1"
+				// "OnSpawn" "intel,addoutput,ondrop1 !activator:$RemoveCond:42:0:-1,0,-1"
 				"OnSpawn" "intel,addoutput,onpickup1 !activator:$AddCond:55:0:-1,0,-1"
 				"OnSpawn" "intel,addoutput,ondrop1 !activator:$RemoveCond:55:0:-1,0,-1"
 				// "OnSpawn" "capturezone,addoutput,oncapteam2 w19_bomb_deploy_relay:Trigger::0:-1,0,-1"
@@ -8736,6 +8738,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnTrigger" "force_respawn_relay,CancelPending,,0,-1"
 				"OnTrigger" "@f@filter_player@player,$AddPlayerAttribute,mult step height|2,2.7,-1"
 				"OnTrigger" "@f@filter_player@player,$AddCond,32,2.7,-1"
+				"OnTrigger" "@f@filter_player@player,$AddCond,42,2.7,-1"
 				"OnTrigger" "@f@filter_bot@player,$AddPlayerAttribute,major move speed bonus|1.001,2.7,-1"
 				"OnTrigger" "player,$RemovePlayerAttribute,no_attack,2.7,-1"
 				"OnTrigger" "player,$RemovePlayerAttribute,no_jump,3.2,-1"
