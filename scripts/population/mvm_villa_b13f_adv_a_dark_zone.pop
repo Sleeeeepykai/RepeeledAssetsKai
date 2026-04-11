@@ -525,11 +525,11 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			Attribute "bleeding duration"
 			Cap 2
 			Increment 1
-			Cost 300
+			Cost 400
 			SecondaryAttributes
 			{
-				"mult bleeding delay" -0.2
-				"mult bleeding dmg" 0.2
+				"mult bleeding delay" -0.15
+				"mult bleeding dmg" 0.15
 				"fire rate penalty" 0.25
 			}
 			Description "+1 second of bleed +Increased bleed intensity -25% firing speed"
@@ -549,9 +549,9 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			{
 				// "mult projectile count" 1
 				"projectile spread angle penalty" 1
-				"reload time increased" 0.25
+				"reload time increased" 0.15
 			}
-			Description "+1 projectile count +1 degree projectile deviation -25% reload speed" 
+			Description "+1 projectile count +1 degree projectile deviation -15% reload speed" 
 			AllowedWeapons
 			{
 				ItemName "Super Bees Gun"
