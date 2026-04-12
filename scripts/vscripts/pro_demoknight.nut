@@ -3669,7 +3669,7 @@ enum State
 			}
 		}
 		
-		if ( !(hOwner.GetFlags() & FL_ONGROUND) && hOwner.InAirDueToKnockback() )
+		if ( !hateSentries && !(hOwner.GetFlags() & FL_ONGROUND) && hOwner.InAirDueToKnockback() )
 		{
 			changeState( State.AIRBORNE )
 			return
@@ -4396,7 +4396,7 @@ enum State
 			}
 		}
 		
-		if ( !closestThreat )	//|| (closestThreat.GetOrigin() - AI_Bot_myDemo.cur_eye_pos).LengthSqr() > 1800*1800)
+		if ( !closestThreat )	//|| (closestThreatPos - AI_Bot_myDemo.cur_eye_pos).LengthSqr() > 1800*1800)
 		{
 			changeState( State.IDLE )
 		}
@@ -4410,13 +4410,18 @@ enum State
 			local closestThreat_weapon = closestThreat.GetActiveWeapon()
 			local isTargetLookingAtMe = prodemoknight.IsInFieldOfView( closestThreat, hOwner )
 			local numberAdvantage	= checkNumberAdvantage( closestThreat )
+			
+			local backward = (AI_Bot_myDemo.cur_pos - closestThreatPos)
+			local distanceSqr = backward.LengthSqr()
 			// printl("isTargetLookingAtMe: " + isTargetLookingAtMe)
 			if (closestThreat_weapon											&&
 				closestThreat_weapon.IsMeleeWeapon()							&&
 				closestThreat_weapon.GetClassname() != "tf_weapon_laser_pointer" &&
 				closestThreat_weapon.GetClassname() != "tf_weapon_buff_item"	&&	// && my_point_of_attack + swingTime < AI_Bot_myDemo.time)	// already finished my attack, do not run at target
 				isTargetLookingAtMe	&&
-				!numberAdvantage )
+				!numberAdvantage &&
+				distanceSqr < 360000
+				)
 			{	//
 				should_attack = false
 				
@@ -4430,8 +4435,6 @@ enum State
 					
 				}
 				
-				local backward = (AI_Bot_myDemo.cur_pos - closestThreat.GetOrigin())
-				local distanceSqr = backward.LengthSqr()
 				backward.Norm()
 				local point_of_attack = closestThreat_Attack + swingTime
 				local canTargetAttackMe = IsTargetCloseEnoughInT(closestThreat, point_of_attack - AI_Bot_myDemo.time, targetRange )
@@ -4445,7 +4448,7 @@ enum State
 					local actualRange = meleeRange + closestThreat.GetBoundingMaxs().x + 36
 					
 					if ( distanceSqr > actualRange * actualRange )
-						AI_Bot_myDemo.locomotion.Approach(closestThreat.GetOrigin(), 999)
+						AI_Bot_myDemo.locomotion.Approach(closestThreatPos, 999)
 					else if ( distanceSqr < targetRange * targetRange - 1000 && !just_out_of_charge )
 						AI_Bot_myDemo.locomotion.Approach( AI_Bot_myDemo.cur_pos + backward * 64 , 999)
 						
@@ -4472,11 +4475,11 @@ enum State
 				// {
 					// if ( hOwner.GetAbsVelocity().LengthSqr() < 100)
 					// {
-						// AI_Bot_myDemo.locomotion.Approach(closestThreat.GetOrigin(), 999)
+						// AI_Bot_myDemo.locomotion.Approach(closestThreatPos, 999)
 					// }
 					// else
 					// {
-						// AI_Bot_myDemo.UpdatePathAndMove(closestThreat.GetOrigin())
+						// AI_Bot_myDemo.UpdatePathAndMove(closestThreatPos)
 					// }
 				// }
 				// else
@@ -4494,7 +4497,7 @@ enum State
 					// if ( distanceSqr < targetRange * targetRange + 1000)
 						AI_Bot_myDemo.locomotion.Approach( AI_Bot_myDemo.cur_pos + backward * 64 , 999)
 					else if ( distanceSqr > targetRange * targetRange + 2000 )
-						AI_Bot_myDemo.locomotion.Approach(closestThreat.GetOrigin(), 999)
+						AI_Bot_myDemo.locomotion.Approach(closestThreatPos, 999)
 						
 					if ( !wait_before_forcedAttack_timer.IsValid() )
 					{
@@ -4517,7 +4520,7 @@ enum State
 			else 
 			{
 				should_attack = true
-				if ( (AI_Bot_myDemo.cur_pos - closestThreat.GetOrigin()).LengthSqr() < 300 * 300 )
+				if ( (AI_Bot_myDemo.cur_pos - closestThreatPos).LengthSqr() < 300 * 300 )
 				{
 					juke( closestThreat )
 				}
@@ -4525,11 +4528,12 @@ enum State
 				{
 					if ( hOwner.GetAbsVelocity().LengthSqr() < 100 )	// 100
 					{
-						AI_Bot_myDemo.locomotion.Approach(closestThreat.GetOrigin(), 999)
+						AI_Bot_myDemo.locomotion.Approach(closestThreatPos, 999)
 					}
 					else
 					{
-						AI_Bot_myDemo.UpdatePathAndMove(closestThreat.GetOrigin())
+						if ( !AI_Bot_myDemo.UpdatePathAndMove(closestThreatPos) )
+							AI_Bot_myDemo.locomotion.Approach(closestThreatPos, 999)
 					}
 				}
 			}
