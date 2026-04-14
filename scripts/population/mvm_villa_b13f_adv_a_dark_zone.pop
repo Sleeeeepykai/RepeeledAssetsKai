@@ -2368,6 +2368,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			logic_relay
 			{
 				"targetname" "w1_relay_2"
+				"OnTrigger" "player,$ForceRespawnDead,,-1,-1"
 				"OnTrigger" "!self,Disable,,0,-1"
 				"OnTrigger" "force_respawn_relay,Disable,,0,-1"
 				"OnTrigger" "force_respawn_relay,CancelPending,,0,-1"
@@ -2558,6 +2559,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			{
 				"targetname" "w2_relay_2"
 				"OnTrigger" "!self,Disable,,0,-1"
+				"OnTrigger" "player,$ForceRespawnDead,,-1,-1"
 				"OnTrigger" "your_taking_2_long,CancelPending,,0,-1"
 				"OnTrigger" "inside_fog,SetMaxDensity,0.8,0,-1"
 				"OnTrigger" "outside_fog,SetMaxDensity,0.8,0,-1"
@@ -2781,6 +2783,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			{
 				"targetname" "w3_relay_2"
 				"OnTrigger" "!self,Disable,,0,-1"
+				"OnTrigger" "player,$ForceRespawnDead,,-1,-1"
 				"OnTrigger" "your_taking_3_long,CancelPending,,0,-1"
 				"OnTrigger" "gamerules,CallScriptFunction,hideNewAnnotation,0,-1"
 				"OnTrigger" "w3_exit_prop_fake,Skin,2,0,-1"
@@ -3518,6 +3521,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			{
 				"targetname" "w5_relay_2"
 				"OnTrigger" "!self,Disable,,0,-1"
+				"OnTrigger" "player,$ForceRespawnDead,,-1,-1"
 				"OnTrigger" "w5_your_long_is_too_long,Trigger,,0,-1"
 				"OnTrigger" "w5_crates,Kill,,0,-1"
 				"OnTrigger" "w5_forcefiel*,Disable,,0,-1"
@@ -4474,6 +4478,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			{
 				"targetname" "w7_relay_2"
 				"OnTrigger" "!self,Disable,,0,-1"
+				"OnTrigger" "player,$ForceRespawnDead,,-1,-1"
 				"OnTrigger" "@f@filter_dropmoney@player,$Suicide,,0,-1"
 				"OnTrigger" "pop_interface,$PauseWavespawn,w7_support,0,-1"
 				"OnTrigger" "inside_fog,SetMaxDensity,0.8,0,-1"
@@ -4500,6 +4505,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			{
 				"targetname" "w7_relay_3"
 				"OnTrigger" "!self,Disable,,0,-1"
+				"OnTrigger" "player,$ForceRespawnDead,,-1,-1"
 				"ontrigger" "w7_text_niceguy,$SetKey$holdtime,3.15,0,-1"
 				"OnTrigger" "your_taking_7_long,CancelPending,,0,-1"
 				"OnTrigger" "inside_fog,SetMaxDensity,0.8,0,-1"
@@ -4824,6 +4830,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			{
 				"targetname" "w9_relay_2"
 				"OnTrigger" "!self,Disable,,0,-1"
+				"OnTrigger" "player,$ForceRespawnDead,,-1,-1"
 				"OnTrigger" "pop_interface,$PauseWavespawn,w9_support,0,-1"
 				"OnTrigger" "flag_pickup_relay,Disable,,0,-1"
 				"OnTrigger" "your_taking_9_long,CancelPending,,0,-1"
@@ -5606,6 +5613,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			{
 				"targetname" "w10_relay_2"
 				"OnTrigger" "!self,Disable,,0,-1"
+				"OnTrigger" "player,$ForceRespawnDead,,-1,-1"
 				"OnTrigger" "w10_forcefiel*,Kill,,0,-1"
 				// "OnTrigger" "@f@filter_despawn@player,$TeleportToEntity,spawnbot_altmode,0,-1"
 				"OnTrigger" "@f@filter_despawn@player,$Suicide,,0.01,-1"
@@ -5938,6 +5946,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			{
 				"targetname" "w11_relay_5"
 				"OnTrigger" "!self,Disable,,0,-1"
+				"OnTrigger" "player,$ForceRespawnDead,,-1,-1"
 				"OnTrigger" "pumpkin_interrupt_target_relay,Enable,,0,-1"
 				"OnTrigger" "pumpkin_interrupt_stop_relay,Enable,,0,-1"
 				"OnTrigger" "w11_forcef*,Disable,,0,-1"
@@ -5958,7 +5967,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnTrigger" "@f@filter_player@player,$RemoveCond,7,0,-1"
 				"OnTrigger" "@f@filter_player@player,$AddCond,120 3.5,0,-1"
 				"OnTrigger" "@f@filter_player@player,$AddCond,79 3.5,0,-1"
-				"OnTrigger" "pumpkin_interrupt_target_relay,Trigger,,0.3,-1"
+				// "OnTrigger" "pumpkin_interrupt_target_relay,Trigger,,0.3,-1"
 				"OnTrigger" "player,$PlaySoundToSelf,missionfolderthatappearswhenyouhavetakentoolonginaghosthouse/snd_your_break_is_taking_too_long.mp3,0.6,-1"
 				"OnTrigger" "w11_text_your2,Display,,0.75,-1"
 				"OnTrigger" "w11_text_break,Display,,1.3,-1"
@@ -5982,7 +5991,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnTrigger" "w11_exit,Enable,,3.5,-1"
 				"OnTrigger" "w11_exit_prop_real,Enable,3.5,-1"
 				"OnTrigger" "w11_player_push,Disable,,3.5,-1"
-				"OnTrigger" "intel,Enable,,3.5,-1"
+				// "OnTrigger" "intel,Enable,,3.5,-1"
 				"OnTrigger" "intel,$TeleportToEntity,w11_exit_prop_real,3.5,-1"
 				"OnTrigger" "the_key_was_forgotten,Enable,,3.5,-1"
 			}
@@ -6761,6 +6770,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			{
 				"targetname" "w13_relay_2"
 				"OnTrigger" "!self,Disable,,0,-1"
+				"OnTrigger" "player,$ForceRespawnDead,,-1,-1"
 				"OnTrigger" "w13_target,$TeleportToEntity,alt_destination_1,2.7,-1"
 				// "OnTrigger" "@f@filter_bot@player,$TeleportToEntity,spawnbot_altmode,0,-1"
 				"OnTrigger" "@f@filter_despawn@player,$Suicide,,0.01,-1"
@@ -7274,6 +7284,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			{
 				"targetname" "w14_relay_2"
 				"OnTrigger" "!self,Disable,,0,-1"
+				"OnTrigger" "player,$ForceRespawnDead,,-1,-1"
 				"OnTrigger" "w14_leaves*,Disable,,0,-1"
 				"OnTrigger" "intel,ForceResetAndDisableSilent,,0,-1"
 				"OnTrigger" "your_taking_14_long,CancelPending,,0,-1"
@@ -7467,6 +7478,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			{
 				"targetname" "w15_relay_2"
 				"OnTrigger" "!self,Disable,,0,-1"
+				"OnTrigger" "player,$ForceRespawnDead,,-1,-1"
 				"OnTrigger" "your_taking_15_long,CancelPending,,0,-1"
 				"OnTrigger" "inside_fog,SetMaxDensity,0.8,0,-1"
 				"OnTrigger" "outside_fog,SetMaxDensity,0.8,0,-1"
@@ -7914,6 +7926,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			{
 				"targetname" "w17_relay_2"
 				"OnTrigger" "!self,Disable,,0,-1"
+				"OnTrigger" "player,$ForceRespawnDead,,-1,-1"
 				"OnTrigger" "force_respawn_relay,Disable,,0,-1"
 				"OnTrigger" "force_respawn_relay,CancelPending,,0,-1"
 				"OnTrigger" "door_red_*,Close,,0,-1"
@@ -8212,6 +8225,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			{
 				"targetname" "w18_relay_2"
 				"OnTrigger" "!self,Disable,,0,-1"
+				"OnTrigger" "player,$ForceRespawnDead,,-1,-1"
 				"OnTrigger" "pop_interface,$PauseWavespawn,w18_support,0,-1"
 				"OnTrigger" "w18_exit_fake,Disable,,0,-1"
 				"OnTrigger" "force_respawn_relay,Disable,,0,-1"
@@ -8684,6 +8698,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			{
 				"targetname" "w19_relay_2"
 				"OnTrigger" "!self,Disable,,0,-1"
+				"OnTrigger" "player,$ForceRespawnDead,,-1,-1"
 				"OnTrigger" "your_taking_19_long,CancelPending,,0,-1"
 				"OnTrigger" "inside_fog,SetMaxDensity,0.8,0,-1"
 				"OnTrigger" "outside_fog,SetMaxDensity,0.8,0,-1"
@@ -15432,7 +15447,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				{
 					Target "!self"
 					Action "$SetLocalOrigin"
-					Param "-10025 3392 897"
+					Param "-9980 3392 900"
 					Delay 0.01
 					Repeats 1
 				}
