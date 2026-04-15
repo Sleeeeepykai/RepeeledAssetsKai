@@ -5891,6 +5891,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 			{
 				"targetname" "w11_relay_4"
 				"OnTrigger" "!self,Disable,,0,-1"
+				"OnTrigger" "player,$ForceRespawnDead,,-1,-1"
 				"OnTrigger" "canteen,ClearParent,,0,-1"
 				"OnTrigger" "pumpkin_interrupt_target_relay,Disable,,0,-1"
 				"OnTrigger" "pumpkin_interrupt_stop_relay,Disable,,0,-1"
@@ -8764,7 +8765,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnTrigger" "gamerules,CallScriptFunction,showAnnotationW19Exit1,2.7,-1"
 				"OnTrigger" "the_key_was_forgotten,Enable,,2.7,-1"
 				"OnTrigger" "w19_player_push,Enable,,2.7,-1" /// ???
-				"OnTrigger" "w19_relay_4,Trigger,,12.7,-1"
+				"OnTrigger" "w19_relay_4,Trigger,,17.7,-1"
 			}
 			logic_relay
 			{
@@ -8955,6 +8956,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnTrigger" "@f@filter_not_cond_65@player,SpeakResponseConcept,TLK_PLAYER_NEGATIVE,0,-1"
 				"OnTrigger" "@f@filter_player_carrier@player,SpeakResponseConcept,TLK_FLAGCAPTURED,0,-1"
 				"OnTrigger" "@f@filter_despawn@player,$Suicide,,1,-1"
+				"OnTrigger" "gamerules,CallScriptFunction,hideNewAnnotation,1,-1"
 				"OnTrigger" "hatch_prop,Disable,,1,-1"
 				"OnTrigger" "hatch_prop_destroy,Enable,,1,-1"
 				"OnTrigger" "hatch_prop_destroy,SetAnimation,acres1,1,-1"
@@ -8968,7 +8970,6 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnTrigger" "intel,ForceResetAndDisableSilent,,1,-1"
 				"OnTrigger" "light_*,TurnOff,,4,-1"
 				"OnTrigger" "takingtoolong_colorcorrection,Disable,,4,-1"
-				"OnTrigger" "gamerules,CallScriptFunction,hideNewAnnotation,4,-1"
 				"OnTrigger" "force_respawn_relay,Enable,,4,-1"
 				"OnTrigger" "item_ammopack*,SetModelScale,1,4,-1"
 				"OnTrigger" "item_healthkit*,SetModelScale,1,4,-1"
@@ -8984,7 +8985,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnTrigger" "spawnbot_w19,Disable,,4.6,-1"
 				// "OnTrigger" "player_detector_fail,Enable,,4.6,-1"
 				"OnTrigger" "dancing_pumpkin_timer,Disable,,4.6,-1"
-				"OnTrigger" "dancing_pumpkin_synchronized_dance_timer,Disable,,4.6,-1"
+				"OnTrigger" "dancing_pumpkin_synchronized_dance_timer,Disable,,24.6,-1"
 				"OnTrigger" "w19_target,Kill,,4.6,-1"
 				"OnTrigger" "pop_interface,$CollectCash,,5,-1"
 			}
@@ -9049,6 +9050,7 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"OnTrigger" "music_relay_boss,Trigger,,0.1,-1"
 				"OnTrigger" "player,$DisplayTextChat,{8800FF}Now Playing {B800FF}: A DARK ZONE (DELTARUNE Chapters 3+4) - GaMetal Remix,0.1,-1"
 				"OnTrigger" "@f@filter_pumpkin@player,$TauntFromItem,Taunt: Roar O'War,0.1,-1"
+				"OnTrigger" "w20_boss_text*,Display,,0.7,-1"
 			}
 			logic_relay
 			{
@@ -9235,6 +9237,35 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				"oncase07" "w20_text_in,Display,,0.65,-1"
 				"oncase07" "w20_text_lake,Display,,0.75,-1"
 				"oncase07" "@f@filter_pumpkin@player,$ChangeAttributes,DefaultMelee,3,-1"
+			}
+			game_text
+			{
+				"origin" "1984 1984 0"
+				"targetname" "w20_boss_text_upper"
+				"message" "KEAPER OF THE [DARK ZONE] AND LOURD OF ALL SCAIRIES" 
+				"x" "-1"
+				"y" "0.4"
+				"spawnflags" "1"
+				"effect" "2"
+				"channel" "2"
+				"color" "150 100 255"
+				"fxtime" "0.2"
+				"fadeout" "1"
+				"holdtime" "5"
+			}
+			game_text
+			{
+				"origin" "1984 1984 0"
+				"targetname" "w20_boss_text_middle"
+				"message" " HATTENSTEIN "
+				"x" "-1"
+				"y" "0.45"
+				"channel" "3"
+				"spawnflags" "1"
+				"color" "150 100 255"
+				"fadein" "0.2"
+				"fadeout" "1"
+				"holdtime" "4.8"
 			}
 			game_text
 			{
@@ -11961,12 +11992,13 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 						// "max pipebombs decreased" -6
 						"stickybomb charge rate" 0.01
 						"faster reload rate" 0.01
-						"Projectile range decreased" 0.35
+						"Projectile range decreased" 0.4
+						"Blast radius increased" 1.5
 						"custom kill icon" "passtime_pass"
 						"custom projectile model" "models/passtime/tv/passtime_plug.mdl"
 						"custom impact sound" "=75|misc/halloween/spell_lightning_ball_impact.wav"
 						"projectile trail particle" "critical_rocket_blue"
-						"explosion particle" "wrenchmotron_teleport_beam"
+						"explosion particle" "drg_cow_explosioncore_charged_blue" // "wrenchmotron_teleport_beam"
 						"crit vs wet players" 1
 						"stickybomb fizzle time" 3
 					}
@@ -11987,11 +12019,16 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 				{
 					WeaponRestrictions SecondaryOnly
 					Attributes AlwaysFireWeapon
-					Item "Stickybomb Jumper"
+					Item "The Scottish Resistance"
 					ItemAttributes
 					{
-						ItemName "Stickybomb Jumper"
+						ItemName "The Scottish Resistance"
 						"fire rate penalty" 0.1
+						"damage penalty" 0.01
+						"rocket jump damage reduction HIDDEN" 0
+						"apply look velocity on damage" 666
+						"apply z velocity on damage" 666
+						"sticky arm time penalty" 0
 						"always crit" 1
 						"max pipebombs decreased" 50
 						"stickybomb charge rate" 0.01
@@ -11999,9 +12036,9 @@ YOUR_WaveSchedule_IS_TAKING_TOO_LONG
 						"clip size bonus" 25
 						"Projectile range decreased" 0.35
 						"projectile spread angle penalty" 15
-						"custom item model" "models/weapons/c_models/c_scottish_resistance/c_scottish_resistance.mdl"
-						"custom projectile model" "models/weapons/c_models/c_scottish_resistance/c_scottish_resistance.mdl"
-						"custom weapon fire sound" "Weapon_StickyBombLauncher.SingleCrit"
+						// "custom item model" "models/weapons/c_models/c_scottish_resistance/c_scottish_resistance.mdl"
+						// "custom projectile model" "models/weapons/c_models/c_scottish_resistance/c_scottish_resistance.mdl"
+						// "custom weapon fire sound" "Weapon_StickyBombLauncher.SingleCrit"
 						"stickybomb fizzle time" 3
 					}
 					FireWeapon  
