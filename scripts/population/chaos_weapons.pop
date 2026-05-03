@@ -8,7 +8,7 @@ WaveSchedule
 	GiantsDropRareSpells 0
 	SpellDropRateGiant 0
 	SpellDropRateCommon 0
-	
+
 	ItemAttributes // Rust Scattergun
 	{
 		ItemName "Rust Botkiller Scattergun Mk.I"
@@ -1734,6 +1734,8 @@ WaveSchedule
 		"mult bleeding dmg"										10
 		"explosive sniper shot"									11
 		"set_item_texture_wear"									0.2
+        "custom_paintkit_seed_lo"								4466973305
+        "custom_paintkit_seed_hi"								4466973305
 	}
 	ItemAttributes // SMG + Skins
 	{
@@ -2082,8 +2084,8 @@ WaveSchedule
 		"scattergun no reload single"							0
 		"Reload time decreased"									0.2
 		"increase buff duration HIDDEN"							50
+        "auto fires full clip penalty"							1
 		"set_item_texture_wear"									0.2
-		"auto fires full clip penalty"							1
 	}
 	ItemAttributes
 	{
@@ -3975,6 +3977,9 @@ WaveSchedule
 	{
 		ItemName	"The Gunslinger"
 		"special taunt"											1
+		"damage bonus"											3
+		"mult dmg vs giants"									2
+		"weapon never gib"										1
 		"health regen"											45
 		"move speed bonus"										1.5
 		"halloween increased jump height"						2
@@ -3988,7 +3993,7 @@ WaveSchedule
 		"engy building health bonus"							32
 		"engineer sentry build rate multiplier"					1
 		"sentry rapid fire"										1
-		"self add attributes on hit"							"mult crit dmg|256.41025|1"
+		"mult crit dmg"											51.282
 		"upgrade rate decrease"									4
 		"Repair rate increased"									4
 		"mod weapon blocks healing"								1
