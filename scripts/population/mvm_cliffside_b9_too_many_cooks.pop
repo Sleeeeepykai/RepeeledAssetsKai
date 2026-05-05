@@ -7576,43 +7576,47 @@ WaveSchedule
 			MaxActive 16
 			SpawnCount 8
 			TotalCurrency 160
-				TFBot
+
+			TFBot
+			{
+				Name "Uber Canteen Scout"
+				Health 350
+				Scale 1.2
+				Class Scout
+				Skill Normal
+				ClassIcon scout_fast_ubercan
+				WeaponRestrictions MeleeOnly
+				ExtAttr SuppressCanteenUse
+				Item "The Byte'd Beak"
+				Item "Battery Canteens"
+				ItemAttributes
 				{
-					Name "Uber Canteen Scout"
-					Health 350
-					Scale 1.2
-					Class Scout
-					Skill Normal
-					ClassIcon scout_fast_ubercan
-					WeaponRestrictions MeleeOnly
-					ExtAttr SuppressCanteenUse
-					Item "The Byte'd Beak"
-					Item "Battery Canteens"
-					ItemAttributes
-					{
-						ItemName "Battery Canteens"
-						"ubercharge" 1
-						"powerup charges" 2
-						"powerup duration" 3
-					}
-					FireWeapon
-					{
-						Type "Action"
-						Delay 0
-						IfSeeTarget 1
-						IfHealthBelow 347
-						}
-						FireWeapon
-						{
-							Type "Action"
-							Delay 0
-							IfSeeTarget 1
-							IfHealthBelow 49
-						}
-						CharacterAttributes
-						{
-							"move speed bonus" 1.2
-							"damage force increase" 1.25
+					ItemName "Battery Canteens"
+					"ubercharge" 1
+					"powerup charges" 2
+					"powerup duration" 3
+				}
+
+				FireWeapon
+				{
+					Type "Action"
+					Delay 0.01
+					IfSeeTarget 1
+					IfHealthBelow 347
+					Repeats 1
+				}
+				FireWeapon
+				{
+					Type "Action"
+					Delay 0.01
+					IfSeeTarget 1
+					IfHealthBelow 49
+					Repeats 1
+				}
+				CharacterAttributes
+				{
+					"move speed bonus" 1.2
+					"damage force increase" 1.25
 				}
 			}
 		}
